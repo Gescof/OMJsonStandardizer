@@ -1,5 +1,9 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class OMMember {	
 	String id;
 	String type;
@@ -11,6 +15,12 @@ public class OMMember {
 		//TODO--Default Constructor
 	}
 	
+	/**
+	 * @param String id
+	 * @param String type
+	 * @param Timestamp resultTime
+	 * @param ResulType result
+	 */
 	public OMMember(String id, String type, Timestamp resultTime, ResulType result)
 	{
 		this.id = id;

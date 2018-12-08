@@ -9,9 +9,20 @@ public class Measures {
 	Member humidity;
 	Member luminosity;
 	
+	/**
+	 * Establece las unidades de medida para cada Member:
+	 * Member temperature ("Cº")
+	 * Member humidity ("RH")
+	 * Member luminosity ("lx")
+	 */
 	public Measures()
 	{
-		//TODO--Default Constructor
+		temperature = new Member();
+		temperature.setUnit("Cº");
+		humidity = new Member();
+		humidity.setUnit("RH");
+		luminosity = new Member();
+		luminosity.setUnit("lx");
 	}
 	
 	public Member getTemperature() {

@@ -51,15 +51,6 @@ public class MotaMeasureTrazaGenerator {
 		motaTraza.MotaMeasure.setGeometry(geometry);
 
 		Measures measures = new Measures();
-		Member memberTemp = new Member();
-		memberTemp.setUnit("Cº");
-		Member memberHum = new Member();
-		memberHum.setUnit("RH");
-		Member memberLum = new Member();
-		memberLum.setUnit("lx");
-		measures.setTemperature(memberTemp);
-		measures.setHumidity(memberHum);
-		measures.setLuminosity(memberLum);
 		motaTraza.MotaMeasure.setMeasures(measures);
 
 		for(int i = 0; i < numIds; i++) {
@@ -99,6 +90,7 @@ public class MotaMeasureTrazaGenerator {
 	{
 		try {
 			generateMotaMeasures();
+			System.out.println("Fichero generado.");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

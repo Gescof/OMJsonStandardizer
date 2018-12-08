@@ -2,6 +2,10 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.util.ArrayList;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class ObservationCollection {
 	String id;
 	Timestamp phenomenomTime;

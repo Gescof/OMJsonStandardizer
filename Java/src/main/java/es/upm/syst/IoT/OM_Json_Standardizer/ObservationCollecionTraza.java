@@ -1,5 +1,9 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class ObservationCollecionTraza {
 	ObservationCollection omCollection;
 	

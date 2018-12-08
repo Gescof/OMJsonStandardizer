@@ -1,5 +1,9 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class Member extends ResulType {
 	float value;
 	String unit;
@@ -23,6 +27,10 @@ public class Member extends ResulType {
 		this.unit = unit;
 	}
 	
+	/**
+	 * @see es.upm.syst.IoT.OM_Json_Standardizer.ResulType#toStringOM()
+	 * @return String
+	 */
 	public String toStringOM() {
 		String string = "";
 		

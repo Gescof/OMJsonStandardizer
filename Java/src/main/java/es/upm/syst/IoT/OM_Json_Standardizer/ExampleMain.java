@@ -7,8 +7,15 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class ExampleMain {
 
+	/**
+	 * @param motaMeasureTraza
+	 */
 	private static void imprimirMotaMeasure(MotaMeasureTraza motaMeasureTraza) {
 		MotaMeasure motaMeasure = motaMeasureTraza.getMotaMeasure();
 		String imprimirEsto = "timestamp: " + motaMeasure.getTimestamp().getDate().toString() + "\nMotaId: "
@@ -25,6 +32,9 @@ public class ExampleMain {
 		System.out.println(imprimirEsto);
 	}
 	
+	/**
+	 * @param omTraza
+	 */
 	private static void imprimirOMCollection(ObservationCollecionTraza omTraza) {
 		ObservationCollection omCollection = omTraza.getOmCollection();
 		String imprimirMeasures = "";
@@ -62,7 +72,13 @@ public class ExampleMain {
 		System.out.println(imprimirEsto);
 	}
 	
-	private static String replacements(String jsonString)
+	/**
+	 * Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada a literales que contendrá una traza OM-JSON.
+	 * 
+	 * @param jsonString
+	 * @return jsonString
+	 */
+	private static String jsonReplace(String jsonString)
 	{
 		jsonString = jsonString.replace("$date", "instant");
 		jsonString = jsonString.replace("members", "member");
@@ -72,6 +88,12 @@ public class ExampleMain {
 		return jsonString;
 	}
 
+	/**
+	 * @param args
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 		String trazaPrueba = "{\"MotaMeasure\":{\"timestamp\":{\"$date\":\"2018-11-19T22:06:52.863Z\"},\"MotaId\":\"13\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[40.390575,-3.626924]},\"measures\":{\"temperature\":{\"value\":5.1,\"unit\":\"Cº\"},\"humidity\":{\"value\":73.3,\"unit\":\"RH\"},\"luminosity\":{\"value\":31.0,\"unit\":\"lx\"}}}}";
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -93,7 +115,7 @@ public class ExampleMain {
 		imprimirOMCollection(omTraza);
 		
 		String jsonString = objectMapper.writeValueAsString(omTraza.omCollection);
-		jsonString = replacements(jsonString);
+		jsonString = jsonReplace(jsonString);
 		System.out.println(jsonString);
 	}
 }

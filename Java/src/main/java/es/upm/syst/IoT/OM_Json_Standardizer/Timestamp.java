@@ -3,6 +3,10 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
+/**
+ * @author Guillermo, Yan Liu
+ *
+ */
 public class Timestamp {
 
 	private String date;

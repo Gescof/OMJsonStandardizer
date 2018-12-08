@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_nZq4UPrZEeimbJFF84EGdA">
+  <modelElement href="OM_Json_Standardizer.uml#_ntM4UPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oJX28PrZEeimbJFF84EGdA" targetItem="_oJhA4PrZEeimbJFF84EGdA" sourceItem="_oJWo0PrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oJd9kfrZEeimbJFF84EGdA" targetItem="_oJhBC_rZEeimbJFF84EGdA" sourceItem="_oJd9kPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oKWHUPrZEeimbJFF84EGdA" targetItem="_oKWuYPrZEeimbJFF84EGdA" sourceItem="_oKVgQPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oKbm4frZEeimbJFF84EGdA" targetItem="_oKcN8PrZEeimbJFF84EGdA" sourceItem="_oKbm4PrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oKiUkfrZEeimbJFF84EGdA" targetItem="_oKpCSfrZEeimbJFF84EGdA" sourceItem="_oKiUkPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oKiUk_rZEeimbJFF84EGdA" targetItem="_oKpCnfrZEeimbJFF84EGdA" sourceItem="_oKiUkvrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oKi7ofrZEeimbJFF84EGdA" targetItem="_oKpCoPrZEeimbJFF84EGdA" sourceItem="_oKi7oPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oKobMPrZEeimbJFF84EGdA" source="_oKpCSfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzBMc_rZEeimbJFF84EGdA"/>
+    <stereotypes xmi:id="_oKobMfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzBzgPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oKobMvrZEeimbJFF84EGdA" text=""/>
+    <sourceRole xmi:id="_oKobM_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzBMdPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKobNPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oKobNfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oKobNvrZEeimbJFF84EGdA" aggregationKind="NONE" name="random" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyKQ0frZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKobN_rZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKobOPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oKpCQPrZEeimbJFF84EGdA" source="_oKpCSfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzBzgfrZEeimbJFF84EGdA"/>
+    <stereotypes xmi:id="_oKpCQfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzCakPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oKpCQvrZEeimbJFF84EGdA" text=""/>
+    <sourceRole xmi:id="_oKpCQ_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzBzgvrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCRPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oKpCRfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oKpCRvrZEeimbJFF84EGdA" aggregationKind="NONE" name="objectMapper" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyK34frZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCR_rZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCSPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oK454frZEeimbJFF84EGdA" targetItem="_oK5g8PrZEeimbJFF84EGdA" sourceItem="_oK454PrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oK79MfrZEeimbJFF84EGdA" targetItem="_oLAOoPrZEeimbJFF84EGdA" sourceItem="_oK79MPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oK8kQfrZEeimbJFF84EGdA" targetItem="_oLAOsvrZEeimbJFF84EGdA" sourceItem="_oK8kQPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oK-ZcPrZEeimbJFF84EGdA" sourceAnchor="277.0,84.0" targetAnchor="93.0,194.0" target="_oLYCEPrZEeimbJFF84EGdA" source="_oLAOoPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzDBoPrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXiOwPrZEeimbJFF84EGdA" sourceX="173" targetY="139"/>
+    <stereotypes xmi:id="_oK-ZcfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzDosPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oK-ZcvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXkrAPrZEeimbJFF84EGdA" position="-134.98471276016448,-17.908629453798284"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oK-Zc_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzDBofrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXkD8_rZEeimbJFF84EGdA" position="39.0169172706112,-32.92479772653252"/>
+      <visibility xmi:id="_oK-ZdPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oK-ZdfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oK-ZdvrZEeimbJFF84EGdA" aggregationKind="NONE" name="temperature" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nySMoPrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXlSEPrZEeimbJFF84EGdA" position="-156.18530603694808,105.62155572313969"/>
+      <visibility xmi:id="_oK-Zd_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oK-ZePrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oK_AgPrZEeimbJFF84EGdA" sourceAnchor="138.0,0.0" targetAnchor="0.0,97.0" target="_oLYCEPrZEeimbJFF84EGdA" source="_oLAOoPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzDosfrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXiOwfrZEeimbJFF84EGdA" sourceY="-152" targetX="-219"/>
+    <stereotypes xmi:id="_oK_AgfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzEPwPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oK_AgvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXl5IPrZEeimbJFF84EGdA" position="-27.408629453798312,86.98471276016446"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oK_Ag_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzDosvrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXlSEfrZEeimbJFF84EGdA" position="-17.42479772653246,-69.01691727061116"/>
+      <visibility xmi:id="_oK_AhPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oK_AhfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oK_AhvrZEeimbJFF84EGdA" aggregationKind="NONE" name="humidity" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nySzsfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXl5IfrZEeimbJFF84EGdA" position="-260.38850600250623,72.78510827802022"/>
+      <visibility xmi:id="_oK_Ah_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oK_AiPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oK_nkPrZEeimbJFF84EGdA" sourceAnchor="277.0,54.0" targetAnchor="63.0,194.0" target="_oLYCEPrZEeimbJFF84EGdA" source="_oLAOoPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzE20PrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXiOwvrZEeimbJFF84EGdA" sourceX="143" targetY="109"/>
+    <stereotypes xmi:id="_oK_nkfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzE20vrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oK_nkvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXmgMPrZEeimbJFF84EGdA" position="-104.98471276016448,-17.90862945379827"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oK_nk_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzE20frZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXl5IvrZEeimbJFF84EGdA" position="39.0169172706112,-32.92479772653252"/>
+      <visibility xmi:id="_oK_nlPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oK_nlfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oK_nlvrZEeimbJFF84EGdA" aggregationKind="NONE" name="luminosity" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyTawfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXmgMfrZEeimbJFF84EGdA" position="-121.78510827802018,76.11149399749371"/>
+      <visibility xmi:id="_oK_nl_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oK_nmPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oLEgEfrZEeimbJFF84EGdA" targetItem="_oLIKcPrZEeimbJFF84EGdA" sourceItem="_oLEgEPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oLFHIPrZEeimbJFF84EGdA" sourceAnchor="137.0,0.0" targetAnchor="93.0,73.0" superClass="_oLIKcPrZEeimbJFF84EGdA" subClass="_oJhA4PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nxbRAPrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXhnsPrZEeimbJFF84EGdA" sourceY="-253" targetX="144" targetY="34"/>
+    <bendpoints xmi:id="_oXhnsfrZEeimbJFF84EGdA" sourceX="-144" sourceY="-253" targetY="34"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oLFHIfrZEeimbJFF84EGdA" sourceAnchor="93.0,0.0" targetAnchor="93.0,73.0" superClass="_oLIKcPrZEeimbJFF84EGdA" subClass="_oLYCEPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nxe7YPrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXi10frZEeimbJFF84EGdA" sourceY="-30" targetX="820" targetY="34"/>
+    <bendpoints xmi:id="_oXjc4PrZEeimbJFF84EGdA" sourceX="-820" sourceY="-30" targetY="34"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oLGVQfrZEeimbJFF84EGdA" targetItem="_oLYCEPrZEeimbJFF84EGdA" sourceItem="_oLGVQPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oLHjYPrZEeimbJFF84EGdA" targetItem="_oLYCOfrZEeimbJFF84EGdA" sourceItem="_oLG8UPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oLTJkfrZEeimbJFF84EGdA" targetItem="_oLVl0PrZEeimbJFF84EGdA" sourceItem="_oLTJkPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oLU-wPrZEeimbJFF84EGdA" sourceAnchor="0.0,46.0" targetAnchor="183.0,213.0" target="_oL7bufrZEeimbJFF84EGdA" source="_oLVl0PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzGE8frZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXi10PrZEeimbJFF84EGdA" sourceX="-746" targetY="101"/>
+    <stereotypes xmi:id="_oLU-wfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzGsAPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oLU-wvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXnHQfrZEeimbJFF84EGdA" position="705.310140618252,0.2206651122492076"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oLU-w_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzGE8vrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXnHQPrZEeimbJFF84EGdA" position="-57.86431589824542,-11.096053314751089"/>
+      <visibility xmi:id="_oLU-xPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLU-xfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oLU-xvrZEeimbJFF84EGdA" aggregationKind="NONE" name="omCollection" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyWeEPrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXnuUPrZEeimbJFF84EGdA" position="716.9816554492486,89.90394668524891"/>
+      <visibility xmi:id="_oLU-x_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLU-yPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oLjoQPrZEeimbJFF84EGdA" sourceAnchor="139.0,0.0" targetAnchor="202.0,40.0" target="_oK5g8PrZEeimbJFF84EGdA" source="_oLvOcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny_-UfrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXjc4frZEeimbJFF84EGdA" sourceY="-517" targetX="1088"/>
+    <stereotypes xmi:id="_oLqV9PrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzAlYPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oLqV8frZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXo8cPrZEeimbJFF84EGdA" position="-27.30000000000001,490.4"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oLqV8vrZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_ny_-UvrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXoVYPrZEeimbJFF84EGdA" position="-18.900000000000006,-73.80000000000001"/>
+      <visibility xmi:id="_oLsyMvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLsyMfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oLqV8_rZEeimbJFF84EGdA" aggregationKind="NONE" name="timestamp" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyH0kPrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXo8cfrZEeimbJFF84EGdA" position="1040.2,517.9"/>
+      <visibility xmi:id="_oLsyNPrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLsyM_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oLkPUPrZEeimbJFF84EGdA" sourceAnchor="277.0,116.0" targetAnchor="137.0,194.0" target="_oJhA4PrZEeimbJFF84EGdA" source="_oLvOcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzAlYfrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXjc4vrZEeimbJFF84EGdA" sourceX="225" targetY="171"/>
+    <stereotypes xmi:id="_oLqV-PrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzAlY_rZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oLqV9frZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXpjgfrZEeimbJFF84EGdA" position="-164.4817178429579,-15.753349912287717"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oLqV9vrZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzAlYvrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXpjgPrZEeimbJFF84EGdA" position="45.949709050907586,-33.253074089455936"/>
+      <visibility xmi:id="_oLsyN_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLsyNvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oLqV9_rZEeimbJFF84EGdA" aggregationKind="NONE" name="geometry" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyJCsfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXpjgvrZEeimbJFF84EGdA" position="-158.930356969065,137.4792999440548"/>
+      <visibility xmi:id="_oLtZQfrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLtZQPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oLk2YPrZEeimbJFF84EGdA" sourceAnchor="277.0,146.0" targetAnchor="138.0,168.0" target="_oLAOoPrZEeimbJFF84EGdA" source="_oLvOcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzBMcPrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXjc4_rZEeimbJFF84EGdA" sourceX="589" targetY="201"/>
+    <stereotypes xmi:id="_oLq9A_rZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzBMcvrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oLq9APrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXqxoPrZEeimbJFF84EGdA" position="-559.6143662952261,-0.6599690885671521"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oLq9AfrZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzBMcfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXqKkPrZEeimbJFF84EGdA" position="40.84762727645526,-11.869527915611684"/>
+      <visibility xmi:id="_oLtZRPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLtZQ_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oLq9AvrZEeimbJFF84EGdA" aggregationKind="NONE" name="measures" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyJpwfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXqxofrZEeimbJFF84EGdA" position="-565.1321643191561,189.95282064198113"/>
+      <visibility xmi:id="_oLtZRvrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLtZRfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oLpu4frZEeimbJFF84EGdA" targetItem="_oLvOcPrZEeimbJFF84EGdA" sourceItem="_oLpu4PrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oLqV8PrZEeimbJFF84EGdA" sourceAnchor="342.0,46.0" targetAnchor="139.0,232.0" target="_oLvOcPrZEeimbJFF84EGdA" source="_oMNvkPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny_XQPrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXkD8vrZEeimbJFF84EGdA" sourceX="235" targetY="101"/>
+    <stereotypes xmi:id="_oLsyMPrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_ny_-UPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oLsLIPrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXt08frZEeimbJFF84EGdA" position="-134.94795644106034,-7.445995996052375"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oLsLIfrZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_ny_XQfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXt08PrZEeimbJFF84EGdA" position="51.22127714354582,-16.72589110880847"/>
+      <visibility xmi:id="_oLuAUfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLuAUPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oLsLIvrZEeimbJFF84EGdA" aggregationKind="NONE" name="MotaMeasure" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyHNgPrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXt08vrZEeimbJFF84EGdA" position="-102.16840896191127,84.72549756244734"/>
+      <stereotypes xmi:id="_oLuAVPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyHNgfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLuAU_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLuAUvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oL4YYPrZEeimbJFF84EGdA" sourceAnchor="183.0,0.0" targetAnchor="0.0,40.0" target="_oK5g8PrZEeimbJFF84EGdA" source="_oL7bufrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzGsAfrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXjc5PrZEeimbJFF84EGdA" sourceY="-674" targetX="-452"/>
+    <stereotypes xmi:id="_oL4_dfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzHTEPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oL4_cvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXrYsfrZEeimbJFF84EGdA" position="-26.177132793854526,629.1545908695557"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oL4_c_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzGsAvrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXrYsPrZEeimbJFF84EGdA" position="-18.07182454938288,-76.63924962766339"/>
+      <visibility xmi:id="_oL6NkfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL6NkPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oL4_dPrZEeimbJFF84EGdA" aggregationKind="NONE" name="phenomenomTime" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyXFIfrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXr_wPrZEeimbJFF84EGdA" position="-522.031569710555,639.444460218152"/>
+      <visibility xmi:id="_oL6Nk_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oL6NkvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oL4_cfrZEeimbJFF84EGdA" targetItem="_oL7bufrZEeimbJFF84EGdA" sourceItem="_oL4_cPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oL7bsPrZEeimbJFF84EGdA" source="_oL7bufrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzHTEfrZEeimbJFF84EGdA"/>
+    <stereotypes xmi:id="_oL7bsfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzH6IPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oL7bsvrZEeimbJFF84EGdA" text=""/>
+    <sourceRole xmi:id="_oL7bs_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzHTEvrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL7btPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL7btfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oL7btvrZEeimbJFF84EGdA" aggregationKind="NONE" name="members" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyXsMPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL7bt_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oL7buPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oMCJYPrZEeimbJFF84EGdA" sourceAnchor="0.0,135.0" targetAnchor="101.0,80.0" target="_oK5g8PrZEeimbJFF84EGdA" source="_oMHB4PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzFd4PrZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXkD8PrZEeimbJFF84EGdA" sourceX="-152" targetY="131"/>
+    <stereotypes xmi:id="_oMD-kfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzFd4vrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oMDXgfrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXsm0PrZEeimbJFF84EGdA" position="74.44619951813979,-2.5713704240652078"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oMDXgvrZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzFd4frZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXr_wfrZEeimbJFF84EGdA" position="-62.83387604205791,-13.083941261750624"/>
+      <visibility xmi:id="_oMFzwfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMFzwPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oMD-kPrZEeimbJFF84EGdA" aggregationKind="NONE" name="resultTime" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyVP8frZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXsm0frZEeimbJFF84EGdA" position="58.14368535060271,118.84603984819992"/>
+      <visibility xmi:id="_oMFzw_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMFzwvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oMCwcPrZEeimbJFF84EGdA" sourceAnchor="292.0,0.0" targetAnchor="0.0,37.0" target="_oLIKcPrZEeimbJFF84EGdA" source="_oMHB4PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nzFd4_rZEeimbJFF84EGdA"/>
+    <bendpoints xmi:id="_oXkD8frZEeimbJFF84EGdA" sourceY="-91" targetX="-871"/>
+    <stereotypes xmi:id="_oMD-lfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nzGE8PrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oMD-kvrZEeimbJFF84EGdA" text="">
+      <visualProperties xmi:id="_oXtN4frZEeimbJFF84EGdA" position="-24.314992122510034,50.496080572254016"/>
+    </nameVisual>
+    <sourceRole xmi:id="_oMD-k_rZEeimbJFF84EGdA" aggregationKind="NONE" name="">
+      <modelElement href="OM_Json_Standardizer.uml#_nzFd5PrZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXtN4PrZEeimbJFF84EGdA" position="-18.163756865852633,-77.77384595241978"/>
+      <visibility xmi:id="_oMGa0frZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMGa0PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oMD-lPrZEeimbJFF84EGdA" aggregationKind="NONE" name="result" navigable="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyVP8_rZEeimbJFF84EGdA"/>
+      <visualProperties xmi:id="_oXtN4vrZEeimbJFF84EGdA" position="-903.9227720765012,64.67693549082608"/>
+      <visibility xmi:id="_oMGa0_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMGa0vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oMDXgPrZEeimbJFF84EGdA" targetItem="_oMHB4PrZEeimbJFF84EGdA" sourceItem="_oMCwcfrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oMFMsfrZEeimbJFF84EGdA" targetItem="_oMHCHfrZEeimbJFF84EGdA" sourceItem="_oMFMsPrZEeimbJFF84EGdA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oMMhcfrZEeimbJFF84EGdA" targetItem="_oMNvkPrZEeimbJFF84EGdA" sourceItem="_oMMhcPrZEeimbJFF84EGdA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oJWo0PrZEeimbJFF84EGdA" sourceConnectionVisual="_oJX28PrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oJhA4PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0YIfrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oJd9kPrZEeimbJFF84EGdA" sourceConnectionVisual="_oJd9kfrZEeimbJFF84EGdA" text="@see es.upm.syst.IoT.OM_Json_Standardizer.ResulType#toStringOM()&#xD;&#xA;&#x9; * @return String" item="_oJhBC_rZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0YIvrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oKVgQPrZEeimbJFF84EGdA" sourceConnectionVisual="_oKWHUPrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_oKWuYPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0_MPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oKbm4PrZEeimbJFF84EGdA" sourceConnectionVisual="_oKbm4frZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oKcN8PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0YIPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oKiUkPrZEeimbJFF84EGdA" sourceConnectionVisual="_oKiUkfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_oKpCSfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny1mQ_rZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oKiUkvrZEeimbJFF84EGdA" sourceConnectionVisual="_oKiUk_rZEeimbJFF84EGdA" text="Genera trazas JSON no estandarizadas en un fichero (motaMeasures.json) alojado en la carpeta raíz.&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @throws FileNotFoundException&#xD;&#xA;&#x9; * @throws UnsupportedEncodingException&#xD;&#xA;&#x9; * @throws JsonProcessingException" item="_oKpCnfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny4pkvrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oKi7oPrZEeimbJFF84EGdA" sourceConnectionVisual="_oKi7ofrZEeimbJFF84EGdA" text="@param args&#xD;&#xA;&#x9; * @throws FileNotFoundException&#xD;&#xA;&#x9; * @throws UnsupportedEncodingException&#xD;&#xA;&#x9; * @throws JsonProcessingException" item="_oKpCoPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny4pk_rZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oK454PrZEeimbJFF84EGdA" sourceConnectionVisual="_oK454frZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oK5g8PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5QpfrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oK79MPrZEeimbJFF84EGdA" sourceConnectionVisual="_oK79MfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oLAOoPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny4plPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oK8kQPrZEeimbJFF84EGdA" sourceConnectionVisual="_oK8kQfrZEeimbJFF84EGdA" text="Establece las unidades de medida para cada Member:&#xD;&#xA;&#x9; * Member temperature (&quot;Cº&quot;)&#xD;&#xA;&#x9; * Member humidity (&quot;RH&quot;)&#xD;&#xA;&#x9; * Member luminosity (&quot;lx&quot;)" item="_oLAOsvrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny4plfrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oLEgEPrZEeimbJFF84EGdA" sourceConnectionVisual="_oLEgEfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oLIKcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5QpPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oLGVQPrZEeimbJFF84EGdA" sourceConnectionVisual="_oLGVQfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oLYCEPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0_MfrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oLG8UPrZEeimbJFF84EGdA" sourceConnectionVisual="_oLHjYPrZEeimbJFF84EGdA" text="@see es.upm.syst.IoT.OM_Json_Standardizer.ResulType#toStringOM()&#xD;&#xA;&#x9; * @return String" item="_oLYCOfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0_MvrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oLTJkPrZEeimbJFF84EGdA" sourceConnectionVisual="_oLTJkfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oLVl0PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5QovrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oLpu4PrZEeimbJFF84EGdA" sourceConnectionVisual="_oLpu4frZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oLvOcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny1mQPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oL4_cPrZEeimbJFF84EGdA" sourceConnectionVisual="_oL4_cfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oL7bufrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5Qo_rZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oMCwcfrZEeimbJFF84EGdA" sourceConnectionVisual="_oMDXgPrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oMHB4PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5QoPrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oMFMsPrZEeimbJFF84EGdA" sourceConnectionVisual="_oMFMsfrZEeimbJFF84EGdA" text="@param String id&#xD;&#xA;&#x9; * @param String type&#xD;&#xA;&#x9; * @param Timestamp resultTime&#xD;&#xA;&#x9; * @param ResulType result" item="_oMHCHfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny5QofrZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oMMhcPrZEeimbJFF84EGdA" sourceConnectionVisual="_oMMhcfrZEeimbJFF84EGdA" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_oMNvkPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_ny0_M_rZEeimbJFF84EGdA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oJhA4PrZEeimbJFF84EGdA" comments="_oJWo0PrZEeimbJFF84EGdA" targetConnectionVisual="_oJX28PrZEeimbJFF84EGdA" name="Geometry" associationsIn="_oLkPUPrZEeimbJFF84EGdA" generalizations="_oLFHIPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nvPfsPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oJhA4frZEeimbJFF84EGdA" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oJhA4vrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oJhA4_rZEeimbJFF84EGdA" name="type">
+      <modelElement href="OM_Json_Standardizer.uml#_nyDjIPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oJhA5PrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyEKMPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oJhA5frZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oJhA5vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oJhA5_rZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oJhA6PrZEeimbJFF84EGdA" name="coordinates">
+      <modelElement href="OM_Json_Standardizer.uml#_nyEKMfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oJhA6frZEeimbJFF84EGdA" name="Array">
+        <modelElement href="OM_Json_Standardizer.uml#_nyExQfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oJhA6vrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyFYUPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oJhA6_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oJhA7PrZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_oJhA7frZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oJhA7vrZEeimbJFF84EGdA" name="Geometry">
+      <modelElement href="OM_Json_Standardizer.uml#_nvQt0PrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oJhA7_rZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oJhA8PrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhA8frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oJhA8vrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvRU4vrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oJhA8_rZEeimbJFF84EGdA" name="Geometry">
+          <modelElement href="OM_Json_Standardizer.uml#_nvPfsPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oJhA9PrZEeimbJFF84EGdA" name="getType">
+      <modelElement href="OM_Json_Standardizer.uml#_nvRU4_rZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oJhA9frZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhA9vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oJhA9_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvR78PrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oJhA-PrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oJhA-frZEeimbJFF84EGdA" name="setType">
+      <modelElement href="OM_Json_Standardizer.uml#_nvR78frZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oJhA-vrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhA-_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oJhA_PrZEeimbJFF84EGdA" name="type">
+        <modelElement href="OM_Json_Standardizer.uml#_nvR78vrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oJhA_frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oJhA_vrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oJhA__rZEeimbJFF84EGdA" name="getCoordinates">
+      <modelElement href="OM_Json_Standardizer.uml#_nvSjAPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oJhBAPrZEeimbJFF84EGdA" name="Array">
+        <modelElement href="OM_Json_Standardizer.uml#_nvTKEPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oJhBAfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhBAvrZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_oJhBA_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvSjAfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oJhBBPrZEeimbJFF84EGdA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oJhBBfrZEeimbJFF84EGdA" name="setCoordinates">
+      <modelElement href="OM_Json_Standardizer.uml#_nvTxIPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oJhBBvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhBB_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oJhBCPrZEeimbJFF84EGdA" name="coordinates">
+        <modelElement href="OM_Json_Standardizer.uml#_nvTxIfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oJhBCfrZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_oJhBCvrZEeimbJFF84EGdA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oJhBC_rZEeimbJFF84EGdA" comments="_oJd9kPrZEeimbJFF84EGdA" targetConnectionVisual="_oJd9kfrZEeimbJFF84EGdA" name="toStringOM">
+      <modelElement href="OM_Json_Standardizer.uml#_nvU_QPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oJhBDPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oJhBDfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oJhBDvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvU_QfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oJhBD_rZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKWuYPrZEeimbJFF84EGdA" comments="_oKVgQPrZEeimbJFF84EGdA" targetConnectionVisual="_oKWHUPrZEeimbJFF84EGdA" name="OMJsonGenerator">
+    <modelElement href="OM_Json_Standardizer.uml#_nvW0cPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKWuYfrZEeimbJFF84EGdA" position="-1146.0,-435.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oKWuYvrZEeimbJFF84EGdA" label="+"/>
+    <operations xmi:id="_oKWuY_rZEeimbJFF84EGdA" name="jsonReplace" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nvYCkPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKWuZPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKWuZfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oKWuZvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvYpoPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oKWuZ_rZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oKWuaPrZEeimbJFF84EGdA" name="jsonString">
+        <modelElement href="OM_Json_Standardizer.uml#_nvYCkfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKWuafrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oKWuavrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oKWua_rZEeimbJFF84EGdA" name="generateOMJson" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nvYpofrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKWubPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKWubfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_oKWubvrZEeimbJFF84EGdA" name="main" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nvZQsPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKWub_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oKWucPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oKWucfrZEeimbJFF84EGdA" name="args">
+        <modelElement href="OM_Json_Standardizer.uml#_nvZQsfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKWucvrZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_oKWuc_rZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKaYwPrZEeimbJFF84EGdA" name="IOException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxUjUPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKaYwfrZEeimbJFF84EGdA" position="-1050.0,316.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oKaYwvrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxVKYPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oKaYw_rZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKcN8PrZEeimbJFF84EGdA" comments="_oKbm4PrZEeimbJFF84EGdA" targetConnectionVisual="_oKbm4frZEeimbJFF84EGdA" name="ExampleMain">
+    <modelElement href="OM_Json_Standardizer.uml#_nvA2MPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKcN8frZEeimbJFF84EGdA" position="-1239.0,424.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oKcN8vrZEeimbJFF84EGdA" label="+"/>
+    <operations xmi:id="_oKcN8_rZEeimbJFF84EGdA" name="jsonReplace" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nvKAIPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKcN9PrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKcN9frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oKcN9vrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvL1UPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oKcN9_rZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oKcN-PrZEeimbJFF84EGdA" name="jsonString">
+        <modelElement href="OM_Json_Standardizer.uml#_nvKAIfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKcN-frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oKcN-vrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oKcN-_rZEeimbJFF84EGdA" name="main" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nvMcYPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKcN_PrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oKcN_frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oKcN_vrZEeimbJFF84EGdA" name="args">
+        <modelElement href="OM_Json_Standardizer.uml#_nvMcYfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKcN__rZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_oKcOAPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oKcOAfrZEeimbJFF84EGdA" name="imprimirMotaMeasure" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nxZb0PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKcOAvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKcOA_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oKcOBPrZEeimbJFF84EGdA" name="motaMeasureTraza">
+        <modelElement href="OM_Json_Standardizer.uml#_nxZb0frZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKcOBfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oKcOBvrZEeimbJFF84EGdA" name="MotaMeasureTraza">
+          <modelElement href="OM_Json_Standardizer.uml#_nvglcPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oKcOB_rZEeimbJFF84EGdA" name="imprimirOMCollection" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nxaC4PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKcOCPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKcOCfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oKcOCvrZEeimbJFF84EGdA" name="omTraza">
+        <modelElement href="OM_Json_Standardizer.uml#_nxaC4frZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKcOC_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oKcODPrZEeimbJFF84EGdA" name="ObservationCollecionTraza">
+          <modelElement href="OM_Json_Standardizer.uml#_nwRacPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKeqMPrZEeimbJFF84EGdA" name="JsonParseException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxW_kfrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKfRQPrZEeimbJFF84EGdA" position="-1236.0,317.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oKfRQfrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxXmoPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oKfRQvrZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKgfYPrZEeimbJFF84EGdA" name="JsonMappingException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxXmofrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKgfYfrZEeimbJFF84EGdA" position="-920.0,318.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oKgfYvrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxYNsPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oKgfY_rZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oKpCSfrZEeimbJFF84EGdA" comments="_oKiUkPrZEeimbJFF84EGdA" targetConnectionVisual="_oKiUkfrZEeimbJFF84EGdA" name="MotaMeasureTrazaGenerator" associationsOut="_oKobMPrZEeimbJFF84EGdA _oKpCQPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nvxrMPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oKpCSvrZEeimbJFF84EGdA" position="-1659.0,18.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oKpCS_rZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oKpCTPrZEeimbJFF84EGdA" name="random" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyKQ0frZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCTfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyK34PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCTvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCT_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCUPrZEeimbJFF84EGdA" name="Random">
+        <modelElement href="OM_Json_Standardizer.uml#_nxpTcfrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCUfrZEeimbJFF84EGdA" defaultValue="new ObjectMapper()" name="objectMapper" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyK34frZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCUvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCU_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCVPrZEeimbJFF84EGdA" name="ObjectMapper">
+        <modelElement href="OM_Json_Standardizer.uml#_nxYNsfrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCVfrZEeimbJFF84EGdA" defaultValue="100" name="numIds" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyLe8frZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCVvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCV_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCWPrZEeimbJFF84EGdA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCWfrZEeimbJFF84EGdA" defaultValue="(int) LocalDate.of(2017, 1, 1).toEpochDay()" name="minDay" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyLe8_rZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCWvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCW_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCXPrZEeimbJFF84EGdA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCXfrZEeimbJFF84EGdA" defaultValue="(int) LocalDate.of(2019, 1, 1).toEpochDay()" name="maxDay" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyMGAfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCXvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCX_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCYPrZEeimbJFF84EGdA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCYfrZEeimbJFF84EGdA" defaultValue="40.9f" name="maxCoorZero" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyMtEPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCYvrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_nyMtEvrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCY_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyNUIPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCZPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCZfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCZvrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCZ_rZEeimbJFF84EGdA" defaultValue="-3.0f" name="maxCoorOne" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyNUIfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCaPrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_nyN7MfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCafrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyN7MvrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCavrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCa_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCbPrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCbfrZEeimbJFF84EGdA" defaultValue="50.0f" name="maxTemp" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyOiQPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCbvrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_nyPJUPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCb_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyPJUfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCcPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCcfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCcvrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCc_rZEeimbJFF84EGdA" defaultValue="100.0f" name="maxHum" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyPJUvrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCdPrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_nyPwYfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCdfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyQXcPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCdvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCd_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCePrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCefrZEeimbJFF84EGdA" defaultValue="100.0f" name="maxLum" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nyQXcfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCevrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_nyQ-gPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCe_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyQ-gfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCfPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCffrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCfvrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCf_rZEeimbJFF84EGdA" defaultValue="40.0f" name="minCoorZero">
+      <modelElement href="OM_Json_Standardizer.uml#_ny1mRPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCgPrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_ny1mRfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCgfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_ny2NUPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCgvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCg_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpChPrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpChfrZEeimbJFF84EGdA" defaultValue="-3.9f" name="minCoorOne">
+      <modelElement href="OM_Json_Standardizer.uml#_ny2NUvrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpChvrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_ny20YPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCh_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_ny20YfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCiPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCifrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCivrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCi_rZEeimbJFF84EGdA" defaultValue="0.0f" name="minTemp">
+      <modelElement href="OM_Json_Standardizer.uml#_ny20Y_rZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCjPrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_ny20ZPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCjfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_ny3bcPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCjvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCj_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCkPrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCkfrZEeimbJFF84EGdA" defaultValue="0.0f" name="minHum">
+      <modelElement href="OM_Json_Standardizer.uml#_ny3bcvrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCkvrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_ny3bc_rZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCk_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_ny4CgPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpClPrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpClfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpClvrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oKpCl_rZEeimbJFF84EGdA" defaultValue="0.0f" name="minLum">
+      <modelElement href="OM_Json_Standardizer.uml#_ny4CgvrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oKpCmPrZEeimbJFF84EGdA" name="MultiDeclaration">
+        <modelElement href="OM_Json_Standardizer.uml#_ny4Cg_rZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oKpCmfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_ny4pkPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oKpCmvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCm_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oKpCnPrZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oKpCnfrZEeimbJFF84EGdA" comments="_oKiUkvrZEeimbJFF84EGdA" targetConnectionVisual="_oKiUk_rZEeimbJFF84EGdA" name="generateMotaMeasures" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nv0ugPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCnvrZEeimbJFF84EGdA" label="-"/>
+      <cardinality xmi:id="_oKpCn_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_oKpCoPrZEeimbJFF84EGdA" comments="_oKi7oPrZEeimbJFF84EGdA" targetConnectionVisual="_oKi7ofrZEeimbJFF84EGdA" name="main" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_nv2jsPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oKpCofrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oKpCovrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oKpCo_rZEeimbJFF84EGdA" name="args">
+        <modelElement href="OM_Json_Standardizer.uml#_nv2jsfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oKpCpPrZEeimbJFF84EGdA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_oKpCpfrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oK0ocPrZEeimbJFF84EGdA" name="FileNotFoundException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxmQIPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oK0ocfrZEeimbJFF84EGdA" position="-1081.0,606.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oK0ocvrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxm3MPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oK0oc_rZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oK2doPrZEeimbJFF84EGdA" name="UnsupportedEncodingException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxoFUPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oK2dofrZEeimbJFF84EGdA" position="-765.0,438.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oK2dovrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxosYPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oK2do_rZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oK3rwPrZEeimbJFF84EGdA" name="JsonProcessingException">
+    <modelElement href="OM_Json_Standardizer.uml#_nxp6gfrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oK3rwfrZEeimbJFF84EGdA" position="-717.0,318.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oK3rwvrZEeimbJFF84EGdA" name="Reference">
+      <modelElement href="OM_Json_Standardizer.uml#_nxqhkPrZEeimbJFF84EGdA"/>
+    </stereotypes>
+    <visibility xmi:id="_oK3rw_rZEeimbJFF84EGdA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oK5g8PrZEeimbJFF84EGdA" comments="_oK454PrZEeimbJFF84EGdA" targetConnectionVisual="_oK454frZEeimbJFF84EGdA" name="Timestamp" associationsIn="_oLjoQPrZEeimbJFF84EGdA _oL4YYPrZEeimbJFF84EGdA _oMCJYPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oK5g8frZEeimbJFF84EGdA" position="-1486.0,-278.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oK5g8vrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oK5g8_rZEeimbJFF84EGdA" name="date">
+      <modelElement href="OM_Json_Standardizer.uml#_nyY6UfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oK5g9PrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyZhYPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oK5g9frZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oK5g9vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oK5g9_rZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oK5g-PrZEeimbJFF84EGdA" name="Timestamp">
+      <modelElement href="OM_Json_Standardizer.uml#_nwhSEPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oK5g-frZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oK5g-vrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oK5g-_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oK5g_PrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwh5IfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oK5g_frZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLAOoPrZEeimbJFF84EGdA" comments="_oK79MPrZEeimbJFF84EGdA" targetConnectionVisual="_oK79MfrZEeimbJFF84EGdA" name="Measures" associationsIn="_oLk2YPrZEeimbJFF84EGdA" associationsOut="_oK-ZcPrZEeimbJFF84EGdA _oK_AgPrZEeimbJFF84EGdA _oK_nkPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nv94cPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oLAOofrZEeimbJFF84EGdA" position="393.0,56.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLAOovrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oLAOo_rZEeimbJFF84EGdA" name="temperature">
+      <modelElement href="OM_Json_Standardizer.uml#_nySMoPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLAOpPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nySzsPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLAOpfrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLAOpvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLAOp_rZEeimbJFF84EGdA" name="Member">
+        <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLAOqPrZEeimbJFF84EGdA" name="humidity">
+      <modelElement href="OM_Json_Standardizer.uml#_nySzsfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLAOqfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyTawPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLAOqvrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLAOq_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLAOrPrZEeimbJFF84EGdA" name="Member">
+        <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLAOrfrZEeimbJFF84EGdA" name="luminosity">
+      <modelElement href="OM_Json_Standardizer.uml#_nyTawfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLAOrvrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyTawvrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLAOr_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLAOsPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLAOsfrZEeimbJFF84EGdA" name="Member">
+        <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oLAOsvrZEeimbJFF84EGdA" comments="_oK8kQPrZEeimbJFF84EGdA" targetConnectionVisual="_oK8kQfrZEeimbJFF84EGdA" name="Measures">
+      <modelElement href="OM_Json_Standardizer.uml#_nv_GkPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oLAOs_rZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oLAOtPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOtfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLAOtvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nv_Gk_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLAOt_rZEeimbJFF84EGdA" name="Measures">
+          <modelElement href="OM_Json_Standardizer.uml#_nv94cPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLAOuPrZEeimbJFF84EGdA" name="getTemperature">
+      <modelElement href="OM_Json_Standardizer.uml#_nv_toPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAOufrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOuvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLAOu_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxuzAPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLAOvPrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLAOvfrZEeimbJFF84EGdA" name="getHumidity">
+      <modelElement href="OM_Json_Standardizer.uml#_nwAUsPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAOvvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOv_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLAOwPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxvaEPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLAOwfrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLAOwvrZEeimbJFF84EGdA" name="getLuminosity">
+      <modelElement href="OM_Json_Standardizer.uml#_nwA7wPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAOw_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOxPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLAOxfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxvaE_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLAOxvrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLAOx_rZEeimbJFF84EGdA" name="setTemperature">
+      <modelElement href="OM_Json_Standardizer.uml#_nxuzAfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAOyPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOyfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLAOyvrZEeimbJFF84EGdA" name="temperature">
+        <modelElement href="OM_Json_Standardizer.uml#_nxuzAvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLAOy_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLAOzPrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLAOzfrZEeimbJFF84EGdA" name="setHumidity">
+      <modelElement href="OM_Json_Standardizer.uml#_nxvaEfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAOzvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAOz_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLAO0PrZEeimbJFF84EGdA" name="humidity">
+        <modelElement href="OM_Json_Standardizer.uml#_nxvaEvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLAO0frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLAO0vrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLAO0_rZEeimbJFF84EGdA" name="setLuminosity">
+      <modelElement href="OM_Json_Standardizer.uml#_nxvaFPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLAO1PrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLAO1frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLAO1vrZEeimbJFF84EGdA" name="luminosity">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwBIPrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLAO1_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLAO2PrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLIKcPrZEeimbJFF84EGdA" comments="_oLEgEPrZEeimbJFF84EGdA" targetConnectionVisual="_oLEgEfrZEeimbJFF84EGdA" name="ResulType" abstractClass="true" associationsIn="_oMCwcPrZEeimbJFF84EGdA" subclassedBy="_oLFHIPrZEeimbJFF84EGdA _oLFHIfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oLIKcfrZEeimbJFF84EGdA" position="-70.0,-330.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLIKcvrZEeimbJFF84EGdA" label="+"/>
+    <operations xmi:id="_oLIKc_rZEeimbJFF84EGdA" name="ResulType">
+      <modelElement href="OM_Json_Standardizer.uml#_nweOwPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oLIKdPrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oLIKdfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLIKdvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLIKd_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nweOw_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLIKePrZEeimbJFF84EGdA" name="ResulType">
+          <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLIKefrZEeimbJFF84EGdA" abstractOperation="true" name="toStringOM">
+      <modelElement href="OM_Json_Standardizer.uml#_nwe10PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLIKevrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLIKe_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLIKfPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwe10frZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLIKffrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLVl0PrZEeimbJFF84EGdA" comments="_oLTJkPrZEeimbJFF84EGdA" targetConnectionVisual="_oLTJkfrZEeimbJFF84EGdA" name="ObservationCollecionTraza" associationsOut="_oLU-wPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nwRacPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oLVl0frZEeimbJFF84EGdA" position="-1192.0,704.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLVl0vrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oLVl0_rZEeimbJFF84EGdA" name="omCollection">
+      <modelElement href="OM_Json_Standardizer.uml#_nyWeEPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLVl1PrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyWeEfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLVl1frZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLVl1vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLVl1_rZEeimbJFF84EGdA" name="ObservationCollection">
+        <modelElement href="OM_Json_Standardizer.uml#_nwVE0PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oLVl2PrZEeimbJFF84EGdA" name="ObservationCollecionTraza">
+      <modelElement href="OM_Json_Standardizer.uml#_nwSokPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oLVl2frZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oLVl2vrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLVl2_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLVl3PrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwSok_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLVl3frZEeimbJFF84EGdA" name="ObservationCollecionTraza">
+          <modelElement href="OM_Json_Standardizer.uml#_nwRacPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLVl3vrZEeimbJFF84EGdA" name="getOmCollection">
+      <modelElement href="OM_Json_Standardizer.uml#_nwTPoPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLVl3_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLVl4PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLVl4frZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxzEcPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLVl4vrZEeimbJFF84EGdA" name="ObservationCollection">
+          <modelElement href="OM_Json_Standardizer.uml#_nwVE0PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLVl4_rZEeimbJFF84EGdA" name="setOmCollection">
+      <modelElement href="OM_Json_Standardizer.uml#_nxzEcfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLVl5PrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLVl5frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLVl5vrZEeimbJFF84EGdA" name="omCollection">
+        <modelElement href="OM_Json_Standardizer.uml#_nxzEcvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLVl5_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLVl6PrZEeimbJFF84EGdA" name="ObservationCollection">
+          <modelElement href="OM_Json_Standardizer.uml#_nwVE0PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLYCEPrZEeimbJFF84EGdA" comments="_oLGVQPrZEeimbJFF84EGdA" targetConnectionVisual="_oLGVQfrZEeimbJFF84EGdA" name="Member" associationsIn="_oK-ZcPrZEeimbJFF84EGdA _oK_AgPrZEeimbJFF84EGdA _oK_nkPrZEeimbJFF84EGdA" generalizations="_oLFHIfrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oLYCEfrZEeimbJFF84EGdA" position="750.0,-193.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLYCEvrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oLYCE_rZEeimbJFF84EGdA" name="value">
+      <modelElement href="OM_Json_Standardizer.uml#_nyFYUfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLYCFPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyF_YPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLYCFfrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLYCFvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLYCF_rZEeimbJFF84EGdA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLYCGPrZEeimbJFF84EGdA" name="unit">
+      <modelElement href="OM_Json_Standardizer.uml#_nyF_YfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLYCGfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyGmcPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLYCGvrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLYCG_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLYCHPrZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oLYCHfrZEeimbJFF84EGdA" name="Member">
+      <modelElement href="OM_Json_Standardizer.uml#_nvcUAPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oLYCHvrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oLYCH_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCIPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLYCIfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvcUA_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLYCIvrZEeimbJFF84EGdA" name="Member">
+          <modelElement href="OM_Json_Standardizer.uml#_nvbF4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLYCI_rZEeimbJFF84EGdA" name="getValue">
+      <modelElement href="OM_Json_Standardizer.uml#_nvc7EPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLYCJPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCJfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLYCJvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvc7EfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLYCJ_rZEeimbJFF84EGdA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLYCKPrZEeimbJFF84EGdA" name="setValue">
+      <modelElement href="OM_Json_Standardizer.uml#_nvdiIPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLYCKfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCKvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLYCK_rZEeimbJFF84EGdA" name="value">
+        <modelElement href="OM_Json_Standardizer.uml#_nvdiIfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLYCLPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLYCLfrZEeimbJFF84EGdA" name="float">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLYCLvrZEeimbJFF84EGdA" name="getUnit">
+      <modelElement href="OM_Json_Standardizer.uml#_nvdiIvrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLYCL_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCMPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLYCMfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nveJMPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLYCMvrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLYCM_rZEeimbJFF84EGdA" name="setUnit">
+      <modelElement href="OM_Json_Standardizer.uml#_nveJMfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLYCNPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCNfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLYCNvrZEeimbJFF84EGdA" name="unit">
+        <modelElement href="OM_Json_Standardizer.uml#_nvewQPrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLYCN_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLYCOPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLYCOfrZEeimbJFF84EGdA" comments="_oLG8UPrZEeimbJFF84EGdA" targetConnectionVisual="_oLHjYPrZEeimbJFF84EGdA" name="toStringOM">
+      <modelElement href="OM_Json_Standardizer.uml#_nvewQfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLYCOvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLYCO_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLYCPPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvfXUPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLYCPfrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oLvOcPrZEeimbJFF84EGdA" comments="_oLpu4PrZEeimbJFF84EGdA" targetConnectionVisual="_oLpu4frZEeimbJFF84EGdA" name="MotaMeasure" associationsIn="_oLqV8PrZEeimbJFF84EGdA" associationsOut="_oLjoQPrZEeimbJFF84EGdA _oLkPUPrZEeimbJFF84EGdA _oLk2YPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nvmsEPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oLvOcfrZEeimbJFF84EGdA" position="-335.0,279.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oLvOcvrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oLvOc_rZEeimbJFF84EGdA" name="timestamp">
+      <modelElement href="OM_Json_Standardizer.uml#_nyH0kPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOdPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyH0kfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOdfrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLvOdvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLvOd_rZEeimbJFF84EGdA" name="Timestamp">
+        <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLvOePrZEeimbJFF84EGdA" name="MotaId">
+      <modelElement href="OM_Json_Standardizer.uml#_nyIboPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOefrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyJCsPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOevrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLvOe_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLvOfPrZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLvOffrZEeimbJFF84EGdA" name="geometry">
+      <modelElement href="OM_Json_Standardizer.uml#_nyJCsfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOfvrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyJpwPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOf_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLvOgPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLvOgfrZEeimbJFF84EGdA" name="Geometry">
+        <modelElement href="OM_Json_Standardizer.uml#_nvPfsPrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oLvOgvrZEeimbJFF84EGdA" name="measures">
+      <modelElement href="OM_Json_Standardizer.uml#_nyJpwfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOg_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyKQ0PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOhPrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oLvOhfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oLvOhvrZEeimbJFF84EGdA" name="Measures">
+        <modelElement href="OM_Json_Standardizer.uml#_nv94cPrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oLvOh_rZEeimbJFF84EGdA" name="MotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_nvn6MPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oLvOiPrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oLvOifrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOivrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLvOi_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvohQvrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLvOjPrZEeimbJFF84EGdA" name="MotaMeasure">
+          <modelElement href="OM_Json_Standardizer.uml#_nvmsEPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLvOjfrZEeimbJFF84EGdA" name="getTimestamp">
+      <modelElement href="OM_Json_Standardizer.uml#_nvohQ_rZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOjvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOj_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLvOkPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxjz4PrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLvOkfrZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLvOkvrZEeimbJFF84EGdA" name="getMotaId">
+      <modelElement href="OM_Json_Standardizer.uml#_nvpIUPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOk_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nvpvYPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oLvOlPrZEeimbJFF84EGdA" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_nvpvYfrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOlfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOlvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLvOl_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvpIUfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLvOmPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLvOmfrZEeimbJFF84EGdA" name="setMotaId">
+      <modelElement href="OM_Json_Standardizer.uml#_nvqWcPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oLvOmvrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nvq9gPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oLvOm_rZEeimbJFF84EGdA" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_nvsLoPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oLvOnPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOnfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLvOnvrZEeimbJFF84EGdA" name="motaId">
+        <modelElement href="OM_Json_Standardizer.uml#_nvqWcfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLvOn_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLvOoPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLvOofrZEeimbJFF84EGdA" name="getGeometry">
+      <modelElement href="OM_Json_Standardizer.uml#_nvsysPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOovrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOo_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLvOpPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxka8vrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLvOpfrZEeimbJFF84EGdA" name="Geometry">
+          <modelElement href="OM_Json_Standardizer.uml#_nvPfsPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLvOpvrZEeimbJFF84EGdA" name="getMeasures">
+      <modelElement href="OM_Json_Standardizer.uml#_nvtZwPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOp_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOqPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oLvOqfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxlCAvrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oLvOqvrZEeimbJFF84EGdA" name="Measures">
+          <modelElement href="OM_Json_Standardizer.uml#_nv94cPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oLvOq_rZEeimbJFF84EGdA" name="setTimestamp">
+      <modelElement href="OM_Json_Standardizer.uml#_nxka8PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOrPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOrfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLvOrvrZEeimbJFF84EGdA" name="timestamp">
+        <modelElement href="OM_Json_Standardizer.uml#_nxka8frZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLvOr_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLvOsPrZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLvOsfrZEeimbJFF84EGdA" name="setGeometry">
+      <modelElement href="OM_Json_Standardizer.uml#_nxlCAPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOsvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOs_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLvOtPrZEeimbJFF84EGdA" name="geometry">
+        <modelElement href="OM_Json_Standardizer.uml#_nxlCAfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLvOtfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLvOtvrZEeimbJFF84EGdA" name="Geometry">
+          <modelElement href="OM_Json_Standardizer.uml#_nvPfsPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oLvOt_rZEeimbJFF84EGdA" name="setMeasures">
+      <modelElement href="OM_Json_Standardizer.uml#_nxlCA_rZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oLvOuPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oLvOufrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oLvOuvrZEeimbJFF84EGdA" name="measures">
+        <modelElement href="OM_Json_Standardizer.uml#_nxlpEPrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oLvOu_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oLvOvPrZEeimbJFF84EGdA" name="Measures">
+          <modelElement href="OM_Json_Standardizer.uml#_nv94cPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oL7bufrZEeimbJFF84EGdA" comments="_oL4_cPrZEeimbJFF84EGdA" targetConnectionVisual="_oL4_cfrZEeimbJFF84EGdA" name="ObservationCollection" associationsIn="_oLU-wPrZEeimbJFF84EGdA" associationsOut="_oL4YYPrZEeimbJFF84EGdA _oL7bsPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nwVE0PrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oL7buvrZEeimbJFF84EGdA" position="-2121.0,436.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oL7bu_rZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oL7bvPrZEeimbJFF84EGdA" name="id">
+      <modelElement href="OM_Json_Standardizer.uml#_nyWeEvrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oL7bvfrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyXFIPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oL7bvvrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oL7bv_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oL7bwPrZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oL7bwfrZEeimbJFF84EGdA" name="phenomenomTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nyXFIfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oL7bwvrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyXFIvrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oL7bw_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oL7bxPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oL7bxfrZEeimbJFF84EGdA" name="Timestamp">
+        <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oL7bxvrZEeimbJFF84EGdA" name="members">
+      <modelElement href="OM_Json_Standardizer.uml#_nyXsMPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oL7bx_rZEeimbJFF84EGdA" name="Generics">
+        <modelElement href="OM_Json_Standardizer.uml#_nyYTQPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oL7byPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyY6UPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oL7byfrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oL7byvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oL7by_rZEeimbJFF84EGdA" name="ArrayList">
+        <modelElement href="OM_Json_Standardizer.uml#_nxWYgPrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oL7bzPrZEeimbJFF84EGdA" name="ObservationCollection">
+      <modelElement href="OM_Json_Standardizer.uml#_nwVr4PrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oL7bzfrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oL7bzvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL7bz_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oL7b0PrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwWS8vrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oL7b0frZEeimbJFF84EGdA" name="ObservationCollection">
+          <modelElement href="OM_Json_Standardizer.uml#_nwVE0PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oL7b0vrZEeimbJFF84EGdA" name="getId">
+      <modelElement href="OM_Json_Standardizer.uml#_nwWS8_rZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL7b0_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL7b1PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oL7b1frZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwWS9PrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oL8CwPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oL8CwfrZEeimbJFF84EGdA" name="setId">
+      <modelElement href="OM_Json_Standardizer.uml#_nwW6APrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL8CwvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL8Cw_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oL8CxPrZEeimbJFF84EGdA" name="id">
+        <modelElement href="OM_Json_Standardizer.uml#_nwW6AfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oL8CxfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oL8CxvrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oL8Cx_rZEeimbJFF84EGdA" name="getPhenomenomTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nwXhEPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL8CyPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL8CyfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oL8CyvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxzrgPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oL8Cy_rZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oL8CzPrZEeimbJFF84EGdA" name="getMembers">
+      <modelElement href="OM_Json_Standardizer.uml#_nwYIIPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oL8CzfrZEeimbJFF84EGdA" name="Generics">
+        <modelElement href="OM_Json_Standardizer.uml#_nwZWQPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oL8CzvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL8Cz_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oL8C0PrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nx_RsPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oL8C0frZEeimbJFF84EGdA" name="ArrayList">
+          <modelElement href="OM_Json_Standardizer.uml#_nxWYgPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oL8C0vrZEeimbJFF84EGdA" name="setPhenomenomTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nx0SkPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL8C0_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL8C1PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oL8C1frZEeimbJFF84EGdA" name="phenomenomTime">
+        <modelElement href="OM_Json_Standardizer.uml#_nx0SkfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oL8C1vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oL8C1_rZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oL8C2PrZEeimbJFF84EGdA" name="setMembers">
+      <modelElement href="OM_Json_Standardizer.uml#_nx_RsfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oL8C2frZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oL8C2vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oL8C2_rZEeimbJFF84EGdA" name="members">
+        <modelElement href="OM_Json_Standardizer.uml#_nx_RsvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oL8C3PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oL8C3frZEeimbJFF84EGdA" name="ArrayList">
+          <modelElement href="OM_Json_Standardizer.uml#_nxWYgPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oMHB4PrZEeimbJFF84EGdA" comments="_oMCwcfrZEeimbJFF84EGdA" targetConnectionVisual="_oMDXgPrZEeimbJFF84EGdA" name="OMMember" associationsOut="_oMCJYPrZEeimbJFF84EGdA _oMCwcPrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nwFNMPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oMHB4frZEeimbJFF84EGdA" position="-1233.0,-202.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oMHB4vrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oMHB4_rZEeimbJFF84EGdA" name="id">
+      <modelElement href="OM_Json_Standardizer.uml#_nyUB0PrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMHB5PrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyUo4PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMHB5frZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMHB5vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oMHB5_rZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oMHB6PrZEeimbJFF84EGdA" name="type">
+      <modelElement href="OM_Json_Standardizer.uml#_nyUo4frZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMHB6frZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyVP8PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMHB6vrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMHB6_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oMHB7PrZEeimbJFF84EGdA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oMHB7frZEeimbJFF84EGdA" name="resultTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nyVP8frZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMHB7vrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyVP8vrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMHB7_rZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMHB8PrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oMHB8frZEeimbJFF84EGdA" name="Timestamp">
+        <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oMHB8vrZEeimbJFF84EGdA" name="result">
+      <modelElement href="OM_Json_Standardizer.uml#_nyVP8_rZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMHB8_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nyV3APrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMHB9PrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMHB9frZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oMHB9vrZEeimbJFF84EGdA" name="ResulType">
+        <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oMHB9_rZEeimbJFF84EGdA" name="OMMember">
+      <modelElement href="OM_Json_Standardizer.uml#_nwHCYPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oMHB-PrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oMHB-frZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHB-vrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHB-_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwHCY_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHB_PrZEeimbJFF84EGdA" name="OMMember">
+          <modelElement href="OM_Json_Standardizer.uml#_nwFNMPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMHB_frZEeimbJFF84EGdA" name="getId">
+      <modelElement href="OM_Json_Standardizer.uml#_nwI3kPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHB_vrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHB__rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHCAPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwI3kfrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHCAfrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMHCAvrZEeimbJFF84EGdA" name="setId">
+      <modelElement href="OM_Json_Standardizer.uml#_nwJeoPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCA_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCBPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oMHCBfrZEeimbJFF84EGdA" name="id">
+        <modelElement href="OM_Json_Standardizer.uml#_nwJeofrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCBvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCB_rZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oMHCCPrZEeimbJFF84EGdA" name="getType">
+      <modelElement href="OM_Json_Standardizer.uml#_nwJeovrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCCfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCCvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHCC_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nwKFsPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHCDPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMHCDfrZEeimbJFF84EGdA" name="setType">
+      <modelElement href="OM_Json_Standardizer.uml#_nwKswPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCDvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCD_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oMHCEPrZEeimbJFF84EGdA" name="type">
+        <modelElement href="OM_Json_Standardizer.uml#_nwKswfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCEfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCEvrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oMHCE_rZEeimbJFF84EGdA" name="getResultTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nwLT0PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCFPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCFfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHCFvrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxxPQPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHCF_rZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMHCGPrZEeimbJFF84EGdA" name="getResult">
+      <modelElement href="OM_Json_Standardizer.uml#_nwL64PrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCGfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCGvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHCG_rZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxx2UPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHCHPrZEeimbJFF84EGdA" name="ResulType">
+          <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMHCHfrZEeimbJFF84EGdA" comments="_oMFMsPrZEeimbJFF84EGdA" targetConnectionVisual="_oMFMsfrZEeimbJFF84EGdA" name="OMMember">
+      <modelElement href="OM_Json_Standardizer.uml#_nxwoMPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oMHCHvrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oMHCH_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCIPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMHCIfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwoN_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMHCIvrZEeimbJFF84EGdA" name="OMMember">
+          <modelElement href="OM_Json_Standardizer.uml#_nwFNMPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oMHCI_rZEeimbJFF84EGdA" name="id">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwoMfrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCJPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCJfrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oMHCJvrZEeimbJFF84EGdA" name="type">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwoMvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCJ_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCKPrZEeimbJFF84EGdA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oMHCKfrZEeimbJFF84EGdA" name="resultTime">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwoM_rZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCKvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCK_rZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oMHCLPrZEeimbJFF84EGdA" name="result">
+        <modelElement href="OM_Json_Standardizer.uml#_nxwoNPrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCLfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCLvrZEeimbJFF84EGdA" name="ResulType">
+          <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oMHCL_rZEeimbJFF84EGdA" name="setResultTime">
+      <modelElement href="OM_Json_Standardizer.uml#_nxxPQfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCMPrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCMfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oMHCMvrZEeimbJFF84EGdA" name="resultTime">
+        <modelElement href="OM_Json_Standardizer.uml#_nxxPQvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCM_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCNPrZEeimbJFF84EGdA" name="Timestamp">
+          <modelElement href="OM_Json_Standardizer.uml#_nwfc4PrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oMHCNfrZEeimbJFF84EGdA" name="setResult">
+      <modelElement href="OM_Json_Standardizer.uml#_nxx2UfrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMHCNvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMHCN_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oMHCOPrZEeimbJFF84EGdA" name="result">
+        <modelElement href="OM_Json_Standardizer.uml#_nxx2UvrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMHCOfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMHCOvrZEeimbJFF84EGdA" name="ResulType">
+          <modelElement href="OM_Json_Standardizer.uml#_nwdnsPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oMNvkPrZEeimbJFF84EGdA" comments="_oMMhcPrZEeimbJFF84EGdA" targetConnectionVisual="_oMMhcfrZEeimbJFF84EGdA" name="MotaMeasureTraza" associationsOut="_oLqV8PrZEeimbJFF84EGdA">
+    <modelElement href="OM_Json_Standardizer.uml#_nvglcPrZEeimbJFF84EGdA"/>
+    <visualProperties xmi:id="_oMNvkfrZEeimbJFF84EGdA" position="-773.0,566.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oMNvkvrZEeimbJFF84EGdA" label="+"/>
+    <attributes xmi:id="_oMNvk_rZEeimbJFF84EGdA" name="MotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_nyHNgPrZEeimbJFF84EGdA"/>
+      <visibility xmi:id="_oMNvlPrZEeimbJFF84EGdA" label="~"/>
+      <cardinality xmi:id="_oMNvlfrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <type xmi:id="_oMOWoPrZEeimbJFF84EGdA" name="MotaMeasure">
+        <modelElement href="OM_Json_Standardizer.uml#_nvmsEPrZEeimbJFF84EGdA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oMOWofrZEeimbJFF84EGdA" name="MotaMeasureTraza">
+      <modelElement href="OM_Json_Standardizer.uml#_nvhzkPrZEeimbJFF84EGdA"/>
+      <keywords xmi:id="_oMOWovrZEeimbJFF84EGdA" keyword="create"/>
+      <visibility xmi:id="_oMOWo_rZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMOWpPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMOWpfrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nvhzk_rZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMOWpvrZEeimbJFF84EGdA" name="MotaMeasureTraza">
+          <modelElement href="OM_Json_Standardizer.uml#_nvglcPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMOWp_rZEeimbJFF84EGdA" name="getMotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_nviaoPrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMOWqPrZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nvjBsPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oMOWqfrZEeimbJFF84EGdA" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_nvkP0PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMOWqvrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMOWq_rZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_oMOWrPrZEeimbJFF84EGdA">
+        <modelElement href="OM_Json_Standardizer.uml#_nxh-sPrZEeimbJFF84EGdA"/>
+        <type xmi:id="_oMOWrfrZEeimbJFF84EGdA" name="MotaMeasure">
+          <modelElement href="OM_Json_Standardizer.uml#_nvmsEPrZEeimbJFF84EGdA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oMOWrvrZEeimbJFF84EGdA" name="setMotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_nxh-sfrZEeimbJFF84EGdA"/>
+      <stereotypes xmi:id="_oMOWr_rZEeimbJFF84EGdA" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_nxilwPrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oMOWsPrZEeimbJFF84EGdA" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_nxjM0PrZEeimbJFF84EGdA"/>
+      </stereotypes>
+      <visibility xmi:id="_oMOWsfrZEeimbJFF84EGdA" label="+"/>
+      <cardinality xmi:id="_oMOWsvrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_oMOWs_rZEeimbJFF84EGdA" name="MotaMeasure">
+        <modelElement href="OM_Json_Standardizer.uml#_nxh-svrZEeimbJFF84EGdA"/>
+        <cardinality xmi:id="_oMOWtPrZEeimbJFF84EGdA" label="1" max="1" min="1"/>
+        <type xmi:id="_oMOWtfrZEeimbJFF84EGdA" name="MotaMeasure">
+          <modelElement href="OM_Json_Standardizer.uml#_nvmsEPrZEeimbJFF84EGdA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

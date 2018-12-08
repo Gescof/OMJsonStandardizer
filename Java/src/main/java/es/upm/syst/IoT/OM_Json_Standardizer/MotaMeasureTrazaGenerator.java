@@ -40,7 +40,7 @@ public class MotaMeasureTrazaGenerator {
 		LocalDate randomDate;	
 		String strDate;		
 		String jsonString;
-		float[] coordinates = {0f, 0f};		
+		float[] coordinates = new float[2];
 
 		PrintWriter writer = new PrintWriter("motaMeasures.json", "UTF-8");
 		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
@@ -64,8 +64,8 @@ public class MotaMeasureTrazaGenerator {
 			timestamp.setDate(strDate);
 			mota.MotaMeasure.setTimestamp(timestamp);
 			
-			coordinates[0] = (random.nextFloat() * (maxCoorZero - minCoorZero) + minCoorZero);
-			coordinates[1] = (random.nextFloat() * (maxCoorOne - minCoorOne) + minCoorOne);
+			coordinates[0] = random.nextFloat() * (maxCoorZero - minCoorZero) + minCoorZero;
+			coordinates[1] = random.nextFloat() * (maxCoorOne - minCoorOne) + minCoorOne;
 			geometry.setCoordinates(coordinates);
 			mota.MotaMeasure.setGeometry(geometry);
 			

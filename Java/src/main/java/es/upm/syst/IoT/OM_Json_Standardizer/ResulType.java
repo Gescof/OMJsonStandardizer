@@ -1,11 +1,12 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
 /**
+ * Representa el tipo de resultado para una OMCollection. Puede ser un OMMember o una Geometry.
  * @author Guillermo, Yan Liu
- *
+ * @see OMMember
+ * @see Geometry
  */
 public abstract class ResulType {
-	
 	
 	public ResulType()
 	{
@@ -13,8 +14,7 @@ public abstract class ResulType {
 	}
 	
 	/**
-	 * Devuelve una cadena (String) que contiene la parte de un Member o Geometry de una traza OM-JSON.
-	 * 
+	 * Devuelve una cadena que contiene la parte de un Member o Geometry de una traza OM-JSON.
 	 * @return String
 	 */
 	public abstract String toStringOM();

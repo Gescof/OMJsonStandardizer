@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
 /**
+ * Representa una fecha que tenga una traza.
  * @author Guillermo, Yan Liu
  *
  */

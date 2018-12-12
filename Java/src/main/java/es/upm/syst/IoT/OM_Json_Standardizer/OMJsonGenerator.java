@@ -6,20 +6,33 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import org.json.JSONObject;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
+ * Generador de trazas OM-JSON.
+ * <p>Atributos:
+ * <li>ArrayList<JSONObject> jsonArrayList -> Lista de JSONObject que contiene a cada una de las trazas OM-JSON.</li>
+ * <li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.</li>
+ * <li>FileInputStream fstream -> Fichero de lectura del que se recogen las trazas JSON sin formato.</li>
+ * <li>BufferedReader buffer -> Buffer que gestiona la entrada de la lectura del fichero.</li>
+ * </p>
+ * 
  * @author Guillermo, Yan Liu
  * @version 1.0
  *
  */
 public class OMJsonGenerator {
+	private static ArrayList<JSONObject> jsonArrayList;
+	private static ObjectMapper objectMapper;
+	private static FileInputStream fstream;	
+	private static BufferedReader buffer;
 
 	/**
 	 * Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada a literales que contendrá una traza OM-JSON.
-	 * 
 	 * @param jsonString
-	 * @return jsonString
+	 * @return String jsonString
 	 */
 	private static String jsonReplace(String jsonString)
 	{
@@ -36,28 +49,31 @@ public class OMJsonGenerator {
 	 * @throws IOException
 	 */
 	private static void generateOMJson() throws IOException {
-		ObjectMapper objectMapper = new ObjectMapper();		
+		objectMapper = new ObjectMapper();
+		jsonArrayList = new ArrayList<JSONObject>();
+		fstream = new FileInputStream("motaMeasures.json");
+		buffer = new BufferedReader(new InputStreamReader(fstream));		
 		String motaTraza = "";
-		FileInputStream fstream = new FileInputStream("motaMeasures.json");
-		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+		int cont = 0;
 
-		while ((motaTraza = br.readLine()) != null) {
+		while ((motaTraza = buffer.readLine()) != null) {
 			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
-			omTraza.omCollection = new ObservationCollection();
+			omTraza.setOmCollection(new ObservationCollection());
 			ArrayList<OMMember> members = new ArrayList<OMMember>();
 			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTraza, MotaMeasureTraza.class);
-			members.add(new OMMember("geometry" + motaMeasure.MotaMeasure.getMotaId(), "Geometry Observation", motaMeasure.MotaMeasure.getTimestamp(), motaMeasure.MotaMeasure.getGeometry()));
-			members.add(new OMMember("temperature" + motaMeasure.MotaMeasure.getMotaId(), "Category Observation", motaMeasure.MotaMeasure.getTimestamp(), motaMeasure.MotaMeasure.measures.getTemperature()));
-			members.add(new OMMember("humidity" + motaMeasure.MotaMeasure.getMotaId(), "Category Observation", motaMeasure.MotaMeasure.getTimestamp(), motaMeasure.MotaMeasure.measures.getHumidity()));
-			members.add(new OMMember("luminosity" + motaMeasure.MotaMeasure.getMotaId(), "Category Observation", motaMeasure.MotaMeasure.getTimestamp(), motaMeasure.MotaMeasure.measures.getLuminosity()));
-			omTraza.omCollection.setId(motaMeasure.MotaMeasure.getMotaId());
-			omTraza.omCollection.setPhenomenomTime(motaMeasure.MotaMeasure.getTimestamp());
-			omTraza.omCollection.setMembers(members);		
-			String jsonString = objectMapper.writeValueAsString(omTraza.omCollection);
+			members.add(new OMMember("geometry" + motaMeasure.getMotaMeasure().getMotaId(), "Geometry Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));
+			members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature()));
+			members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity()));
+			members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity()));
+			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
+			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
+			omTraza.getOmCollection().setMembers(members);
+			String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());
 			jsonString = jsonReplace(jsonString);
-			System.out.println(jsonString);
+			jsonArrayList.add(new JSONObject(jsonString));
+			System.out.println(jsonArrayList.get(cont++));
 		}
-		br.close();
+		buffer.close();
 	}
 	
 	/**

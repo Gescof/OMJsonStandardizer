@@ -53,7 +53,6 @@ public class Geometry extends ResulType {
 	 */
 	public String toStringOM() {
 		String string = "";
-		
 		string += "type: Point";
 		string += "\n\t\tcoordinates: [" + this.coordinates[0] + ", " + this.coordinates[1] + "]";
 		

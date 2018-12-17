@@ -52,19 +52,19 @@ public class OMJsonGenerator {
 		objectMapper = new ObjectMapper();
 		jsonArrayList = new ArrayList<JSONObject>();
 		fstream = new FileInputStream("motaMeasures.json");
-		buffer = new BufferedReader(new InputStreamReader(fstream));		
-		String motaTraza = "";
-		int cont = 0;
-
-		while ((motaTraza = buffer.readLine()) != null) {
+		buffer = new BufferedReader(new InputStreamReader(fstream));			
+		ArrayList<OMMember> members = new ArrayList<OMMember>();	
+		String motaTrazaStr = "";
+		int cont = 0;			
+		
+		while ((motaTrazaStr = buffer.readLine()) != null) {
 			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
 			omTraza.setOmCollection(new ObservationCollection());
-			ArrayList<OMMember> members = new ArrayList<OMMember>();
-			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTraza, MotaMeasureTraza.class);
+			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);
 			members.add(new OMMember("geometry" + motaMeasure.getMotaMeasure().getMotaId(), "Geometry Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));
-			members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature()));
-			members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity()));
-			members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity()));
+			members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature().standarizeMember()));
+			members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity().standarizeMember()));
+			members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity().standarizeMember()));
 			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
 			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
 			omTraza.getOmCollection().setMembers(members);
@@ -72,6 +72,7 @@ public class OMJsonGenerator {
 			jsonString = jsonReplace(jsonString);
 			jsonArrayList.add(new JSONObject(jsonString));
 			System.out.println(jsonArrayList.get(cont++));
+			members.clear();
 		}
 		buffer.close();
 	}

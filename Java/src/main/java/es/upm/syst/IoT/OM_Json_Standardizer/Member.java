@@ -53,11 +53,27 @@ public class Member extends ResulType {
 	 */
 	public String toStringOM() {
 		String string = "";
-		
 		string += "value: " + this.value;
 		string += "\n\t\tuom: " + this.unit;
 		
 		return string;
+	}
+	
+	/**
+	 * Devuelve el objeto Member estandarizado a OM-JSON.
+	 * @return Member
+	 */
+	public Member standarizeMember() {
+		if(unit.compareTo("Cº") == 0) {
+			unit = "href: https://en.wikipedia.org/wiki/Celsius";
+		}
+		else if(unit.compareTo("RH") == 0) {
+			unit = "href: https://en.wikipedia.org/wiki/Relative_humidity";
+		}
+		else if(unit.compareTo("lx") == 0) {
+			unit = "href: https://en.wikipedia.org/wiki/Lux";
+		}
+		return this;
 	}
 	
 }

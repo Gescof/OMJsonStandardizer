@@ -13,13 +13,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Generador de trazas JSON no estandarizadas.
  * <p>Atributos:
  * <li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.</li>
- * <li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.</li>
- * <li>int numIds -> Número de trazas JSON que se generan.</li>
- * <li>int minDay, maxDay -> Día de inicio (minDay) y final (maxDay) para generar las fechas.</li>
- * <li>float minCoorZero, maxCoorZero -> Coordenada mínima y máxima a generar.</li>
- * <li>float minTemp, maxTemp -> Temperatura mínima y máxima a generar.</li>
- * <li>float minHum, maxHum -> Humedad mínima y máxima a generar.</li>
- * <li>float minLum,  maxLum -> Luminosidad mínima y máxima a generar.</li>
+ * <li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.</li>
+ * <li>int NUMIDS -> Número de trazas JSON que se generan.</li>
+ * <li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas.</li>
+ * <li>float MINCOORZERO, MAXCOORZERO -> Coordenada mínima y máxima a generar.</li>
+ * <li>float MINTEMP, MAXTEMP -> Temperatura mínima y máxima a generar.</li>
+ * <li>float MINHUM, MAXHUM -> Humedad mínima y máxima a generar.</li>
+ * <li>float MINLUM,  MAXLUM -> Luminosidad mínima y máxima a generar.</li>
  * </p>
  * 
  * @author Guillermo, Yan Liu
@@ -28,15 +28,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class MotaMeasureTrazaGenerator {
 	private static Random random;
-	private static final ObjectMapper objectMapper = new ObjectMapper();
-	private static final int numIds = 100;
-	private static final int minDay = (int) LocalDate.of(2017, 1, 1).toEpochDay();
-	private static final int maxDay = (int) LocalDate.of(2019, 1, 1).toEpochDay();
-	private static final float maxCoorZero = 40.9f, minCoorZero = 40.0f;
-	private static final float maxCoorOne = -3.0f, minCoorOne = -3.9f;
-	private static final float maxTemp = 50.0f, minTemp = 0.0f;
-	private static final float maxHum = 100.0f, minHum = 0.0f;
-	private static final float maxLum = 100.0f, minLum = 0.0f;
+	private static PrintWriter writer;
+	private static final ObjectMapper OBJECTMAPPER = new ObjectMapper();
+	private static final int NUMIDS = 100;
+	private static final int MINDAY = (int) LocalDate.of(2017, 1, 1).toEpochDay();
+	private static final int MAXDAY = (int) LocalDate.of(2019, 1, 1).toEpochDay();
+	private static final float MAXCOORZERO = 40.9f, MINCOORZERO = 40.0f;
+	private static final float MAXCOORONE = -3.0f, MINCOORONE = -3.9f;
+	private static final float MAXTEMP = 50.0f, MINTEMP = 0.0f;
+	private static final float MAXHUM = 100.0f, MINHUM = 0.0f;
+	private static final float MAXLUM = 100.0f, MINLUM = 0.0f;
 	
 	/**
 	 * Genera trazas JSON no estandarizadas en un fichero (motaMeasures.json) alojado en la carpeta raíz.
@@ -46,6 +47,7 @@ public class MotaMeasureTrazaGenerator {
 	 */
 	private static void generateMotaMeasures() throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException {		
 		random = new Random();			
+		writer = new PrintWriter("motaMeasures.json", "UTF-8");		
 		Timestamp timestamp = new Timestamp();		
 		long randomDay;
 		LocalDate randomDate;	
@@ -53,10 +55,9 @@ public class MotaMeasureTrazaGenerator {
 		String jsonString;
 		float[] coordinates = new float[2];
 
-		PrintWriter writer = new PrintWriter("motaMeasures.json", "UTF-8");
 		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
 		motaTraza.setMotaMeasure(new MotaMeasure());
-		
+	
 		Geometry geometry = new Geometry();
 		geometry.setType("Point");
 		motaTraza.getMotaMeasure().setGeometry(geometry);
@@ -64,28 +65,28 @@ public class MotaMeasureTrazaGenerator {
 		Measures measures = new Measures();
 		motaTraza.getMotaMeasure().setMeasures(measures);
 
-		for(int i = 0; i < numIds; i++) {
+		for(int i = 0; i < NUMIDS; i++) {
 			MotaMeasureTraza mota = new MotaMeasureTraza();
 			mota = motaTraza;
 			mota.getMotaMeasure().setMotaId("mota" + (i + 1));
 			
-			randomDay = minDay + random.nextInt(maxDay - minDay);
+			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
 			randomDate = LocalDate.ofEpochDay(randomDay);
 			strDate = randomDate.toString();
 			timestamp.setDate(strDate);
 			mota.getMotaMeasure().setTimestamp(timestamp);
 			
-			coordinates[0] = random.nextFloat() * (maxCoorZero - minCoorZero) + minCoorZero;
-			coordinates[1] = random.nextFloat() * (maxCoorOne - minCoorOne) + minCoorOne;
+			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
+			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
 			geometry.setCoordinates(coordinates);
 			mota.getMotaMeasure().setGeometry(geometry);
 			
-			measures.getTemperature().setValue(random.nextFloat() * (maxTemp - minTemp) + minTemp);
-			measures.getHumidity().setValue(random.nextFloat() * (maxHum - minHum) + minHum);
-			measures.getLuminosity().setValue(random.nextFloat() * (maxLum - minLum) + minLum);
+			measures.getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
+			measures.getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
+			measures.getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			mota.getMotaMeasure().setMeasures(measures);
 			
-			jsonString = objectMapper.writeValueAsString(mota);
+			jsonString = OBJECTMAPPER.writeValueAsString(mota);
 			writer.println(jsonString);
 		}		
 		writer.close();

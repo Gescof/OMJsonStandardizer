@@ -40,7 +40,7 @@ public class OMJsonGenerator {
 		jsonString = jsonString.replace("members", "member");
 		jsonString = jsonString.replace("unit", "uom");
 		//jsonString = jsonString.replace("\"", "\\" + "\"");
-		
+		//MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://aliciayan:8Xz5XzSA6O9cRayKkuwtqkAGz1roB3hKeiYd3470dcbzHOO71wvj0uOyAsKhsJCLqLuIijkgxcOhJGaA54ppcg==@aliciayan.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"));
 		return jsonString;
 	}
 	

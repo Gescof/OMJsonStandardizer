@@ -65,13 +65,13 @@ public class Member extends ResulType {
 	 */
 	public Member standarizeMember() {
 		if(unit.compareTo("Cº") == 0) {
-			unit = "href: https://en.wikipedia.org/wiki/Celsius";
+			unit = "https://en.wikipedia.org/wiki/Celsius";
 		}
 		else if(unit.compareTo("RH") == 0) {
-			unit = "href: https://en.wikipedia.org/wiki/Relative_humidity";
+			unit = "https://en.wikipedia.org/wiki/Relative_humidity";
 		}
 		else if(unit.compareTo("lx") == 0) {
-			unit = "href: https://en.wikipedia.org/wiki/Lux";
+			unit = "https://en.wikipedia.org/wiki/Lux";
 		}
 		return this;
 	}

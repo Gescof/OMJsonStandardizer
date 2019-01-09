@@ -2,6 +2,7 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
+import java.sql.Date;
 import java.io.PrintWriter;
 
 import java.time.Instant;
@@ -93,10 +94,8 @@ public class MotaMeasureTrazaGenerator {
 		writer = new PrintWriter("motaMeasures.json", "UTF-8");			
 		String jsonString;	
 		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SS'Z'", Locale.ENGLISH);
 		long randomDay;
-		ZonedDateTime randomDate;	
-		String strDate;		
+		ZonedDateTime randomDate;		
 		
 		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
 		float[] coordinates = new float[2];
@@ -108,8 +107,7 @@ public class MotaMeasureTrazaGenerator {
 			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
 			Instant instant = Instant.ofEpochSecond(randomDay);
 			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
-			strDate = randomDate.format(formatter);
-			motaTraza.getMotaMeasure().getTimestamp().setDate(strDate);
+			motaTraza.getMotaMeasure().getTimestamp().setDate(Date.from(randomDate.toInstant()));
 			
 			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
 			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;

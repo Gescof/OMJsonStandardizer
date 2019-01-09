@@ -1,5 +1,8 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
@@ -10,28 +13,31 @@ import com.fasterxml.jackson.annotation.JsonSetter;
  */
 public class Timestamp {
 
-	private String date;
+	@JsonFormat(
+			shape = JsonFormat.Shape.STRING,
+			pattern = "yyyy-MM-dd'T'HH:mm:ss.SS'Z'")
+	private Date date;
 
 	public Timestamp()
 	{
-		//TODO--Default Constructor
+		this.date = new Date();
 	}
 	
 	/**
-	 * Devuelve la fecha como cadena.
-	 * @return String date
+	 * Devuelve la fecha.
+	 * @return Date date
 	 */
 	@JsonGetter("$date")
-	public String getDate() {
+	public Date getDate() {
 		return date;
 	}
 	
 	/**
-	 * Establece la fecha como cadena.
+	 * Establece la fecha.
 	 * @param date
 	 */
 	@JsonSetter("$date")
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 	

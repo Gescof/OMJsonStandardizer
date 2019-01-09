@@ -19,6 +19,12 @@
     </sourceRole>
     <targetRole xmi:id="_PqPtRgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="jsonArrayList" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQja4AI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPTY0BOQEemT5uxQr2c4lw" name="Generics">
+        <modelElement href="OM_Json_Standardizer.uml#_PQkB8AI6EemV_o9XM1JgBg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oPV1EBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQkB8QI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqPtRwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqPtSAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -36,6 +42,9 @@
     </sourceRole>
     <targetRole xmi:id="_PqQUVgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="objectMapper" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQkpAAI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPXDMBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQkpAQI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqQUVwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqQUWAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -53,6 +62,9 @@
     </sourceRole>
     <targetRole xmi:id="_PqQ7ZgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="fstream" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQlQEAI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPXqQBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQlQEQI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqQ7ZwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqQ7aAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -70,6 +82,9 @@
     </sourceRole>
     <targetRole xmi:id="_PqSJhgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="buffer" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQlQEgI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPYRUBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQl3IAI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqSJhwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqSJiAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -108,6 +123,9 @@
     </sourceRole>
     <targetRole xmi:id="_PqtARgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="random" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQcGIQI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPY4YBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQctMAI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqtARwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqtASAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -125,6 +143,9 @@
     </sourceRole>
     <targetRole xmi:id="_PqtnVgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="writer" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQctMQI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPZfcBOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQctMgI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PqtnVwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqtnWAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -304,7 +325,7 @@
       <stereotypes xmi:id="_PrmYMAI6EemV_o9XM1JgBg" name="LegacyStyledElement">
         <modelElement href="OM_Json_Standardizer.uml#_PQaQ8QI6EemV_o9XM1JgBg"/>
       </stereotypes>
-      <visibility xmi:id="_PrmYLwI6EemV_o9XM1JgBg" label="+"/>
+      <visibility xmi:id="_PrmYLwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PrmYLgI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
@@ -342,6 +363,12 @@
     </sourceRole>
     <targetRole xmi:id="_Prr3tgI6EemV_o9XM1JgBg" aggregationKind="NONE" name="members" navigable="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQnsUQI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_oPb7sBOQEemT5uxQr2c4lw" name="Generics">
+        <modelElement href="OM_Json_Standardizer.uml#_PQoTYAI6EemV_o9XM1JgBg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oPb7sROQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_PQo6cAI6EemV_o9XM1JgBg"/>
+      </stereotypes>
       <visibility xmi:id="_PrsexAI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PrsewwI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
     </targetRole>
@@ -390,13 +417,18 @@
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PrzzgQI6EemV_o9XM1JgBg" targetItem="_Pr1osgI6EemV_o9XM1JgBg" sourceItem="_PrzzgAI6EemV_o9XM1JgBg"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Pr5TEQI6EemV_o9XM1JgBg" targetItem="_Pr6hMAI6EemV_o9XM1JgBg" sourceItem="_Pr5TEAI6EemV_o9XM1JgBg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qEhOABOQEemT5uxQr2c4lw" targetItem="_qEh1EBOQEemT5uxQr2c4lw" sourceItem="_qEdjoBOQEemT5uxQr2c4lw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qEq_ABOQEemT5uxQr2c4lw" targetItem="_qEsNIBOQEemT5uxQr2c4lw" sourceItem="_qEjqQBOQEemT5uxQr2c4lw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qE-hABOQEemT5uxQr2c4lw" targetItem="_qE_IEBOQEemT5uxQr2c4lw" sourceItem="_qE3MQBOQEemT5uxQr2c4lw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qFEAkBOQEemT5uxQr2c4lw" targetItem="_qFEnoBOQEemT5uxQr2c4lw" sourceItem="_qFAWMBOQEemT5uxQr2c4lw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qFJgIBOQEemT5uxQr2c4lw" targetItem="_qFKHMBOQEemT5uxQr2c4lw" sourceItem="_qFF1wBOQEemT5uxQr2c4lw"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PpKIIAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PpKvMAI6EemV_o9XM1JgBg" text="Representa la geometría que contiene una traza.&#xD;&#xA;@author Guillermo, Yan Liu&#xD;&#xA; *" item="_PpTSEAI6EemV_o9XM1JgBg">
     <modelElement href="OM_Json_Standardizer.uml#_PQ6nQAI6EemV_o9XM1JgBg"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqKNsAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqKNsQI6EemV_o9XM1JgBg" text="Generador de trazas OM-JSON.&#xD;&#xA;&lt;p>Atributos:&#xD;&#xA;&lt;li>ArrayList&lt;JSONObject> jsonArrayList -> Lista de JSONObject que contiene a cada una de las trazas OM-JSON.&lt;/li>&#xD;&#xA;&lt;li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.&lt;/li>&#xD;&#xA;&lt;li>FileInputStream fstream -> Fichero de lectura del que se recogen las trazas JSON sin formato.&lt;/li>&#xD;&#xA;&lt;li>BufferedReader buffer -> Buffer que gestiona la entrada de la lectura del fichero.&lt;/li>&#xD;&#xA;&lt;/p>&#xD;&#xA;&#xD;&#xA;@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_PqSJiQI6EemV_o9XM1JgBg">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqKNsAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqKNsQI6EemV_o9XM1JgBg" text="Generador de trazas OM-JSON.&#xD;&#xA;&lt;p>Atributos:&#xD;&#xA;&lt;li>ArrayList&lt;JSONObject> jsonArrayList -> Lista de JSONObject que contiene a cada una de las trazas OM-JSON.&lt;/li>&#xD;&#xA;&lt;li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.&lt;/li>&#xD;&#xA;&lt;li>FileInputStream fstream -> Fichero de lectura del que se recogen las trazas JSON sin formato.&lt;/li>&#xD;&#xA;&lt;li>BufferedReader buffer -> Buffer que gestiona la entrada de la lectura del fichero.&lt;/li>&#xD;&#xA;&lt;li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.&lt;/li>&#xD;&#xA;&lt;/p>&#xD;&#xA;&#xD;&#xA;@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_PqSJiQI6EemV_o9XM1JgBg">
     <modelElement href="OM_Json_Standardizer.uml#_PRAG1QI6EemV_o9XM1JgBg"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqK0wAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqK0wQI6EemV_o9XM1JgBg" text="Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada a literales que contendrá una traza OM-JSON.&#xD;&#xA;&#x9; * @param jsonString&#xD;&#xA;&#x9; * @return String jsonString" item="_PqSJoQI6EemV_o9XM1JgBg">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqK0wAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqK0wQI6EemV_o9XM1JgBg" text="Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada &#xD;&#xA;&#x9; * a literales que contendrá una traza OM-JSON.&#xD;&#xA;&#x9; * @param jsonString&#xD;&#xA;&#x9; * @return String jsonString" item="_PqSJoQI6EemV_o9XM1JgBg">
     <modelElement href="OM_Json_Standardizer.uml#_PRAt4AI6EemV_o9XM1JgBg"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqK0wgI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqK0wwI6EemV_o9XM1JgBg" text="Lee el fichero motaMeasures.json y genera una traza OMJson-Collection por cada línea de texto.&#xD;&#xA;&#x9; * @throws IOException" item="_PqSJqQI6EemV_o9XM1JgBg">
@@ -408,7 +440,7 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqchkAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqchkQI6EemV_o9XM1JgBg" text="@author Guillermo, Yan Liu&#xD;&#xA; *" item="_PqdvsAI6EemV_o9XM1JgBg">
     <modelElement href="OM_Json_Standardizer.uml#_PQ6AMAI6EemV_o9XM1JgBg"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqlrgAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqlrgQI6EemV_o9XM1JgBg" text="Generador de trazas JSON no estandarizadas.&#xD;&#xA;&lt;p>Atributos:&#xD;&#xA;&lt;li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.&lt;/li>&#xD;&#xA;&lt;li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.&lt;/li>&#xD;&#xA;&lt;li>int NUMIDS -> Número de trazas JSON que se generan.&lt;/li>&#xD;&#xA;&lt;li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas.&lt;/li>&#xD;&#xA;&lt;li>float MINCOORZERO, MAXCOORZERO -> Coordenada mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINTEMP, MAXTEMP -> Temperatura mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINHUM, MAXHUM -> Humedad mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINLUM,  MAXLUM -> Luminosidad mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;/p>&#xD;&#xA;&#xD;&#xA;@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_PquOYAI6EemV_o9XM1JgBg">
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqlrgAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqlrgQI6EemV_o9XM1JgBg" text="Generador de trazas JSON no estandarizadas.&#xD;&#xA;&lt;p>Atributos:&#xD;&#xA;&lt;li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.&lt;/li>&#xD;&#xA;&lt;li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.&lt;/li>&#xD;&#xA;&lt;li>int NUMIDS -> Número de trazas JSON que se generan.&lt;/li>&#xD;&#xA;&lt;li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas.&lt;/li>&#xD;&#xA;&lt;li>float MINCOORZERO, MAXCOORZERO -> Coordenada mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINTEMP, MAXTEMP -> Temperatura mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINHUM, MAXHUM -> Humedad mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>float MINLUM,  MAXLUM -> Luminosidad mínima y máxima a generar.&lt;/li>&#xD;&#xA;&lt;li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.&lt;/li>&#xD;&#xA;&lt;/p>&#xD;&#xA;&#xD;&#xA;@author Guillermo, Yan Liu&#xD;&#xA;@version 1.0&#xD;&#xA; *" item="_PquOYAI6EemV_o9XM1JgBg">
     <modelElement href="OM_Json_Standardizer.uml#_PQ9qkgI6EemV_o9XM1JgBg"/>
   </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PqmSkAI6EemV_o9XM1JgBg" sourceConnectionVisual="_PqmSkQI6EemV_o9XM1JgBg" text="Genera trazas JSON no estandarizadas en un fichero (motaMeasures.json) alojado en la carpeta raíz.&#xD;&#xA;&#x9; * @throws FileNotFoundException&#xD;&#xA;&#x9; * @throws UnsupportedEncodingException&#xD;&#xA;&#x9; * @throws JsonProcessingException" item="_PquOuQI6EemV_o9XM1JgBg">
@@ -506,12 +538,12 @@
     <visibility xmi:id="_PqSJiwI6EemV_o9XM1JgBg" label="+"/>
     <attributes xmi:id="_PqSJjAI6EemV_o9XM1JgBg" name="jsonArrayList" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQja4AI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PqSJjQI6EemV_o9XM1JgBg" name="Generics">
-        <modelElement href="OM_Json_Standardizer.uml#_PQkB8AI6EemV_o9XM1JgBg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_PqSJjgI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQkB8QI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP0WMBOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oP2LYBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP2ycBOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oP2ycROQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQHRIBOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oQHRIROQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PqSJjwI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqSJkAI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PqSJkQI6EemV_o9XM1JgBg" name="ArrayList">
@@ -520,9 +552,9 @@
     </attributes>
     <attributes xmi:id="_PqSJkgI6EemV_o9XM1JgBg" name="objectMapper" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQkpAAI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PqSJkwI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQkpAQI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP3ZgBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP4AkBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQH4MBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PqSJlAI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqSJlQI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PqSJlgI6EemV_o9XM1JgBg" name="ObjectMapper">
@@ -531,9 +563,9 @@
     </attributes>
     <attributes xmi:id="_PqSJlwI6EemV_o9XM1JgBg" name="fstream" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQlQEAI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PqSJmAI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQlQEQI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP4noBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP4noROQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQIfQBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PqSJmQI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqSJmgI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PqSJmwI6EemV_o9XM1JgBg" name="FileInputStream">
@@ -542,13 +574,21 @@
     </attributes>
     <attributes xmi:id="_PqSJnAI6EemV_o9XM1JgBg" name="buffer" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQlQEgI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PqSJnQI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQl3IAI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP5OsBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP51wBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQJGUBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PqSJngI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PqSJnwI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PqSJoAI6EemV_o9XM1JgBg" name="BufferedReader">
         <modelElement href="OM_Json_Standardizer.uml#_PQABQAI6EemV_o9XM1JgBg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qFL8YBOQEemT5uxQr2c4lw" defaultValue="&quot;mongodb://guillermo:UWwucsNOJx0mr1NxvAMNaiZnellePZRBfwCakZp8MPaqZytxqPjvMYqKv8fDK7KfT7Yj6umTKEHo1kWta3UF5Q==@guillermo.documents.azure.com:10255/?ssl=true&amp;replicaSet=globaldb&quot;" name="CONNECTIONSTRING" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p-YJwBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qFL8YROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qFL8YhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <type xmi:id="_qFL8YxOQEemT5uxQr2c4lw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
     <operations xmi:id="_PqSJoQI6EemV_o9XM1JgBg" comments="_PqK0wAI6EemV_o9XM1JgBg" targetConnectionVisual="_PqK0wQI6EemV_o9XM1JgBg" name="jsonReplace" staticOperation="true">
@@ -582,6 +622,34 @@
         <modelElement href="OM_Json_Standardizer.uml#_PO4m8QI6EemV_o9XM1JgBg"/>
         <cardinality xmi:id="_PqSJsAI6EemV_o9XM1JgBg" label="1..*" max="-1" min="1"/>
         <type xmi:id="_PqSJsQI6EemV_o9XM1JgBg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qE_IEBOQEemT5uxQr2c4lw" comments="_qE3MQBOQEemT5uxQr2c4lw" targetConnectionVisual="_qE-hABOQEemT5uxQr2c4lw" name="getMongoDBDoc" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p9lfkBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qE_IEROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qE_IEhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qE_IExOQEemT5uxQr2c4lw">
+        <modelElement href="OM_Json_Standardizer.uml#_p9yT4BOQEemT5uxQr2c4lw"/>
+        <type xmi:id="_qE_IFBOQEemT5uxQr2c4lw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qFEnoBOQEemT5uxQr2c4lw" comments="_qFAWMBOQEemT5uxQr2c4lw" targetConnectionVisual="_qFEAkBOQEemT5uxQr2c4lw" name="generateOMJsonToMongoDB" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p9mGoBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qFEnoROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qFEnohOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_qFKHMBOQEemT5uxQr2c4lw" comments="_qFF1wBOQEemT5uxQr2c4lw" targetConnectionVisual="_qFJgIBOQEemT5uxQr2c4lw" name="pushToMongoDB" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p9xs0BOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qFKHMROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qFKHMhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_qFKHMxOQEemT5uxQr2c4lw" name="jsonString">
+        <modelElement href="OM_Json_Standardizer.uml#_p9xs0ROQEemT5uxQr2c4lw"/>
+        <cardinality xmi:id="_qFKHNBOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+        <type xmi:id="_qFKHNROQEemT5uxQr2c4lw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
@@ -676,9 +744,9 @@
     <visibility xmi:id="_PquOYgI6EemV_o9XM1JgBg" label="+"/>
     <attributes xmi:id="_PquOYwI6EemV_o9XM1JgBg" name="random" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQcGIQI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PquOZAI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQctMAI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP7D4BOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP7q8BOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQJtYBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PquOZQI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PquOZgI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PquOZwI6EemV_o9XM1JgBg" name="Random">
@@ -687,9 +755,9 @@
     </attributes>
     <attributes xmi:id="_PquOaAI6EemV_o9XM1JgBg" name="writer" staticAttribute="true">
       <modelElement href="OM_Json_Standardizer.uml#_PQctMQI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_PquOaQI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQctMgI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oP8SABOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oP9gIBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQK7gBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_PquOagI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_PquOawI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PquObAI6EemV_o9XM1JgBg" name="PrintWriter">
@@ -868,6 +936,14 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
       </type>
     </attributes>
+    <attributes xmi:id="_qEuCUBOQEemT5uxQr2c4lw" defaultValue="&quot;mongodb://guillermo:UWwucsNOJx0mr1NxvAMNaiZnellePZRBfwCakZp8MPaqZytxqPjvMYqKv8fDK7KfT7Yj6umTKEHo1kWta3UF5Q==@guillermo.documents.azure.com:10255/?ssl=true&amp;replicaSet=globaldb&quot;" name="CONNECTIONSTRING" staticAttribute="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p-XisBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qEuCUROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qEuCUhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <type xmi:id="_qEuCUxOQEemT5uxQr2c4lw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
     <operations xmi:id="_PquOuQI6EemV_o9XM1JgBg" comments="_PqmSkAI6EemV_o9XM1JgBg" targetConnectionVisual="_PqmSkQI6EemV_o9XM1JgBg" name="generateMotaMeasures" staticOperation="true">
       <modelElement href="OM_Json_Standardizer.uml#_POtn0AI6EemV_o9XM1JgBg"/>
       <visibility xmi:id="_PquOugI6EemV_o9XM1JgBg" label="-"/>
@@ -881,6 +957,36 @@
         <modelElement href="OM_Json_Standardizer.uml#_POvdAAI6EemV_o9XM1JgBg"/>
         <cardinality xmi:id="_PquOwAI6EemV_o9XM1JgBg" label="1..*" max="-1" min="1"/>
         <type xmi:id="_PquOwQI6EemV_o9XM1JgBg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qEh1EBOQEemT5uxQr2c4lw" comments="_qEdjoBOQEemT5uxQr2c4lw" targetConnectionVisual="_qEhOABOQEemT5uxQr2c4lw" name="pushToMongoDB" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p9v3oBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qEh1EROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qEh1EhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_qEh1ExOQEemT5uxQr2c4lw" name="jsonString">
+        <modelElement href="OM_Json_Standardizer.uml#_p9v3oROQEemT5uxQr2c4lw"/>
+        <cardinality xmi:id="_qEh1FBOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+        <type xmi:id="_qEh1FROQEemT5uxQr2c4lw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qEsNIBOQEemT5uxQr2c4lw" comments="_qEjqQBOQEemT5uxQr2c4lw" targetConnectionVisual="_qEq_ABOQEemT5uxQr2c4lw" name="jsonReplace" staticOperation="true">
+      <modelElement href="OM_Json_Standardizer.uml#_p9wesBOQEemT5uxQr2c4lw"/>
+      <visibility xmi:id="_qEsNIROQEemT5uxQr2c4lw" label="-"/>
+      <cardinality xmi:id="_qEsNIhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_qEsNIxOQEemT5uxQr2c4lw">
+        <modelElement href="OM_Json_Standardizer.uml#_p9xFwBOQEemT5uxQr2c4lw"/>
+        <type xmi:id="_qEsNJBOQEemT5uxQr2c4lw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qEsNJROQEemT5uxQr2c4lw" name="jsonString">
+        <modelElement href="OM_Json_Standardizer.uml#_p9wesROQEemT5uxQr2c4lw"/>
+        <cardinality xmi:id="_qEsNJhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+        <type xmi:id="_qEsNJxOQEemT5uxQr2c4lw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </type>
       </parameters>
@@ -1017,6 +1123,17 @@
       <cardinality xmi:id="_PrXurQI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_PrXurgI6EemV_o9XM1JgBg" name="ObservationCollection">
         <modelElement href="OM_Json_Standardizer.uml#_PPBw4AI6EemV_o9XM1JgBg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qFT4MBOQEemT5uxQr2c4lw" name="_id">
+      <modelElement href="OM_Json_Standardizer.uml#_p-Yw0BOQEemT5uxQr2c4lw"/>
+      <stereotypes xmi:id="_qFT4MROQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_p-Yw0ROQEemT5uxQr2c4lw"/>
+      </stereotypes>
+      <visibility xmi:id="_qFT4MhOQEemT5uxQr2c4lw" label="+"/>
+      <cardinality xmi:id="_qFT4MxOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <type xmi:id="_qFT4NBOQEemT5uxQr2c4lw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
     <operations xmi:id="_PrXurwI6EemV_o9XM1JgBg" name="ObservationCollecionTraza">
@@ -1161,12 +1278,12 @@
     </attributes>
     <attributes xmi:id="_Prts5wI6EemV_o9XM1JgBg" name="members">
       <modelElement href="OM_Json_Standardizer.uml#_PQnsUQI6EemV_o9XM1JgBg"/>
-      <stereotypes xmi:id="_Prts6AI6EemV_o9XM1JgBg" name="Generics">
-        <modelElement href="OM_Json_Standardizer.uml#_PQoTYAI6EemV_o9XM1JgBg"/>
-      </stereotypes>
-      <stereotypes xmi:id="_Prts6QI6EemV_o9XM1JgBg" name="LegacyStyledElement">
-        <modelElement href="OM_Json_Standardizer.uml#_PQo6cAI6EemV_o9XM1JgBg"/>
-      </stereotypes>
+      <stereotypes xmi:id="_oQEN0BOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oQE04BOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQFb8BOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oQFb8ROQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQPM8BOQEemT5uxQr2c4lw" name="Generics"/>
+      <stereotypes xmi:id="_oQP0ABOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
       <visibility xmi:id="_Prts6gI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_Prts6wI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_Prts7AI6EemV_o9XM1JgBg" name="ArrayList">
@@ -1319,10 +1436,25 @@
     <visibility xmi:id="_Pr6hMgI6EemV_o9XM1JgBg" label="+"/>
     <attributes xmi:id="_Pr6hMwI6EemV_o9XM1JgBg" name="MotaMeasure">
       <modelElement href="OM_Json_Standardizer.uml#_PQaQ8AI6EemV_o9XM1JgBg"/>
-      <visibility xmi:id="_Pr6hNAI6EemV_o9XM1JgBg" label="+"/>
+      <stereotypes xmi:id="_oQBxkBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQC_sBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_oQRCIBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_qEcVgBOQEemT5uxQr2c4lw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_Pr6hNAI6EemV_o9XM1JgBg" label="-"/>
       <cardinality xmi:id="_Pr6hNQI6EemV_o9XM1JgBg" label="1" max="1" min="1"/>
       <type xmi:id="_Pr6hNgI6EemV_o9XM1JgBg" name="MotaMeasure">
         <modelElement href="OM_Json_Standardizer.uml#_POjPwAI6EemV_o9XM1JgBg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qEIzgBOQEemT5uxQr2c4lw" name="_id">
+      <modelElement href="OM_Json_Standardizer.uml#_p-VGcBOQEemT5uxQr2c4lw"/>
+      <stereotypes xmi:id="_qEIzgROQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_p-VGcROQEemT5uxQr2c4lw"/>
+      </stereotypes>
+      <visibility xmi:id="_qEIzghOQEemT5uxQr2c4lw" label="+"/>
+      <cardinality xmi:id="_qEIzgxOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <type xmi:id="_qEIzhBOQEemT5uxQr2c4lw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
     <operations xmi:id="_Pr6hNwI6EemV_o9XM1JgBg" name="MotaMeasureTraza">
@@ -1337,5 +1469,55 @@
         </type>
       </outParameters>
     </operations>
+    <operations xmi:id="_p-llIBOQEemT5uxQr2c4lw" name="getMotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_PQa4AAI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_p-mMMBOQEemT5uxQr2c4lw" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_PQbfEQI6EemV_o9XM1JgBg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_p-mMMROQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_p9pxABOQEemT5uxQr2c4lw"/>
+      </stereotypes>
+      <visibility xmi:id="_p-mMMhOQEemT5uxQr2c4lw" label="+"/>
+      <cardinality xmi:id="_p-mMMxOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_p-mMNBOQEemT5uxQr2c4lw">
+        <modelElement href="OM_Json_Standardizer.uml#_PQbfEAI6EemV_o9XM1JgBg"/>
+        <type xmi:id="_p-mMNROQEemT5uxQr2c4lw" name="MotaMeasure">
+          <modelElement href="OM_Json_Standardizer.uml#_POjPwAI6EemV_o9XM1JgBg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qDzcUBOQEemT5uxQr2c4lw" name="setMotaMeasure">
+      <modelElement href="OM_Json_Standardizer.uml#_PQa4AQI6EemV_o9XM1JgBg"/>
+      <stereotypes xmi:id="_qDzcUROQEemT5uxQr2c4lw" name="Annotations">
+        <modelElement href="OM_Json_Standardizer.uml#_PQbfFAI6EemV_o9XM1JgBg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qDzcUhOQEemT5uxQr2c4lw" name="LegacyStyledElement">
+        <modelElement href="OM_Json_Standardizer.uml#_p9qYEBOQEemT5uxQr2c4lw"/>
+      </stereotypes>
+      <visibility xmi:id="_qDzcUxOQEemT5uxQr2c4lw" label="+"/>
+      <cardinality xmi:id="_qDzcVBOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_qDzcVROQEemT5uxQr2c4lw" name="MotaMeasure">
+        <modelElement href="OM_Json_Standardizer.uml#_PQa4AgI6EemV_o9XM1JgBg"/>
+        <cardinality xmi:id="_qDzcVhOQEemT5uxQr2c4lw" label="1" max="1" min="1"/>
+        <type xmi:id="_qDzcVxOQEemT5uxQr2c4lw" name="MotaMeasure">
+          <modelElement href="OM_Json_Standardizer.uml#_POjPwAI6EemV_o9XM1JgBg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qEdjoBOQEemT5uxQr2c4lw" sourceConnectionVisual="_qEhOABOQEemT5uxQr2c4lw" text="Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;&#xA;&#x9; * e inserta un documento con formato json a partir de la traza (jsonString).&#xD;&#xA;&#x9; * @param jsonString" item="_qEh1EBOQEemT5uxQr2c4lw">
+    <modelElement href="OM_Json_Standardizer.uml#_p-e3cBOQEemT5uxQr2c4lw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qEjqQBOQEemT5uxQr2c4lw" sourceConnectionVisual="_qEq_ABOQEemT5uxQr2c4lw" text="Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada.&#xD;&#xA;&#x9; * @param jsonString&#xD;&#xA;&#x9; * @return String jsonString" item="_qEsNIBOQEemT5uxQr2c4lw">
+    <modelElement href="OM_Json_Standardizer.uml#_p-e3cROQEemT5uxQr2c4lw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qE3MQBOQEemT5uxQr2c4lw" sourceConnectionVisual="_qE-hABOQEemT5uxQr2c4lw" text="Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;&#xA;&#x9; * y consulta los documentos de la colección de trazas sin estandarizar.&#xD;&#xA;&#x9; * @param jsonString" item="_qE_IEBOQEemT5uxQr2c4lw">
+    <modelElement href="OM_Json_Standardizer.uml#_p-e3cxOQEemT5uxQr2c4lw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qFAWMBOQEemT5uxQr2c4lw" sourceConnectionVisual="_qFEAkBOQEemT5uxQr2c4lw" text="Obtiene los documentos sin estandarizar almacenados en la base de datos de Azure Cosmos DB&#xD;&#xA;&#x9; * y genera una traza OMJson-Collection por cada línea de texto.&#xD;&#xA;&#x9; * @throws JsonParseException&#xD;&#xA;&#x9; * @throws JsonMappingException&#xD;&#xA;&#x9; * @throws IOException" item="_qFEnoBOQEemT5uxQr2c4lw">
+    <modelElement href="OM_Json_Standardizer.uml#_p-e3dBOQEemT5uxQr2c4lw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qFF1wBOQEemT5uxQr2c4lw" sourceConnectionVisual="_qFJgIBOQEemT5uxQr2c4lw" text="Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;&#xA;&#x9; * e inserta un documento con formato json a partir de la traza (jsonString).&#xD;&#xA;&#x9; * @param jsonString" item="_qFKHMBOQEemT5uxQr2c4lw">
+    <modelElement href="OM_Json_Standardizer.uml#_p-e3chOQEemT5uxQr2c4lw"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

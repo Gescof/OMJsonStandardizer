@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
  */
 public class MotaMeasure {
 	private Timestamp timestamp;
-	private String MotaId;
+	private String motaId;
 	private Geometry geometry;
 	private Measures measures;
 	
@@ -43,7 +43,7 @@ public class MotaMeasure {
 	 */
 	@JsonGetter("MotaId")
 	public String getMotaId() {
-		return MotaId;
+		return motaId;
 	}
 	
 	/**
@@ -52,7 +52,7 @@ public class MotaMeasure {
 	 */
 	@JsonSetter("MotaId")
 	public void setMotaId(String motaId) {
-		MotaId = motaId;
+		this.motaId = motaId;
 	}
 	
 	/**

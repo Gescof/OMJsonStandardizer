@@ -1,13 +1,13 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import org.json.JSONObject;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -23,9 +23,9 @@ import com.mongodb.client.model.Filters;
  * <p>Atributos:
  * <li>ArrayList<JSONObject> jsonArrayList -> Lista de JSONObject que contiene a cada una de las trazas OM-JSON.</li>
  * <li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.</li>
- * <li>FileInputStream fstream -> Fichero de lectura del que se recogen las trazas JSON sin formato.</li>
- * <li>BufferedReader buffer -> Buffer que gestiona la entrada de la lectura del fichero.</li>
- * <li>String connectionString -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.</li>
+ * <li>File inputFile -> Fichero de lectura del que se recogen las trazas JSON sin formato.</li>
+ * <li>Scanner scanner -> Buffer que gestiona la entrada de la lectura del fichero.</li>
+ * <li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.</li>
  * </p>
  * 
  * @author Guillermo, Yan Liu
@@ -35,8 +35,8 @@ import com.mongodb.client.model.Filters;
 public class OMJsonGenerator {
 	private static ArrayList<JSONObject> jsonArrayList;
 	private static ObjectMapper objectMapper;
-	private static FileInputStream fstream;	
-	private static BufferedReader buffer;
+	private static File inputFile;	
+	private static Scanner scanner;
 	private static final String CONNECTIONSTRING = "mongodb://guillermo:UWwucsNOJx0mr1NxvAMNaiZnellePZRBfwCakZp8MPaqZytxqPjvMYqKv8fDK7KfT7Yj6umTKEHo1kWta3UF5Q==@guillermo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb";
 	
 	/**
@@ -77,9 +77,9 @@ public class OMJsonGenerator {
 			mongoClient = new MongoClient(uri);
 			MongoDatabase database = mongoClient.getDatabase("db");
 			MongoCollection<Document> collection = database.getCollection("motaTrazas");
-			Document queryResult = collection.find().first();
+			Bson filter = Filters.eq("MotaMeasure.MotaId", "mota1");
+			Document queryResult = collection.find(filter).first();
 			strResult = queryResult.toJson();
-			strResult = strResult.replace("date", "$date");
 			System.out.println("Query completed successfully");
 
 		} finally {
@@ -100,9 +100,7 @@ public class OMJsonGenerator {
 	{
 		jsonString = jsonString.replace("$date", "instant");
 		jsonString = jsonString.replace("members", "member");
-		jsonString = jsonString.replace("unit", "uom");
-//		jsonString = jsonString.replace("\"", "\\" + "\"");
-		
+		jsonString = jsonString.replace("unit", "uom");		
 		return jsonString;
 	}
 	
@@ -114,12 +112,13 @@ public class OMJsonGenerator {
 	{
 		objectMapper = new ObjectMapper();
 		jsonArrayList = new ArrayList<JSONObject>();
-		fstream = new FileInputStream("motaMeasures.json");
-		buffer = new BufferedReader(new InputStreamReader(fstream));			
+		inputFile = new File("motaMeasures.json");
+		scanner = new Scanner(inputFile);			
 		ArrayList<OMMember> members = new ArrayList<OMMember>();	
-		String motaTrazaStr;		
+		String motaTrazaStr = "";		
 		
-		while ((motaTrazaStr = buffer.readLine()) != null) {
+		while (scanner.hasNext()) {
+			motaTrazaStr = scanner.next();
 			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
 			omTraza.setOmCollection(new ObservationCollection());
 			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);
@@ -135,8 +134,11 @@ public class OMJsonGenerator {
 			jsonArrayList.add(new JSONObject(jsonString));
 			members.clear();
 		}
-		buffer.close();		
-		jsonArrayList.forEach((jsonObject)->System.out.println(jsonObject.toString()));
+		scanner.close();	
+		if(!jsonArrayList.isEmpty()) 
+		{
+			jsonArrayList.forEach((jsonObject)->System.out.println(jsonObject.toString()));
+		}
 	}
 	
 	/**

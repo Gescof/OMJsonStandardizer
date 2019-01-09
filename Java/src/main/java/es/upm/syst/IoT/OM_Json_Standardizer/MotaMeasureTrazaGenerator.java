@@ -3,7 +3,12 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.time.LocalDate;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.Random;
 
 import org.bson.Document;
@@ -21,12 +26,12 @@ import com.mongodb.client.MongoDatabase;
  * <li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.</li>
  * <li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.</li>
  * <li>int NUMIDS -> Número de trazas JSON que se generan.</li>
- * <li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas.</li>
+ * <li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas (Epoch).</li>
  * <li>float MINCOORZERO, MAXCOORZERO -> Coordenada mínima y máxima a generar.</li>
  * <li>float MINTEMP, MAXTEMP -> Temperatura mínima y máxima a generar.</li>
  * <li>float MINHUM, MAXHUM -> Humedad mínima y máxima a generar.</li>
  * <li>float MINLUM,  MAXLUM -> Luminosidad mínima y máxima a generar.</li>
- * <li>String connectionString -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.</li>
+ * <li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.</li>
  * </p>
  * 
  * @author Guillermo, Yan Liu
@@ -38,8 +43,8 @@ public class MotaMeasureTrazaGenerator {
 	private static PrintWriter writer;
 	private static final ObjectMapper OBJECTMAPPER = new ObjectMapper();
 	private static final int NUMIDS = 100;
-	private static final int MINDAY = (int) LocalDate.of(2017, 1, 1).toEpochDay();
-	private static final int MAXDAY = (int) LocalDate.of(2019, 1, 1).toEpochDay();
+	private static final int MINDAY = 1483228800;
+	private static final int MAXDAY = 1546300800;
 	private static final float MAXCOORZERO = 40.9f, MINCOORZERO = 40.0f;
 	private static final float MAXCOORONE = -3.0f, MINCOORONE = -3.9f;
 	private static final float MAXTEMP = 50.0f, MINTEMP = 0.0f;
@@ -72,17 +77,6 @@ public class MotaMeasureTrazaGenerator {
 	}
 	
 	/**
-	 * Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada.
-	 * @param jsonString
-	 * @return String jsonString
-	 */
-	private static String jsonReplace(String jsonString)
-	{
-		jsonString = jsonString.replace("$date", "date");
-		return jsonString;
-	}
-	
-	/**
 	 * Genera trazas JSON no estandarizadas en un fichero (motaMeasures.json) alojado en la carpeta raíz.
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
@@ -90,12 +84,15 @@ public class MotaMeasureTrazaGenerator {
 	 */
 	private static void generateMotaMeasures() throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException {		
 		random = new Random();			
-		writer = new PrintWriter("motaMeasures.json", "UTF-8");		
+		writer = new PrintWriter("motaMeasures.json", "UTF-8");			
+		String jsonString;	
+		
 		Timestamp timestamp = new Timestamp();		
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SS'Z'", Locale.ENGLISH);
 		long randomDay;
-		LocalDate randomDate;	
+		ZonedDateTime randomDate;	
 		String strDate;		
-		String jsonString;
+
 		float[] coordinates = new float[2];
 
 		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
@@ -114,8 +111,9 @@ public class MotaMeasureTrazaGenerator {
 			mota.getMotaMeasure().setMotaId("mota" + (i + 1));
 			
 			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
-			randomDate = LocalDate.ofEpochDay(randomDay);
-			strDate = randomDate.toString();
+			Instant instant = Instant.ofEpochSecond(randomDay);
+			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
+			strDate = randomDate.format(formatter);
 			timestamp.setDate(strDate);
 			mota.getMotaMeasure().setTimestamp(timestamp);
 			
@@ -130,7 +128,6 @@ public class MotaMeasureTrazaGenerator {
 			mota.getMotaMeasure().setMeasures(measures);
 			
 			jsonString = OBJECTMAPPER.writeValueAsString(mota);
-			jsonString = jsonReplace(jsonString);
 			pushToMongoDB(jsonString);
 			writer.println(jsonString);
 		}		

@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_O9OPMAI6EemV_o9XM1JgBg" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_O9O2QAI6EemV_o9XM1JgBg" source="codegen">
         <details xmi:id="_O9O2QQI6EemV_o9XM1JgBg" key="codegenDirectory" value="/OM_Json_Standardizer/src/main/java"/>
-        <details xmi:id="_Po3NMAI6EemV_o9XM1JgBg" key="AssociatedSourceCode" value="/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ExampleMain.java;1297009556/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Geometry.java;2521774283/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Measures.java;832830905/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Member.java;138964956/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasure.java;935335435/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasureTraza.java;3554052811/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasureTrazaGenerator.java;1240922691/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/OMJsonGenerator.java;1659242929/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/OMMember.java;3354730277/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ObservationCollecionTraza.java;963156428/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ObservationCollection.java;3029258293/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ResulType.java;4227678836/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Timestamp.java;826940287/1;"/>
+        <details xmi:id="_Po3NMAI6EemV_o9XM1JgBg" key="AssociatedSourceCode" value="/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ExampleMain.java;1297009556/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Geometry.java;2521774283/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Measures.java;832830905/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Member.java;4162603011/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasure.java;935335435/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasureTraza.java;4116917076/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/MotaMeasureTrazaGenerator.java;4293323150/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/OMJsonGenerator.java;2237948727/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/OMMember.java;3354730277/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ObservationCollecionTraza.java;4238856972/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ObservationCollection.java;3029258293/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/ResulType.java;4227678836/1;/OM_Json_Standardizer/src/main/java/es/upm/syst/IoT/OM_Json_Standardizer/Timestamp.java;826940287/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_psERwBOQEemT5uxQr2c4lw" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_psE40BOQEemT5uxQr2c4lw" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_psE40ROQEemT5uxQr2c4lw" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_psE40hOQEemT5uxQr2c4lw" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+          <details xmi:id="_psE40xOQEemT5uxQr2c4lw" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_PORi8AI6EemV_o9XM1JgBg">
@@ -253,13 +260,16 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ0gpgI6EemV_o9XM1JgBg" name="Member" specification="_POgzgAI6EemV_o9XM1JgBg">
-                  <ownedParameter xmi:id="_PQ0gpwI6EemV_o9XM1JgBg" type="_POflYAI6EemV_o9XM1JgBg" direction="return"/>
+                  <ownedParameter xmi:id="_PQ0gpwI6EemV_o9XM1JgBg" type="_POflYAI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>//TODO--Default Constructor&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ1HsAI6EemV_o9XM1JgBg" name="toStringOM" specification="_POgzhAI6EemV_o9XM1JgBg">
                   <ownedParameter xmi:id="_PQ1HsQI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
@@ -271,16 +281,18 @@
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ1HsgI6EemV_o9XM1JgBg" name="standarizeMember" specification="_POhakQI6EemV_o9XM1JgBg">
-                  <ownedParameter xmi:id="_PQ1HswI6EemV_o9XM1JgBg" type="_POflYAI6EemV_o9XM1JgBg" direction="return"/>
+                  <ownedParameter xmi:id="_PQ1HswI6EemV_o9XM1JgBg" type="_POflYAI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>if(unit.compareTo(&quot;Cº&quot;) == 0) {&#xD;
-			unit = &quot;href: https://en.wikipedia.org/wiki/Celsius&quot;;&#xD;
+			unit = &quot;https://en.wikipedia.org/wiki/Celsius&quot;;&#xD;
 		}&#xD;
 		else if(unit.compareTo(&quot;RH&quot;) == 0) {&#xD;
-			unit = &quot;href: https://en.wikipedia.org/wiki/Relative_humidity&quot;;&#xD;
+			unit = &quot;https://en.wikipedia.org/wiki/Relative_humidity&quot;;&#xD;
 		}&#xD;
 		else if(unit.compareTo(&quot;lx&quot;) == 0) {&#xD;
-			unit = &quot;href: https://en.wikipedia.org/wiki/Lux&quot;;&#xD;
+			unit = &quot;https://en.wikipedia.org/wiki/Lux&quot;;&#xD;
 		}&#xD;
 		return this;&#xD;
 	</body>
@@ -331,11 +343,30 @@
 @author Guillermo, Yan Liu&#xD;
  *</body>
                 </ownedComment>
-                <ownedAttribute xmi:id="_PQaQ8AI6EemV_o9XM1JgBg" name="MotaMeasure" type="_POjPwAI6EemV_o9XM1JgBg" association="_PRGNcAI6EemV_o9XM1JgBg"/>
+                <ownedAttribute xmi:id="_PQaQ8AI6EemV_o9XM1JgBg" name="MotaMeasure" visibility="private" type="_POjPwAI6EemV_o9XM1JgBg" association="_PRGNcAI6EemV_o9XM1JgBg"/>
+                <ownedAttribute xmi:id="_p-VGcBOQEemT5uxQr2c4lw" name="_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ2V0AI6EemV_o9XM1JgBg" name="MotaMeasureTraza" specification="_POovUAI6EemV_o9XM1JgBg">
-                  <ownedParameter xmi:id="_PQ2V0QI6EemV_o9XM1JgBg" type="_POoIQAI6EemV_o9XM1JgBg" direction="return"/>
+                  <ownedParameter xmi:id="_PQ2V0QI6EemV_o9XM1JgBg" type="_POoIQAI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>//TODO--Default Constructor&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ1uwgI6EemV_o9XM1JgBg" name="getMotaMeasure" specification="_PQa4AAI6EemV_o9XM1JgBg">
+                  <ownedParameter xmi:id="_PQ1uwwI6EemV_o9XM1JgBg" type="_POjPwAI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return MotaMeasure;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ1uxAI6EemV_o9XM1JgBg" name="setMotaMeasure" specification="_PQa4AQI6EemV_o9XM1JgBg">
+                  <ownedParameter xmi:id="_PQ1uxQI6EemV_o9XM1JgBg" name="MotaMeasure" type="_POjPwAI6EemV_o9XM1JgBg"/>
+                  <language>java</language>
+                  <body>this.MotaMeasure = MotaMeasure;&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedOperation xmi:id="_POovUAI6EemV_o9XM1JgBg" name="MotaMeasureTraza" method="_PQ2V0AI6EemV_o9XM1JgBg">
@@ -343,6 +374,12 @@
                     <details xmi:id="_POpWYQI6EemV_o9XM1JgBg" key="create"/>
                   </eAnnotations>
                   <ownedParameter xmi:id="_POpWYgI6EemV_o9XM1JgBg" type="_POoIQAI6EemV_o9XM1JgBg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_PQa4AAI6EemV_o9XM1JgBg" name="getMotaMeasure" method="_PQ1uwgI6EemV_o9XM1JgBg">
+                  <ownedParameter xmi:id="_PQbfEAI6EemV_o9XM1JgBg" type="_POjPwAI6EemV_o9XM1JgBg" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_PQa4AQI6EemV_o9XM1JgBg" name="setMotaMeasure" method="_PQ1uxAI6EemV_o9XM1JgBg">
+                  <ownedParameter xmi:id="_PQa4AgI6EemV_o9XM1JgBg" name="MotaMeasure" type="_POjPwAI6EemV_o9XM1JgBg"/>
                 </ownedOperation>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_POrLkAI6EemV_o9XM1JgBg" name="MotaMeasureTrazaGenerator">
@@ -357,6 +394,7 @@
 &lt;li>float MINTEMP, MAXTEMP -> Temperatura mínima y máxima a generar.&lt;/li>&#xD;
 &lt;li>float MINHUM, MAXHUM -> Humedad mínima y máxima a generar.&lt;/li>&#xD;
 &lt;li>float MINLUM,  MAXLUM -> Luminosidad mínima y máxima a generar.&lt;/li>&#xD;
+&lt;li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.&lt;/li>&#xD;
 &lt;/p>&#xD;
 &#xD;
 @author Guillermo, Yan Liu&#xD;
@@ -420,6 +458,10 @@
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
                   <defaultValue xmi:type="uml:LiteralString" xmi:id="_PRAG0gI6EemV_o9XM1JgBg" value="0.0f"/>
                 </ownedAttribute>
+                <ownedAttribute xmi:id="_p-XisBOQEemT5uxQr2c4lw" name="CONNECTIONSTRING" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_p-XisROQEemT5uxQr2c4lw" value="&quot;mongodb://guillermo:UWwucsNOJx0mr1NxvAMNaiZnellePZRBfwCakZp8MPaqZytxqPjvMYqKv8fDK7KfT7Yj6umTKEHo1kWta3UF5Q==@guillermo.documents.azure.com:10255/?ssl=true&amp;replicaSet=globaldb&quot;"/>
+                </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ2V0gI6EemV_o9XM1JgBg" name="generateMotaMeasures" specification="_POtn0AI6EemV_o9XM1JgBg">
                   <language>java</language>
                   <body>random = new Random();			&#xD;
@@ -463,9 +505,12 @@
 			mota.getMotaMeasure().setMeasures(measures);&#xD;
 			&#xD;
 			jsonString = OBJECTMAPPER.writeValueAsString(mota);&#xD;
+			jsonString = jsonReplace(jsonString);&#xD;
+			pushToMongoDB(jsonString);&#xD;
 			writer.println(jsonString);&#xD;
 		}		&#xD;
-		writer.close();&#xD;
+		writer.close();			&#xD;
+		System.out.println(&quot;Fichero generado.&quot;);&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ284AI6EemV_o9XM1JgBg" name="main" specification="_POu18AI6EemV_o9XM1JgBg">
@@ -476,11 +521,44 @@
                   <language>java</language>
                   <body>try {&#xD;
 			generateMotaMeasures();&#xD;
-			System.out.println(&quot;Fichero generado.&quot;);&#xD;
 		} catch (Exception e) {&#xD;
 			// TODO Auto-generated catch block&#xD;
 			e.printStackTrace();&#xD;
 		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p-cbMBOQEemT5uxQr2c4lw" name="pushToMongoDB" specification="_p9v3oBOQEemT5uxQr2c4lw">
+                  <ownedParameter xmi:id="_p-cbMROQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>MongoClientURI uri = new MongoClientURI(CONNECTIONSTRING);&#xD;
+		MongoClient mongoClient = null;&#xD;
+		try {&#xD;
+			mongoClient = new MongoClient(uri);&#xD;
+			MongoDatabase database = mongoClient.getDatabase(&quot;db&quot;);&#xD;
+			MongoCollection&lt;Document> collection = database.getCollection(&quot;motaTrazas&quot;);&#xD;
+			Document document = new Document(Document.parse(jsonString));&#xD;
+			collection.insertOne(document);&#xD;
+			System.out.println(&quot;Completed successfully&quot;);&#xD;
+&#xD;
+		} finally {&#xD;
+			if (mongoClient != null) {&#xD;
+				mongoClient.close();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p-cbMhOQEemT5uxQr2c4lw" name="jsonReplace" specification="_p9wesBOQEemT5uxQr2c4lw">
+                  <ownedParameter xmi:id="_p-cbMxOQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_p-cbNBOQEemT5uxQr2c4lw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>jsonString = jsonString.replace(&quot;$date&quot;, &quot;date&quot;);&#xD;
+		return jsonString;&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedOperation xmi:id="_POtn0AI6EemV_o9XM1JgBg" name="generateMotaMeasures" visibility="private" isStatic="true" method="_PQ2V0gI6EemV_o9XM1JgBg" raisedException="_PP5TkAI6EemV_o9XM1JgBg _PP6hsQI6EemV_o9XM1JgBg _PP898AI6EemV_o9XM1JgBg">
@@ -503,6 +581,29 @@
                     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_POvdAQI6EemV_o9XM1JgBg" value="*"/>
                   </ownedParameter>
                 </ownedOperation>
+                <ownedOperation xmi:id="_p9v3oBOQEemT5uxQr2c4lw" name="pushToMongoDB" visibility="private" isStatic="true" method="_p-cbMBOQEemT5uxQr2c4lw">
+                  <ownedComment xmi:id="_p-e3cBOQEemT5uxQr2c4lw">
+                    <body>Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;
+	 * e inserta un documento con formato json a partir de la traza (jsonString).&#xD;
+	 * @param jsonString</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_p9v3oROQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_p9wesBOQEemT5uxQr2c4lw" name="jsonReplace" visibility="private" isStatic="true" method="_p-cbMhOQEemT5uxQr2c4lw">
+                  <ownedComment xmi:id="_p-e3cROQEemT5uxQr2c4lw">
+                    <body>Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada.&#xD;
+	 * @param jsonString&#xD;
+	 * @return String jsonString</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_p9wesROQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_p9xFwBOQEemT5uxQr2c4lw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_PO08kAI6EemV_o9XM1JgBg" name="OMJsonGenerator">
                 <ownedComment xmi:id="_PRAG1QI6EemV_o9XM1JgBg">
@@ -512,6 +613,7 @@
 &lt;li>ObjectMapper objectMapper -> Usado para mapear de objeto Java a JSON y viceversa.&lt;/li>&#xD;
 &lt;li>FileInputStream fstream -> Fichero de lectura del que se recogen las trazas JSON sin formato.&lt;/li>&#xD;
 &lt;li>BufferedReader buffer -> Buffer que gestiona la entrada de la lectura del fichero.&lt;/li>&#xD;
+&lt;li>String CONNECTIONSTRING -> Cadena que contiene el token para establecer la conexión con la base de datos de Azure.&lt;/li>&#xD;
 &lt;/p>&#xD;
 &#xD;
 @author Guillermo, Yan Liu&#xD;
@@ -522,18 +624,23 @@
                 <ownedAttribute xmi:id="_PQkpAAI6EemV_o9XM1JgBg" name="objectMapper" visibility="private" isStatic="true" type="_PPwJoAI6EemV_o9XM1JgBg" association="_PRIpsQI6EemV_o9XM1JgBg"/>
                 <ownedAttribute xmi:id="_PQlQEAI6EemV_o9XM1JgBg" name="fstream" visibility="private" isStatic="true" type="_PQAoUQI6EemV_o9XM1JgBg" association="_PRJQwQI6EemV_o9XM1JgBg"/>
                 <ownedAttribute xmi:id="_PQlQEgI6EemV_o9XM1JgBg" name="buffer" visibility="private" isStatic="true" type="_PQABQAI6EemV_o9XM1JgBg" association="_PRJ30QI6EemV_o9XM1JgBg"/>
+                <ownedAttribute xmi:id="_p-YJwBOQEemT5uxQr2c4lw" name="CONNECTIONSTRING" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_p-YJwROQEemT5uxQr2c4lw" value="&quot;mongodb://guillermo:UWwucsNOJx0mr1NxvAMNaiZnellePZRBfwCakZp8MPaqZytxqPjvMYqKv8fDK7KfT7Yj6umTKEHo1kWta3UF5Q==@guillermo.documents.azure.com:10255/?ssl=true&amp;replicaSet=globaldb&quot;"/>
+                </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ3j8AI6EemV_o9XM1JgBg" name="jsonReplace" specification="_PO2xwAI6EemV_o9XM1JgBg">
                   <ownedParameter xmi:id="_PQ3j8QI6EemV_o9XM1JgBg" name="jsonString">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <ownedParameter xmi:id="_PQ3j8gI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
                   <body>jsonString = jsonString.replace(&quot;$date&quot;, &quot;instant&quot;);&#xD;
 		jsonString = jsonString.replace(&quot;members&quot;, &quot;member&quot;);&#xD;
 		jsonString = jsonString.replace(&quot;unit&quot;, &quot;uom&quot;);&#xD;
-		//jsonString = jsonString.replace(&quot;\&quot;&quot;, &quot;\\&quot; + &quot;\&quot;&quot;);&#xD;
+//		jsonString = jsonString.replace(&quot;\&quot;&quot;, &quot;\\&quot; + &quot;\&quot;&quot;);&#xD;
 		&#xD;
 		return jsonString;&#xD;
 	</body>
@@ -545,8 +652,7 @@
 		fstream = new FileInputStream(&quot;motaMeasures.json&quot;);&#xD;
 		buffer = new BufferedReader(new InputStreamReader(fstream));			&#xD;
 		ArrayList&lt;OMMember> members = new ArrayList&lt;OMMember>();	&#xD;
-		String motaTrazaStr = &quot;&quot;;&#xD;
-		int cont = 0;			&#xD;
+		String motaTrazaStr;		&#xD;
 		&#xD;
 		while ((motaTrazaStr = buffer.readLine()) != null) {&#xD;
 			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();&#xD;
@@ -562,10 +668,10 @@
 			String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());&#xD;
 			jsonString = jsonReplace(jsonString);&#xD;
 			jsonArrayList.add(new JSONObject(jsonString));&#xD;
-			System.out.println(jsonArrayList.get(cont++));&#xD;
 			members.clear();&#xD;
 		}&#xD;
-		buffer.close();&#xD;
+		buffer.close();		&#xD;
+		jsonArrayList.forEach((jsonObject)->System.out.println(jsonObject.toString()));&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ3j9AI6EemV_o9XM1JgBg" name="main" specification="_PO4m8AI6EemV_o9XM1JgBg">
@@ -575,11 +681,86 @@
                   </ownedParameter>
                   <language>java</language>
                   <body>generateOMJson();&#xD;
+		generateOMJsonToMongoDB();&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p-dCQBOQEemT5uxQr2c4lw" name="pushToMongoDB" specification="_p9xs0BOQEemT5uxQr2c4lw">
+                  <ownedParameter xmi:id="_p-dCQROQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>MongoClientURI uri = new MongoClientURI(CONNECTIONSTRING);&#xD;
+		MongoClient mongoClient = null;&#xD;
+		try {&#xD;
+			mongoClient = new MongoClient(uri);&#xD;
+			MongoDatabase database = mongoClient.getDatabase(&quot;db&quot;);&#xD;
+			MongoCollection&lt;Document> collection = database.getCollection(&quot;coll&quot;);&#xD;
+			Document document = new Document(Document.parse(jsonString));&#xD;
+			collection.insertOne(document);&#xD;
+			System.out.println(&quot;Completed successfully&quot;);&#xD;
+&#xD;
+		} finally {&#xD;
+			if (mongoClient != null) {&#xD;
+				mongoClient.close();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p-dCQhOQEemT5uxQr2c4lw" name="getMongoDBDoc" specification="_p9lfkBOQEemT5uxQr2c4lw">
+                  <ownedParameter xmi:id="_p-dCQxOQEemT5uxQr2c4lw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>String strResult = &quot;&quot;;&#xD;
+		MongoClientURI uri = new MongoClientURI(CONNECTIONSTRING);&#xD;
+		MongoClient mongoClient = null;&#xD;
+		try {&#xD;
+			mongoClient = new MongoClient(uri);&#xD;
+			MongoDatabase database = mongoClient.getDatabase(&quot;db&quot;);&#xD;
+			MongoCollection&lt;Document> collection = database.getCollection(&quot;motaTrazas&quot;);&#xD;
+			Document queryResult = collection.find().first();&#xD;
+			strResult = queryResult.toJson();&#xD;
+			strResult = strResult.replace(&quot;date&quot;, &quot;$date&quot;);&#xD;
+			System.out.println(&quot;Query completed successfully&quot;);&#xD;
+&#xD;
+		} finally {&#xD;
+			if (mongoClient != null) {&#xD;
+				mongoClient.close();&#xD;
+			}&#xD;
+		}&#xD;
+		return strResult;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_p-dCRBOQEemT5uxQr2c4lw" name="generateOMJsonToMongoDB" specification="_p9mGoBOQEemT5uxQr2c4lw">
+                  <language>java</language>
+                  <body>objectMapper = new ObjectMapper();&#xD;
+		jsonArrayList = new ArrayList&lt;JSONObject>();		&#xD;
+		ArrayList&lt;OMMember> members = new ArrayList&lt;OMMember>();	&#xD;
+		String motaTrazaStr;&#xD;
+		&#xD;
+		if ((motaTrazaStr = getMongoDBDoc()) != null) {&#xD;
+			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();&#xD;
+			omTraza.setOmCollection(new ObservationCollection());&#xD;
+			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);&#xD;
+			members.add(new OMMember(&quot;geometry&quot; + motaMeasure.getMotaMeasure().getMotaId(), &quot;Geometry Observation&quot;, motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));&#xD;
+			members.add(new OMMember(&quot;temperature&quot; + motaMeasure.getMotaMeasure().getMotaId(), &quot;Category Observation&quot;, motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature().standarizeMember()));&#xD;
+			members.add(new OMMember(&quot;humidity&quot; + motaMeasure.getMotaMeasure().getMotaId(), &quot;Category Observation&quot;, motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity().standarizeMember()));&#xD;
+			members.add(new OMMember(&quot;luminosity&quot; + motaMeasure.getMotaMeasure().getMotaId(), &quot;Category Observation&quot;, motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity().standarizeMember()));&#xD;
+			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());&#xD;
+			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());&#xD;
+			omTraza.getOmCollection().setMembers(members);&#xD;
+			String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());&#xD;
+			jsonString = jsonReplace(jsonString);&#xD;
+			jsonArrayList.add(new JSONObject(jsonString));&#xD;
+			members.clear();&#xD;
+		}&#xD;
+		jsonArrayList.forEach((jsonObject)->pushToMongoDB(jsonObject.toString()));&#xD;
 	</body>
                 </ownedBehavior>
                 <ownedOperation xmi:id="_PO2xwAI6EemV_o9XM1JgBg" name="jsonReplace" visibility="private" isStatic="true" method="_PQ3j8AI6EemV_o9XM1JgBg">
                   <ownedComment xmi:id="_PRAt4AI6EemV_o9XM1JgBg">
-                    <body>Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada a literales que contendrá una traza OM-JSON.&#xD;
+                    <body>Devuelve una cadena (String) que reemplaza los literales de una traza JSON no estandarizada &#xD;
+	 * a literales que contendrá una traza OM-JSON.&#xD;
 	 * @param jsonString&#xD;
 	 * @return String jsonString</body>
                   </ownedComment>
@@ -604,6 +785,35 @@
                   <ownedParameter xmi:id="_PO4m8QI6EemV_o9XM1JgBg" name="args">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PO4m8gI6EemV_o9XM1JgBg" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_p9lfkBOQEemT5uxQr2c4lw" name="getMongoDBDoc" visibility="private" isStatic="true" method="_p-dCQhOQEemT5uxQr2c4lw">
+                  <ownedComment xmi:id="_p-e3cxOQEemT5uxQr2c4lw">
+                    <body>Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;
+	 * y consulta los documentos de la colección de trazas sin estandarizar.&#xD;
+	 * @param jsonString</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_p9yT4BOQEemT5uxQr2c4lw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_p9mGoBOQEemT5uxQr2c4lw" name="generateOMJsonToMongoDB" visibility="private" isStatic="true" method="_p-dCRBOQEemT5uxQr2c4lw" raisedException="_PPttYQI6EemV_o9XM1JgBg _PPu7gAI6EemV_o9XM1JgBg _PPrRIAI6EemV_o9XM1JgBg">
+                  <ownedComment xmi:id="_p-e3dBOQEemT5uxQr2c4lw">
+                    <body>Obtiene los documentos sin estandarizar almacenados en la base de datos de Azure Cosmos DB&#xD;
+	 * y genera una traza OMJson-Collection por cada línea de texto.&#xD;
+	 * @throws JsonParseException&#xD;
+	 * @throws JsonMappingException&#xD;
+	 * @throws IOException</body>
+                  </ownedComment>
+                </ownedOperation>
+                <ownedOperation xmi:id="_p9xs0BOQEemT5uxQr2c4lw" name="pushToMongoDB" visibility="private" isStatic="true" method="_p-dCQBOQEemT5uxQr2c4lw">
+                  <ownedComment xmi:id="_p-e3chOQEemT5uxQr2c4lw">
+                    <body>Establece la conexión con la base de datos de Azure Cosmos DB, con la API MongoDB&#xD;
+	 * e inserta un documento con formato json a partir de la traza (jsonString).&#xD;
+	 * @param jsonString</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_p9xs0ROQEemT5uxQr2c4lw" name="jsonString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
               </packagedElement>
@@ -672,8 +882,13 @@
  *</body>
                 </ownedComment>
                 <ownedAttribute xmi:id="_PQnFQAI6EemV_o9XM1JgBg" name="omCollection" type="_PPBw4AI6EemV_o9XM1JgBg" association="_PRBU8QI6EemV_o9XM1JgBg"/>
+                <ownedAttribute xmi:id="_p-Yw0BOQEemT5uxQr2c4lw" name="_id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PQ4LCAI6EemV_o9XM1JgBg" name="ObservationCollecionTraza" specification="_PPAiwAI6EemV_o9XM1JgBg">
-                  <ownedParameter xmi:id="_PQ4LCQI6EemV_o9XM1JgBg" type="_PO_7sAI6EemV_o9XM1JgBg" direction="return"/>
+                  <ownedParameter xmi:id="_PQ4LCQI6EemV_o9XM1JgBg" type="_PO_7sAI6EemV_o9XM1JgBg" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>//TODO--Default Constructor&#xD;
 	</body>
@@ -895,13 +1110,28 @@
           <packagedElement xmi:type="uml:Package" xmi:id="_PNlmcAI6EemV_o9XM1JgBg" name="annotation">
             <packagedElement xmi:type="uml:Interface" xmi:id="_PP2QQAI6EemV_o9XM1JgBg" name="JsonGetter"/>
             <packagedElement xmi:type="uml:Interface" xmi:id="_PP23UQI6EemV_o9XM1JgBg" name="JsonSetter"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_p-LVcBOQEemT5uxQr2c4lw" name="JsonIgnore"/>
           </packagedElement>
         </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_p9gAAROQEemT5uxQr2c4lw" name="mongodb">
+        <packagedElement xmi:type="uml:Package" xmi:id="_p9gAAhOQEemT5uxQr2c4lw" name="client">
+          <packagedElement xmi:type="uml:Package" xmi:id="_p9jqYBOQEemT5uxQr2c4lw" name="model">
+            <packagedElement xmi:type="uml:Class" xmi:id="_p-RcEBOQEemT5uxQr2c4lw" name="Filters"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_p-QN8BOQEemT5uxQr2c4lw" name="MongoCollection"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_p-Q1ABOQEemT5uxQr2c4lw" name="MongoDatabase"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_p-OYwROQEemT5uxQr2c4lw" name="MongoClient"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_p-O_0ROQEemT5uxQr2c4lw" name="MongoClientURI"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_PN0P8AI6EemV_o9XM1JgBg" name="org">
       <packagedElement xmi:type="uml:Package" xmi:id="_PN0P8QI6EemV_o9XM1JgBg" name="json">
         <packagedElement xmi:type="uml:Class" xmi:id="_PQB2cQI6EemV_o9XM1JgBg" name="JSONObject"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_p9gAABOQEemT5uxQr2c4lw" name="bson">
+        <packagedElement xmi:type="uml:Class" xmi:id="_p-NKoBOQEemT5uxQr2c4lw" name="Document"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_O9RSgAI6EemV_o9XM1JgBg">
@@ -960,25 +1190,18 @@
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_PQaQ8QI6EemV_o9XM1JgBg" base_Element="_PQaQ8AI6EemV_o9XM1JgBg">
-    <associatedElement xmi:type="uml:Operation" xmi:id="_PQa4AAI6EemV_o9XM1JgBg" name="getMotaMeasure" method="_PQ1uwgI6EemV_o9XM1JgBg">
-      <ownedParameter xmi:id="_PQbfEAI6EemV_o9XM1JgBg" type="_POjPwAI6EemV_o9XM1JgBg" direction="return"/>
-    </associatedElement>
-    <associatedElement xmi:type="uml:Operation" xmi:id="_PQa4AQI6EemV_o9XM1JgBg" name="setMotaMeasure" method="_PQ1uxAI6EemV_o9XM1JgBg">
-      <ownedParameter xmi:id="_PQa4AgI6EemV_o9XM1JgBg" name="MotaMeasure" type="_POjPwAI6EemV_o9XM1JgBg"/>
-    </associatedElement>
-  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_PQaQ8QI6EemV_o9XM1JgBg" base_Element="_PQaQ8AI6EemV_o9XM1JgBg"/>
   <UMLLabProfile:Annotations xmi:id="_PQbfEQI6EemV_o9XM1JgBg" base_Element="_PQa4AAI6EemV_o9XM1JgBg">
     <annotations xmi:id="_PQbfEgI6EemV_o9XM1JgBg" name="JsonGetter">
       <annotationParameters xmi:id="_PQbfEwI6EemV_o9XM1JgBg" skipName="true" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_PQ9qkAI6EemV_o9XM1JgBg" value="&quot;MotaMeasure&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_p-eQYBOQEemT5uxQr2c4lw" value="&quot;MotaMeasure&quot;"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
   <UMLLabProfile:Annotations xmi:id="_PQbfFAI6EemV_o9XM1JgBg" base_Element="_PQa4AQI6EemV_o9XM1JgBg">
     <annotations xmi:id="_PQbfFQI6EemV_o9XM1JgBg" name="JsonSetter">
       <annotationParameters xmi:id="_PQcGIAI6EemV_o9XM1JgBg" skipName="true" skipArray="true">
-        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_PQ9qkQI6EemV_o9XM1JgBg" value="&quot;MotaMeasure&quot;"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_p-eQYROQEemT5uxQr2c4lw" value="&quot;MotaMeasure&quot;"/>
       </annotationParameters>
     </annotations>
   </UMLLabProfile:Annotations>
@@ -1043,18 +1266,6 @@
     <body>MotaId = motaId;&#xD;
 	</body>
   </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_PQ1uwgI6EemV_o9XM1JgBg" name="getMotaMeasure" specification="_PQa4AAI6EemV_o9XM1JgBg">
-    <ownedParameter xmi:id="_PQ1uwwI6EemV_o9XM1JgBg" type="_POjPwAI6EemV_o9XM1JgBg" direction="return"/>
-    <language>java</language>
-    <body>return MotaMeasure;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
-  <uml:OpaqueBehavior xmi:id="_PQ1uxAI6EemV_o9XM1JgBg" name="setMotaMeasure" specification="_PQa4AQI6EemV_o9XM1JgBg">
-    <ownedParameter xmi:id="_PQ1uxQI6EemV_o9XM1JgBg" name="MotaMeasure" type="_POjPwAI6EemV_o9XM1JgBg"/>
-    <language>java</language>
-    <body>this.MotaMeasure = MotaMeasure;&#xD;
-	</body>
-  </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_PQ5ZIAI6EemV_o9XM1JgBg" name="getDate" specification="_PQphgQI6EemV_o9XM1JgBg">
     <ownedParameter xmi:id="_PQ5ZIQI6EemV_o9XM1JgBg" direction="return">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1090,4 +1301,81 @@
   <UMLLabProfile:Reference xmi:id="_PRJ30AI6EemV_o9XM1JgBg" base_Element="_PRJQwQI6EemV_o9XM1JgBg"/>
   <UMLLabProfile:Reference xmi:id="_PRJ30wI6EemV_o9XM1JgBg" base_Element="_PRJ30QI6EemV_o9XM1JgBg"/>
   <UMLLabProfile:Reference xmi:id="_PRKe4AI6EemV_o9XM1JgBg" base_Element="_PRJ31AI6EemV_o9XM1JgBg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_p9pxABOQEemT5uxQr2c4lw" base_Element="_PQa4AAI6EemV_o9XM1JgBg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_p9qYEBOQEemT5uxQr2c4lw" base_Element="_PQa4AQI6EemV_o9XM1JgBg"/>
+  <UMLLabProfile:Reference xmi:id="_p-MjkBOQEemT5uxQr2c4lw" base_Element="_p-LVcBOQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-OYwBOQEemT5uxQr2c4lw" base_Element="_p-NKoBOQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-O_0BOQEemT5uxQr2c4lw" base_Element="_p-OYwROQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-Pm4BOQEemT5uxQr2c4lw" base_Element="_p-O_0ROQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-QN8ROQEemT5uxQr2c4lw" base_Element="_p-QN8BOQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-Q1AROQEemT5uxQr2c4lw" base_Element="_p-Q1ABOQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:Reference xmi:id="_p-SDIBOQEemT5uxQr2c4lw" base_Element="_p-RcEBOQEemT5uxQr2c4lw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_p-VGcROQEemT5uxQr2c4lw" base_Element="_p-VGcBOQEemT5uxQr2c4lw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_p-VtgBOQEemT5uxQr2c4lw" name="get_id" method="_p-bNEBOQEemT5uxQr2c4lw">
+      <ownedParameter xmi:id="_p-WUkBOQEemT5uxQr2c4lw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_p-VtgROQEemT5uxQr2c4lw" name="set_id" method="_p-b0IBOQEemT5uxQr2c4lw">
+      <ownedParameter xmi:id="_p-VtghOQEemT5uxQr2c4lw" name="_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_p-WUkROQEemT5uxQr2c4lw" base_Element="_p-VtgBOQEemT5uxQr2c4lw">
+    <annotations xmi:id="_p-WUkhOQEemT5uxQr2c4lw" name="JsonIgnore"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_p-W7oBOQEemT5uxQr2c4lw" base_Element="_p-VtgROQEemT5uxQr2c4lw">
+    <annotations xmi:id="_p-W7oROQEemT5uxQr2c4lw" name="JsonIgnore"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_p-Yw0ROQEemT5uxQr2c4lw" base_Element="_p-Yw0BOQEemT5uxQr2c4lw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_p-ZX4BOQEemT5uxQr2c4lw" name="get_id" method="_p-dpUBOQEemT5uxQr2c4lw">
+      <ownedParameter xmi:id="_p-ZX4xOQEemT5uxQr2c4lw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_p-ZX4ROQEemT5uxQr2c4lw" name="set_id" method="_p-dpUhOQEemT5uxQr2c4lw">
+      <ownedParameter xmi:id="_p-ZX4hOQEemT5uxQr2c4lw" name="_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_p-Z-8BOQEemT5uxQr2c4lw" base_Element="_p-ZX4BOQEemT5uxQr2c4lw">
+    <annotations xmi:id="_p-Z-8ROQEemT5uxQr2c4lw" name="JsonIgnore"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_p-amABOQEemT5uxQr2c4lw" base_Element="_p-ZX4ROQEemT5uxQr2c4lw">
+    <annotations xmi:id="_p-amAROQEemT5uxQr2c4lw" name="JsonIgnore"/>
+  </UMLLabProfile:Annotations>
+  <uml:OpaqueBehavior xmi:id="_p-bNEBOQEemT5uxQr2c4lw" name="get_id" specification="_p-VtgBOQEemT5uxQr2c4lw">
+    <ownedParameter xmi:id="_p-bNEROQEemT5uxQr2c4lw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return _id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_p-b0IBOQEemT5uxQr2c4lw" name="set_id" specification="_p-VtgROQEemT5uxQr2c4lw">
+    <ownedParameter xmi:id="_p-b0IROQEemT5uxQr2c4lw" name="_id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this._id = _id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_p-dpUBOQEemT5uxQr2c4lw" name="get_id" specification="_p-ZX4BOQEemT5uxQr2c4lw">
+    <ownedParameter xmi:id="_p-dpUROQEemT5uxQr2c4lw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return _id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_p-dpUhOQEemT5uxQr2c4lw" name="set_id" specification="_p-ZX4ROQEemT5uxQr2c4lw">
+    <ownedParameter xmi:id="_p-dpUxOQEemT5uxQr2c4lw" name="_id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this._id = _id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
 </xmi:XMI>

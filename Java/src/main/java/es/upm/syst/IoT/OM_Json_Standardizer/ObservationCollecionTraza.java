@@ -1,15 +1,18 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * Reperesenta una traza de una colección de observaciones.
  * @author Guillermo, Yan Liu
  *
  */
+@JsonIgnoreProperties({"_id"})
 public class ObservationCollecionTraza {
 	private ObservationCollection omCollection;
-	private String _id;
+	private String id;
 	
 	public ObservationCollecionTraza()
 	{
@@ -38,18 +41,18 @@ public class ObservationCollecionTraza {
 	 * Devuelve el identificador de la traza que establece Azure Cosmos DB.
 	 * @return _id
 	 */
-	@JsonIgnore
-	public String get_id() {
-		return _id;
+	@JsonGetter("_id")
+	public String getId() {
+		return id;
 	}
 
 	/**
 	 * Establece el identificador de la traza para Azure Cosmos DB.
 	 * @param _id
 	 */
-	@JsonIgnore
-	public void set_id(String _id) {
-		this._id = _id;
+	@JsonSetter("_id")
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 }

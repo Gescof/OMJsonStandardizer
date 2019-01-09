@@ -16,7 +16,7 @@ public class MotaMeasureTraza {
 
 	public MotaMeasureTraza()
 	{
-		//TODO--Default Constructor
+		this.motaMeasure = new MotaMeasure();
 	}
 
 	/**

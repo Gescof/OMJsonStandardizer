@@ -16,7 +16,7 @@ public class ObservationCollecionTraza {
 	
 	public ObservationCollecionTraza()
 	{
-		//TODO--Default Constructor
+		this.omCollection = new ObservationCollection();
 	}
 		
 	/**

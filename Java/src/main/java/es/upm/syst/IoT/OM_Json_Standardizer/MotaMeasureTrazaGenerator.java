@@ -1,15 +1,18 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.io.PrintWriter;
+
 import java.time.Instant;
-import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+
 import java.util.Locale;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.bson.Document;
 
@@ -23,7 +26,9 @@ import com.mongodb.client.MongoDatabase;
 /**
  * Generador de trazas JSON no estandarizadas.
  * <p>Atributos:
+ * <li>Logger logger -> Registro de las actividades del programa.</li>
  * <li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.</li>
+ * <li>PrintWriter writer -> Búfer de escritura del fichero que se crea.</li>
  * <li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.</li>
  * <li>int NUMIDS -> Número de trazas JSON que se generan.</li>
  * <li>int MINDAY, MAXDAY -> Día de inicio (MINDAY) y final (MAXDAY) para generar las fechas (Epoch).</li>
@@ -39,6 +44,7 @@ import com.mongodb.client.MongoDatabase;
  * 
  */
 public class MotaMeasureTrazaGenerator {
+	private static Logger logger;
 	private static Random random;
 	private static PrintWriter writer;
 	private static final ObjectMapper OBJECTMAPPER = new ObjectMapper();
@@ -87,47 +93,33 @@ public class MotaMeasureTrazaGenerator {
 		writer = new PrintWriter("motaMeasures.json", "UTF-8");			
 		String jsonString;	
 		
-		Timestamp timestamp = new Timestamp();		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SS'Z'", Locale.ENGLISH);
 		long randomDay;
 		ZonedDateTime randomDate;	
 		String strDate;		
-
-		float[] coordinates = new float[2];
-
+		
 		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
-		motaTraza.setMotaMeasure(new MotaMeasure());
-	
-		Geometry geometry = new Geometry();
-		geometry.setType("Point");
-		motaTraza.getMotaMeasure().setGeometry(geometry);
-
-		Measures measures = new Measures();
-		motaTraza.getMotaMeasure().setMeasures(measures);
+		float[] coordinates = new float[2];
+		motaTraza.getMotaMeasure().getGeometry().setType("Point");
 
 		for(int i = 0; i < NUMIDS; i++) {
-			MotaMeasureTraza mota = new MotaMeasureTraza();
-			mota = motaTraza;
-			mota.getMotaMeasure().setMotaId("mota" + (i + 1));
+			motaTraza.getMotaMeasure().setMotaId("mota" + (i + 1));
 			
 			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
 			Instant instant = Instant.ofEpochSecond(randomDay);
 			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
 			strDate = randomDate.format(formatter);
-			timestamp.setDate(strDate);
-			mota.getMotaMeasure().setTimestamp(timestamp);
+			motaTraza.getMotaMeasure().getTimestamp().setDate(strDate);
 			
 			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
 			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
-			geometry.setCoordinates(coordinates);
-			mota.getMotaMeasure().setGeometry(geometry);
+			motaTraza.getMotaMeasure().getGeometry().setCoordinates(coordinates);
 			
-			measures.getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
-			measures.getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
-			measures.getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
-			mota.getMotaMeasure().setMeasures(measures);
+			motaTraza.getMotaMeasure().getMeasures().getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
+			motaTraza.getMotaMeasure().getMeasures().getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
+			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			
-			jsonString = OBJECTMAPPER.writeValueAsString(mota);
+			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
 			pushToMongoDB(jsonString);
 			writer.println(jsonString);
 		}		
@@ -147,7 +139,7 @@ public class MotaMeasureTrazaGenerator {
 			generateMotaMeasures();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			logger.log(Level.INFO, e.getMessage(), e);
 		}
 	}
 }

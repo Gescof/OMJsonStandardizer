@@ -14,7 +14,8 @@ public class ObservationCollection {
 	
 	public ObservationCollection()
 	{
-		//TODO--Default Constructor
+		this.phenomenomTime = new Timestamp();
+		this.members = new ArrayList<OMMember>();
 	}
 	
 	/**

@@ -13,7 +13,7 @@ public class OMMember {
 	
 	public OMMember()
 	{
-		//TODO--Default Constructor
+		this.resultTime = new Timestamp();
 	}
 	
 	/**

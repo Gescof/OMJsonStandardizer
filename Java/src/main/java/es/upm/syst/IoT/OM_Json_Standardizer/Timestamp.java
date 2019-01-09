@@ -17,10 +17,19 @@ public class Timestamp {
 		//TODO--Default Constructor
 	}
 	
+	/**
+	 * Devuelve la fecha como cadena.
+	 * @return String date
+	 */
 	@JsonGetter("$date")
 	public String getDate() {
 		return date;
 	}
+	
+	/**
+	 * Establece la fecha como cadena.
+	 * @param date
+	 */
 	@JsonSetter("$date")
 	public void setDate(String date) {
 		this.date = date;

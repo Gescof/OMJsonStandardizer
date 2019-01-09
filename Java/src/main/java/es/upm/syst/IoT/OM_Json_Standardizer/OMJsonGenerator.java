@@ -2,6 +2,7 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.io.File;
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ import org.bson.conversions.Bson;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
@@ -114,20 +116,20 @@ public class OMJsonGenerator {
 		jsonArrayList = new ArrayList<JSONObject>();
 		inputFile = new File("motaMeasures.json");
 		scanner = new Scanner(inputFile);			
-		ArrayList<OMMember> members = new ArrayList<OMMember>();	
-		String motaTrazaStr = "";		
+		String motaTrazaStr = "";			
+		
+		ObservationCollecionTraza omTraza = new ObservationCollecionTraza();	
+		ArrayList<OMMember> members = new ArrayList<OMMember>();
 		
 		while (scanner.hasNext()) {
 			motaTrazaStr = scanner.next();
-			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
-			omTraza.setOmCollection(new ObservationCollection());
 			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);
+			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
+			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
 			members.add(new OMMember("geometry" + motaMeasure.getMotaMeasure().getMotaId(), "Geometry Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));
 			members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature().standarizeMember()));
 			members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity().standarizeMember()));
 			members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity().standarizeMember()));
-			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
-			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
 			omTraza.getOmCollection().setMembers(members);
 			String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());
 			jsonString = jsonReplace(jsonString);
@@ -151,20 +153,20 @@ public class OMJsonGenerator {
 	private static void generateOMJsonToMongoDB() throws JsonParseException, JsonMappingException, IOException 
 	{
 		objectMapper = new ObjectMapper();
-		jsonArrayList = new ArrayList<JSONObject>();		
-		ArrayList<OMMember> members = new ArrayList<OMMember>();	
+		jsonArrayList = new ArrayList<JSONObject>();	
 		String motaTrazaStr;
 		
+		ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
+		ArrayList<OMMember> members = new ArrayList<OMMember>();
+		
 		if ((motaTrazaStr = getMongoDBDoc()) != null) {
-			ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
-			omTraza.setOmCollection(new ObservationCollection());
 			MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);
+			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
+			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
 			members.add(new OMMember("geometry" + motaMeasure.getMotaMeasure().getMotaId(), "Geometry Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));
 			members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature().standarizeMember()));
 			members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity().standarizeMember()));
 			members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity().standarizeMember()));
-			omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
-			omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
 			omTraza.getOmCollection().setMembers(members);
 			String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());
 			jsonString = jsonReplace(jsonString);

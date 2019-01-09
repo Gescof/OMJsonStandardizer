@@ -16,7 +16,9 @@ public class MotaMeasure {
 	
 	public MotaMeasure()
 	{
-		//TODO--Default Constructor
+		this.timestamp = new Timestamp();
+		this.geometry = new Geometry();
+		this.measures = new Measures();
 	}
 	
 	/**

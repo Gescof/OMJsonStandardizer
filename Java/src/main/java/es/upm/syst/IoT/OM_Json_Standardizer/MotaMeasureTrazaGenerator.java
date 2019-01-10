@@ -2,18 +2,16 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
-import java.sql.Date;
 import java.io.PrintWriter;
+
+import java.text.ParseException;
 
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 
-import java.util.Locale;
+import java.util.Date;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import org.bson.Document;
 
@@ -45,7 +43,6 @@ import com.mongodb.client.MongoDatabase;
  * 
  */
 public class MotaMeasureTrazaGenerator {
-	private static Logger logger;
 	private static Random random;
 	private static PrintWriter writer;
 	private static final ObjectMapper OBJECTMAPPER = new ObjectMapper();
@@ -88,8 +85,9 @@ public class MotaMeasureTrazaGenerator {
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 * @throws JsonProcessingException
+	 * @throws ParseException
 	 */
-	private static void generateMotaMeasures() throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException {		
+	private static void generateMotaMeasures() throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException, ParseException {		
 		random = new Random();			
 		writer = new PrintWriter("motaMeasures.json", "UTF-8");			
 		String jsonString;	
@@ -108,7 +106,7 @@ public class MotaMeasureTrazaGenerator {
 			Instant instant = Instant.ofEpochSecond(randomDay);
 			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
 			motaTraza.getMotaMeasure().getTimestamp().setDate(Date.from(randomDate.toInstant()));
-			
+
 			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
 			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
 			motaTraza.getMotaMeasure().getGeometry().setCoordinates(coordinates);
@@ -118,7 +116,7 @@ public class MotaMeasureTrazaGenerator {
 			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			
 			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
-			pushToMongoDB(jsonString);
+//			pushToMongoDB(jsonString);
 			writer.println(jsonString);
 		}		
 		writer.close();			
@@ -136,8 +134,7 @@ public class MotaMeasureTrazaGenerator {
 		try {
 			generateMotaMeasures();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			logger.log(Level.INFO, e.getMessage(), e);
+			e.printStackTrace();
 		}
 	}
 }

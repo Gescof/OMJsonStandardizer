@@ -79,7 +79,7 @@ public class OMJsonGenerator {
 			mongoClient = new MongoClient(uri);
 			MongoDatabase database = mongoClient.getDatabase("db");
 			MongoCollection<Document> collection = database.getCollection("motaTrazas");
-			Bson filter = Filters.eq("MotaMeasure.MotaId", "mota1");
+			Bson filter = Filters.eq("MotaMeasure.MotaId", "mota2");
 			Document queryResult = collection.find(filter).first();
 			strResult = queryResult.toJson();
 			System.out.println("Query completed successfully");

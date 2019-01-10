@@ -2,9 +2,10 @@ package es.upm.syst.IoT.OM_Json_Standardizer;
 
 import java.util.Date;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 /**
  * Representa una fecha que tenga una traza.
@@ -12,10 +13,6 @@ import com.fasterxml.jackson.annotation.JsonSetter;
  *
  */
 public class Timestamp {
-
-	@JsonFormat(
-			shape = JsonFormat.Shape.STRING,
-			pattern = "yyyy-MM-dd'T'HH:mm:ss.SS'Z'")
 	private Date date;
 
 	public Timestamp()
@@ -28,6 +25,7 @@ public class Timestamp {
 	 * @return Date date
 	 */
 	@JsonGetter("$date")
+	@JsonDeserialize(using = MultiDateDeserializer.class)
 	public Date getDate() {
 		return date;
 	}
@@ -37,6 +35,7 @@ public class Timestamp {
 	 * @param date
 	 */
 	@JsonSetter("$date")
+	@JsonSerialize(using = MultiDateSerializer.class)
 	public void setDate(Date date) {
 		this.date = date;
 	}

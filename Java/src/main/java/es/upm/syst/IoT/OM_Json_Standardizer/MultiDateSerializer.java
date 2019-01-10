@@ -34,11 +34,11 @@ public class MultiDateSerializer extends StdSerializer<Date> {
 	@Override
 	public void serialize(final Date value, final JsonGenerator jGen, final SerializerProvider provider) throws IOException {
 		SimpleDateFormat pattern;
-		pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSZ");
+		pattern = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SS'Z'");
 		try {
-			String strDate = pattern.format(value); 
-			pattern.parse(strDate);
-			jGen.writeString(strDate);
+			final String date = pattern.format(value); 
+			pattern.parse(date);
+			jGen.writeString(date);
 		} catch(ParseException e){}
 	}
 }

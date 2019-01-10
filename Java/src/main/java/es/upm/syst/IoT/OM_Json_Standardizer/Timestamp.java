@@ -13,6 +13,8 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
  *
  */
 public class Timestamp {
+	@JsonDeserialize(using = MultiDateDeserializer.class)
+	@JsonSerialize(using = MultiDateSerializer.class)
 	private Date date;
 
 	public Timestamp()
@@ -25,7 +27,6 @@ public class Timestamp {
 	 * @return Date date
 	 */
 	@JsonGetter("$date")
-	@JsonDeserialize(using = MultiDateDeserializer.class)
 	public Date getDate() {
 		return date;
 	}
@@ -35,7 +36,6 @@ public class Timestamp {
 	 * @param date
 	 */
 	@JsonSetter("$date")
-	@JsonSerialize(using = MultiDateSerializer.class)
 	public void setDate(Date date) {
 		this.date = date;
 	}

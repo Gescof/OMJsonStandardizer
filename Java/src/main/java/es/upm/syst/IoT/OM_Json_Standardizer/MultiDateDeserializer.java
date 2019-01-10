@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
 import java.util.Arrays;
 import java.util.Date;
 
@@ -45,14 +44,31 @@ public class MultiDateDeserializer extends StdDeserializer<Date> {
      */
     @Override
     public Date deserialize(JsonParser jsonParser, DeserializationContext cTxt) throws IOException, JsonProcessingException {
+    	boolean match = false;
+    	Date dateTimestamp = new Date();
         JsonNode node = jsonParser.getCodec().readTree(jsonParser);
-        final String date = node.textValue();
-
-        for (String dateString : DATE_FORMATS) {
-            try {
-                return new SimpleDateFormat(dateString).parse(date);
-            } catch (ParseException e) {}
+        if(node.textValue() != null) {
+        	final String date = node.textValue();
+            for (String dateFormat : DATE_FORMATS) {
+            	if(!match) {
+	                try {
+	                	dateTimestamp = new SimpleDateFormat(dateFormat).parse(date);
+	                	match = true;
+	                } catch (ParseException e) {}
+            	}
+            	else break;
+            }
+            if(!match) {
+            	throw new JsonParseException(jsonParser, "Unparseable date: \"" + date + "\". Supported formats: " + Arrays.toString(DATE_FORMATS));
+            }
         }
-        throw new JsonParseException(jsonParser, "Unparseable date: \"" + date + "\". Supported formats: " + Arrays.toString(DATE_FORMATS));
+        else if(node.isLong()) {
+        	final long dateInstant = node.asLong();
+        	dateTimestamp = new Date(dateInstant);
+        }
+        else {
+        	throw new JsonParseException(jsonParser, "Unparseable date. Supported formats: " + Arrays.toString(DATE_FORMATS));
+        }
+        return dateTimestamp;
     }
 }

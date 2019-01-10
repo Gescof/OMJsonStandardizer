@@ -116,7 +116,7 @@ public class MotaMeasureTrazaGenerator {
 			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			
 			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
-//			pushToMongoDB(jsonString);
+			pushToMongoDB(jsonString);
 			writer.println(jsonString);
 		}		
 		writer.close();			

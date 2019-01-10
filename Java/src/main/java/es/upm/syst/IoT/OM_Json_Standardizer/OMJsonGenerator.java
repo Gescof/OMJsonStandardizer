@@ -173,7 +173,10 @@ public class OMJsonGenerator {
 			jsonArrayList.add(new JSONObject(jsonString));
 			members.clear();
 		}
-		jsonArrayList.forEach((jsonObject)->pushToMongoDB(jsonObject.toString()));
+		if(!jsonArrayList.isEmpty()) 
+		{
+			jsonArrayList.forEach((jsonObject)->pushToMongoDB(jsonObject.toString()));
+		}
 	}
 	
 	/**

@@ -129,7 +129,7 @@ public class MotaMeasureTrazaGenerator {
 	 * @throws UnsupportedEncodingException
 	 * @throws JsonProcessingException
 	 */
-	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException
+	public static void main(final String[] args) throws FileNotFoundException, UnsupportedEncodingException, JsonProcessingException
 	{
 		try {
 			generateMotaMeasures();

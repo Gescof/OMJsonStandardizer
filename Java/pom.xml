@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
   </properties>
 
   <build>
@@ -29,6 +30,7 @@
   </build>
 
   <dependencies>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -65,5 +67,6 @@
 	  <artifactId>mongo-java-driver</artifactId>
 	  <version>3.9.1</version>
 	</dependency>
+	
   </dependencies>
 </project>

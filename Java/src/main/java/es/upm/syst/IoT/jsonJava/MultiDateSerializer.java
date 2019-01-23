@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.OM_Json_Standardizer;
+package es.upm.syst.IoT.jsonJava;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.OM_Json_Standardizer;
+package es.upm.syst.IoT.jsonJava;
 
 /**
  * Representa el tipo de resultado para una OMCollection. Puede ser un OMMember o una Geometry.

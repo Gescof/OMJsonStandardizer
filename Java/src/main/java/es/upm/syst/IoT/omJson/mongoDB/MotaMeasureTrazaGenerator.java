@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.OM_Json_Standardizer;
+package es.upm.syst.IoT.omJson.mongoDB;
 
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
@@ -21,6 +21,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+
+import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
 
 /**
  * Generador de trazas JSON no estandarizadas.

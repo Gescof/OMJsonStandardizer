@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.OM_Json_Standardizer;
+package es.upm.syst.IoT.jsonJava;
 
 /**
  * Representa el resultado de un miembro de una traza.
@@ -48,7 +48,7 @@ public class Member extends ResulType {
 	
 	/**
 	 * Devuelve un objeto Member a una cadena con el formato OM-JSON.
-	 * @see es.upm.syst.IoT.OM_Json_Standardizer.ResulType#toStringOM()
+	 * @see es.upm.syst.IoT.jsonJava.ResulType#toStringOM()
 	 * @return String
 	 */
 	public String toStringOM() {

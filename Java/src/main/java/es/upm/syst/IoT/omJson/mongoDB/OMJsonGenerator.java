@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.OM_Json_Standardizer;
+package es.upm.syst.IoT.omJson.mongoDB;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +19,10 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
+
+import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
+import es.upm.syst.IoT.jsonJava.OMMember;
+import es.upm.syst.IoT.jsonJava.ObservationCollecionTraza;
 
 /**
  * Generador de trazas OM-JSON.

@@ -13,9 +13,9 @@ import org.bson.conversions.Bson;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
@@ -107,7 +107,8 @@ public class OMJsonGenerator {
 	}
 	
 	/**
-	 * Lee el fichero motaMeasures.json y genera una traza OMJson-Collection por cada línea de texto.
+	 * Lee el fichero motaMeasures.json 
+	 * y genera una traza OMJson-Collection por cada línea de texto.
 	 * @throws IOException
 	 */
 	private static void generateOMJson() throws IOException 
@@ -144,13 +145,64 @@ public class OMJsonGenerator {
 	}
 	
 	/**
-	 * Obtiene los documentos sin estandarizar almacenados en la base de datos de Azure Cosmos DB
-	 * y genera una traza OMJson-Collection por cada línea de texto.
+	 * Obtiene todos los documentos sin estandarizar almacenados 
+	 * en la base de datos de Azure Cosmos DB
+	 * y genera una traza OMJson-Collection por cada uno.
 	 * @throws JsonParseException
 	 * @throws JsonMappingException
 	 * @throws IOException
 	 */
-	private static void generateOMJsonToMongoDB() throws JsonParseException, JsonMappingException, IOException 
+	private static void insertOMJsonToMongoDBMany() throws JsonParseException, JsonMappingException, IOException 
+	{
+		MongoClientURI uri = new MongoClientURI(CONNECTIONSTRING);
+		MongoClient mongoClient = null;		
+		
+		objectMapper = new ObjectMapper();
+		jsonArrayList = new ArrayList<JSONObject>();			
+		
+		ObservationCollecionTraza omTraza = new ObservationCollecionTraza();
+		ArrayList<OMMember> members = new ArrayList<OMMember>();
+		try {
+			mongoClient = new MongoClient(uri);
+			MongoDatabase database = mongoClient.getDatabase("db");
+			MongoCollection<Document> collection = database.getCollection("motaTrazas");
+			System.out.println("Query completed successfully");
+			FindIterable<Document> all = collection.find();
+			for(Document document : all) {
+				String motaTrazaStr = document.toJson();
+				MotaMeasureTraza motaMeasure = objectMapper.readValue(motaTrazaStr, MotaMeasureTraza.class);
+				omTraza.getOmCollection().setId(motaMeasure.getMotaMeasure().getMotaId());
+				omTraza.getOmCollection().setPhenomenomTime(motaMeasure.getMotaMeasure().getTimestamp());
+				members.add(new OMMember("geometry" + motaMeasure.getMotaMeasure().getMotaId(), "Geometry Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getGeometry()));
+				members.add(new OMMember("temperature" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getTemperature().standarizeMember()));
+				members.add(new OMMember("humidity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getHumidity().standarizeMember()));
+				members.add(new OMMember("luminosity" + motaMeasure.getMotaMeasure().getMotaId(), "Category Observation", motaMeasure.getMotaMeasure().getTimestamp(), motaMeasure.getMotaMeasure().getMeasures().getLuminosity().standarizeMember()));
+				omTraza.getOmCollection().setMembers(members);
+				String jsonString = objectMapper.writeValueAsString(omTraza.getOmCollection());
+				jsonString = jsonReplace(jsonString);
+				jsonArrayList.add(new JSONObject(jsonString));
+				members.clear();
+			}
+		} finally {
+			if (mongoClient != null) {
+				mongoClient.close();
+			}
+		}
+		if(!jsonArrayList.isEmpty()) 
+		{
+			jsonArrayList.forEach((jsonObject)->pushToMongoDB(jsonObject.toString()));
+		}
+	}
+	
+	/**
+	 * Obtiene un documento sin estandarizar almacenados 
+	 * en la base de datos de Azure Cosmos DB
+	 * y genera una traza OMJson-Collection.
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 */
+	private static void insertOMJsonToMongoDBOne() throws JsonParseException, JsonMappingException, IOException 
 	{
 		objectMapper = new ObjectMapper();
 		jsonArrayList = new ArrayList<JSONObject>();	
@@ -186,6 +238,7 @@ public class OMJsonGenerator {
 	public static void main(String[] args) throws IOException
 	{
 		generateOMJson();
-		generateOMJsonToMongoDB();
+		insertOMJsonToMongoDBMany();
+		insertOMJsonToMongoDBOne();
 	}
 }

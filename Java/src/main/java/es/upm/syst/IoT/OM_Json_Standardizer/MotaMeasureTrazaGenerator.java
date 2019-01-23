@@ -81,7 +81,8 @@ public class MotaMeasureTrazaGenerator {
 	}
 	
 	/**
-	 * Genera trazas JSON no estandarizadas en un fichero (motaMeasures.json) alojado en la carpeta raíz.
+	 * Genera trazas JSON no estandarizadas en un fichero 
+	 * (motaMeasures.json) alojado en la carpeta raíz.
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 * @throws JsonProcessingException
@@ -116,11 +117,48 @@ public class MotaMeasureTrazaGenerator {
 			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			
 			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
-			pushToMongoDB(jsonString);
 			writer.println(jsonString);
 		}		
 		writer.close();			
 		System.out.println("Fichero generado.");
+	}
+	
+	/**
+	 * Genera trazas JSON no estandarizadas 
+	 * y las almacena en la nube de Azure.
+	 * @throws JsonProcessingException
+	 * @throws ParseException
+	 */
+	private static void generateMotaMeasuresMongoDB() throws JsonProcessingException, ParseException {		
+		random = new Random();				
+		String jsonString;	
+		
+		long randomDay;
+		ZonedDateTime randomDate;		
+		
+		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
+		float[] coordinates = new float[2];
+		motaTraza.getMotaMeasure().getGeometry().setType("Point");
+
+		for(int i = 0; i < NUMIDS; i++) {
+			motaTraza.getMotaMeasure().setMotaId("mota" + (i + 1));
+			
+			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
+			Instant instant = Instant.ofEpochSecond(randomDay);
+			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
+			motaTraza.getMotaMeasure().getTimestamp().setDate(Date.from(randomDate.toInstant()));
+
+			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
+			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
+			motaTraza.getMotaMeasure().getGeometry().setCoordinates(coordinates);
+			
+			motaTraza.getMotaMeasure().getMeasures().getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
+			motaTraza.getMotaMeasure().getMeasures().getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
+			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
+			
+			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
+			pushToMongoDB(jsonString);
+		}
 	}
 	
 	/**
@@ -133,6 +171,7 @@ public class MotaMeasureTrazaGenerator {
 	{
 		try {
 			generateMotaMeasures();
+			generateMotaMeasuresMongoDB();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

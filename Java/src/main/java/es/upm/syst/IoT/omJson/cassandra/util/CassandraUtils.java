@@ -15,12 +15,12 @@ public class CassandraUtils {
 
 	private Cluster cluster;
 	private Configurations config = new Configurations();
-	private String cassandraHost = "127.0.0.1";
+	private String cassandraHost;
 	private int cassandraPort = 10350;
-	private String cassandraUsername = "localhost";
-	private String cassandraPassword = "defaultpassword";
+	private String cassandraUsername;
+	private String cassandraPassword;
 	private File sslKeyStoreFile = null;
-	private String sslKeyStorePassword = "changeit";
+	private String sslKeyStorePassword = "";
 
 	/**
 	 * This method creates a Cassandra Session based on the the end-point details
@@ -93,7 +93,7 @@ public class CassandraUtils {
 			if (javaHomeDirectory == null || javaHomeDirectory.isEmpty()) {
 				throw new Exception("JAVA_HOME not set");
 			}
-			ssl_keystore_file_path = new StringBuilder(javaHomeDirectory).append("/jre/lib/security/cacerts")
+			ssl_keystore_file_path = new StringBuilder(javaHomeDirectory).append("/lib/security/cacerts")
 					.toString();
 		}
 

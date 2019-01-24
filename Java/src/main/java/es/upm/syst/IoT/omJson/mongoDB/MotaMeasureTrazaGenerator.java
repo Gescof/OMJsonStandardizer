@@ -27,7 +27,6 @@ import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
 /**
  * Generador de trazas JSON no estandarizadas.
  * <p>Atributos:
- * <li>Logger logger -> Registro de las actividades del programa.</li>
  * <li>Random random -> Generador aleatorio de valores de los atributos de las trazas JSON.</li>
  * <li>PrintWriter writer -> Búfer de escritura del fichero que se crea.</li>
  * <li>ObjectMapper OBJECTMAPPER -> Usado para mapear de objeto Java a JSON y viceversa.</li>

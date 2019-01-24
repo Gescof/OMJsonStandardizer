@@ -8,6 +8,10 @@ import com.indra.sofia2.ssap.kp.implementations.rest.resource.SSAPResource;
 
 public class Sofia2Producer {
 
+	/**
+	 * @param $args
+	 * @throws ResponseMapperException
+	 */
 	public static void main(final String ... $args) throws ResponseMapperException 
 	{
 		SSAPResourceAPI api = new SSAPResourceAPI("http://sofia2.com/sib/services/api_ssap/");

@@ -5,7 +5,10 @@ import org.fusesource.mqtt.client.QoS;
 import com.indra.sofia2.ssap.kp.Kp;
 import com.indra.sofia2.ssap.kp.Listener4SIBIndicationNotifications;
 import com.indra.sofia2.ssap.kp.SSAPMessageGenerator;
-import com.indra.sofia2.ssap.kp.config.ConnectionConfig;
+import com.indra.sofia2.ssap.kp.config.MQTTConnectionConfig;
+import com.indra.sofia2.ssap.kp.exceptions.ConnectionToSIBException;
+import com.indra.sofia2.ssap.kp.exceptions.SSAPResponseTimeoutException;
+import com.indra.sofia2.ssap.kp.implementations.KpMQTTClient;
 import com.indra.sofia2.ssap.ssap.SSAPMessage;
 import com.indra.sofia2.ssap.ssap.SSAPQueryType;
 import com.indra.sofia2.ssap.ssap.body.SSAPBodyReturnMessage;
@@ -17,15 +20,20 @@ public class Sofia2Consumer {
 	private static final String KP_INSTANCE = "Prod_TemperaturaEjBienvenida:Prod_TemperaturaEjBienvenida 01";
 	private static final String ONTOLOGY_NAME = "SensorTemperaturaEjBienvenida";
 
-	public static void main(final String... $args) 
+	/**
+	 * @param $args
+	 * @throws ConnectionToSIBException
+	 * @throws SSAPResponseTimeoutException
+	 */
+	public static void main(final String ... $args) throws ConnectionToSIBException, SSAPResponseTimeoutException 
 	{
 		// Configura los parámetros de la conexión MQTT
 		MQTTConnectionConfig config = new MQTTConnectionConfig();
-		config.setHostSIB(HOST);
-		config.setPortSIB(PORT);
+		config.setSibHost(HOST);
+		config.setSibPort(PORT);
 		config.setKeepAliveInSeconds(5);
 		config.setQualityOfService(QoS.AT_LEAST_ONCE);
-		config.setTimeOutConnectionSIB(5000);
+		config.setSibConnectionTimeout(5000);
 
 		// Intancia la interfaz del KP con la implementación de MQTT para la
 		// configuración indicada

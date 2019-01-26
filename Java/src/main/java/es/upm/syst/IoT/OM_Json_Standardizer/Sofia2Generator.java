@@ -1,9 +1,17 @@
 package es.upm.syst.IoT.OM_Json_Standardizer;
 
+import java.text.ParseException;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.indra.sofia2.ssap.kp.exceptions.ConnectionToSIBException;
 import com.indra.sofia2.ssap.kp.exceptions.SSAPResponseTimeoutException;
 import com.indra.sofia2.ssap.kp.implementations.rest.exception.ResponseMapperException;
 
+/**
+ * @author Guillermo, Yan Liu
+ * @version 1.0
+ *
+ */
 public class Sofia2Generator {
 	
 	/**
@@ -11,8 +19,10 @@ public class Sofia2Generator {
 	 * @throws ResponseMapperException
 	 * @throws ConnectionToSIBException
 	 * @throws SSAPResponseTimeoutException
+	 * @throws ParseException 
+	 * @throws JsonProcessingException 
 	 */
-	public static void main(final String ... $args) throws ResponseMapperException, ConnectionToSIBException, SSAPResponseTimeoutException 
+	public static void main(final String ... $args) throws ResponseMapperException, ConnectionToSIBException, SSAPResponseTimeoutException, JsonProcessingException, ParseException 
 	{
 		Sofia2Producer.main("producer1");
 		Sofia2Consumer.main("consumer1");

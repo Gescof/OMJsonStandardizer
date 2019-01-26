@@ -13,6 +13,11 @@ import com.indra.sofia2.ssap.ssap.SSAPMessage;
 import com.indra.sofia2.ssap.ssap.SSAPQueryType;
 import com.indra.sofia2.ssap.ssap.body.SSAPBodyReturnMessage;
 
+/**
+ * @author Guillermo, Yan Liu
+ * @version 1.0
+ *
+ */
 public class Sofia2Consumer {
 	private static final String HOST = "sofia2.com";
 	private static final int PORT = 1883;

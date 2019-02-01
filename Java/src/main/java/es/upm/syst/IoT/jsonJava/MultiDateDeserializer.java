@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonSerialized;
+package es.upm.syst.IoT.jsonJava;
 
 import java.io.IOException;
 

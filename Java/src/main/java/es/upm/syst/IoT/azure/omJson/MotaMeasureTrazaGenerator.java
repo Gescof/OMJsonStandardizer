@@ -22,7 +22,7 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import es.upm.syst.IoT.jsonSerialized.MotaMeasureTraza;
+import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
 
 /**
  * Generador de trazas JSON no estandarizadas.

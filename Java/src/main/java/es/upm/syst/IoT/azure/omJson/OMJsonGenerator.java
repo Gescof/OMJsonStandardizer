@@ -20,9 +20,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
-import es.upm.syst.IoT.jsonSerialized.MotaMeasureTraza;
-import es.upm.syst.IoT.jsonSerialized.OMMember;
-import es.upm.syst.IoT.jsonSerialized.ObservationCollecionTraza;
+import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
+import es.upm.syst.IoT.jsonJava.OMMember;
+import es.upm.syst.IoT.jsonJava.ObservationCollecionTraza;
 
 /**
  * Generador de trazas OM-JSON.

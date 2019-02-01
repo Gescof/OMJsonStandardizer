@@ -6,18 +6,15 @@ import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.util.Date;
 import java.util.Random;
-
-import javax.ws.rs.core.Response;
+import java.util.concurrent.TimeUnit;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.indra.sofia2.ssap.kp.SSAPMessageGenerator;
-import com.indra.sofia2.ssap.kp.implementations.rest.SSAPResourceAPI;
-import com.indra.sofia2.ssap.kp.implementations.rest.exception.ResponseMapperException;
-import com.indra.sofia2.ssap.kp.implementations.rest.resource.SSAPResource;
-import com.indra.sofia2.ssap.ssap.SSAPMessage;
 
-import es.upm.syst.IoT.jsonSerialized.MotaMeasureTraza;
+import com.minsait.onesait.platform.client.RestClient;
+import com.minsait.onesait.platform.client.TimeOutConfig;
+
+import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
 
 /**
  * @author Guillermo, Yan Liu
@@ -25,6 +22,10 @@ import es.upm.syst.IoT.jsonSerialized.MotaMeasureTraza;
  *
  */
 public class Sofia2Producer {
+	private static final String URL = "tcp://development.onesaitplatform.com:1883";
+	private static final String DEVICE = "EtsisiApp";
+	private static final String TOKEN = "724fcaba296742cba85e2a92357d8d86";
+	private static final String ONTOLOGY_NAME = "MotaMeasures";
 	private static Random random;
 	private static final ObjectMapper OBJECTMAPPER = new ObjectMapper();
 	private static final int NUMIDS = 100;
@@ -41,8 +42,9 @@ public class Sofia2Producer {
 	 * y las inserta en Sofia2.
 	 * @throws JsonProcessingException
 	 * @throws ParseException
+	 * @throws MqttClientException 
 	 */
-	private static void generateMotaMeasures(SSAPResourceAPI api, SSAPResource ssapResource) throws JsonProcessingException, ParseException {		
+	private static void generateMotaMeasures(RestClient client) throws JsonProcessingException, ParseException {		
 		random = new Random();				
 		String jsonString;	
 		
@@ -70,14 +72,8 @@ public class Sofia2Producer {
 			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
 			
 			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
-			ssapResource.setData(jsonString);
-			
-			Response responseInsert = api.insert(ssapResource);
-			
-			if(responseInsert.getStatus() != 200) {
-				System.out.println("Error Insertando");
-			}
-			
+//			client.insert(ONTOLOGY_NAME, jsonString);
+
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -88,33 +84,14 @@ public class Sofia2Producer {
 	
 	/**
 	 * @param $args
-	 * @throws ResponseMapperException
 	 * @throws ParseException 
 	 * @throws JsonProcessingException 
 	 */
-	public static void main(final String ... $args) throws ResponseMapperException, JsonProcessingException, ParseException 
+	public static void main(final String ... $args) throws JsonProcessingException, ParseException
 	{
-		SSAPResourceAPI api = new SSAPResourceAPI("http://sofia2.com/sib/services/api_ssap/");
-		
-		SSAPResource ssapResource = new SSAPResource();
-		ssapResource.setJoin(true);
-		ssapResource.setToken("");
-		ssapResource.setInstanceKP("");
-		
-		Response responseJoin = api.insert(ssapResource);
-		
-		if(responseJoin.getStatus() == 200) {
-			String sessionKey = api.responseAsSsap(responseJoin).getSessionKey();
-			
-			System.out.println("Sessionkey recibida " + sessionKey);
-			
-			SSAPResource ssapResourceMedida = new SSAPResource();
-			ssapResourceMedida.setSessionKey(sessionKey);
-			ssapResourceMedida.setOntology("SensorTemperaturaEjBienvenida");
-			
-			generateMotaMeasures(api, ssapResourceMedida);
-			
-//			SSAPMessage msgInsert = SSAPMessageGenerator.getInstance().generateInsertMessage(ssapResourceMedida.getSessionKey(), ssapResourceMedida.getOntology(), datos);
-		}
+		RestClient client = new RestClient(URL, 
+				TimeOutConfig.builder().connectTimeout(5).readTimeouts(5).writeTimeout(5).timeunit(TimeUnit.SECONDS).build());
+		String sessionKey = client.connect(TOKEN, DEVICE, "device-test", true);
+		generateMotaMeasures(client);
 	}
 }

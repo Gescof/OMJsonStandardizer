@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonSerialized;
+package es.upm.syst.IoT.jsonJava;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;

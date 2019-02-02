@@ -5,14 +5,20 @@ import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.minsait.onesait.platform.client.RestClient;
 import com.minsait.onesait.platform.client.TimeOutConfig;
+import com.minsait.onesait.platform.comms.protocol.enums.SSAPQueryType;
 
 import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
 
@@ -22,7 +28,8 @@ import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
  *
  */
 public class Sofia2Producer {
-	private static final String URL = "tcp://development.onesaitplatform.com:1883";
+	private static Logger log;
+	private static final String URL = "http://development.onesaitplatform.com/iot-broker";
 	private static final String DEVICE = "EtsisiApp";
 	private static final String TOKEN = "724fcaba296742cba85e2a92357d8d86";
 	private static final String ONTOLOGY_NAME = "MotaMeasures";
@@ -45,41 +52,45 @@ public class Sofia2Producer {
 	 * @throws MqttClientException 
 	 */
 	private static void generateMotaMeasures(RestClient client) throws JsonProcessingException, ParseException {		
-		random = new Random();				
-		String jsonString;	
-		
-		long randomDay;
-		ZonedDateTime randomDate;		
-		
-		MotaMeasureTraza motaTraza = new MotaMeasureTraza();
-		float[] coordinates = new float[2];
-		motaTraza.getMotaMeasure().getGeometry().setType("Point");
-
-		for(int i = 0; i < NUMIDS; i++) {
-			motaTraza.getMotaMeasure().setMotaId("mota" + (i + 1));
-			
-			randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
-			Instant instant = Instant.ofEpochSecond(randomDay);
-			randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
-			motaTraza.getMotaMeasure().getTimestamp().setDate(Date.from(randomDate.toInstant()));
-
-			coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
-			coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
-			motaTraza.getMotaMeasure().getGeometry().setCoordinates(coordinates);
-			
-			motaTraza.getMotaMeasure().getMeasures().getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
-			motaTraza.getMotaMeasure().getMeasures().getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
-			motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
-			
-			jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
-//			client.insert(ONTOLOGY_NAME, jsonString);
-
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}			
+		List<JsonNode> collection = client.query(ONTOLOGY_NAME, "db.getCollection(" + ONTOLOGY_NAME + ")", SSAPQueryType.NATIVE);
+		if(collection != null)
+		{
+			random = new Random();				
+			String jsonString;	
+				
+			long randomDay;
+			ZonedDateTime randomDate;		
+				
+			MotaMeasureTraza motaTraza = new MotaMeasureTraza();
+			float[] coordinates = new float[2];
+			motaTraza.getMotaMeasure().getGeometry().setType("Point");
+	
+			for(int i = 0; i < NUMIDS; i++) {
+				motaTraza.getMotaMeasure().setMotaId("mota" + (i + 1));
+					
+				randomDay = MINDAY + random.nextInt(MAXDAY - MINDAY);
+				Instant instant = Instant.ofEpochSecond(randomDay);
+				randomDate = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);
+				motaTraza.getMotaMeasure().getTimestamp().setDate(Date.from(randomDate.toInstant()));
+	
+				coordinates[0] = random.nextFloat() * (MAXCOORZERO - MINCOORZERO) + MINCOORZERO;
+				coordinates[1] = random.nextFloat() * (MAXCOORONE - MINCOORONE) + MINCOORONE;
+				motaTraza.getMotaMeasure().getGeometry().setCoordinates(coordinates);
+					
+				motaTraza.getMotaMeasure().getMeasures().getTemperature().setValue(random.nextFloat() * (MAXTEMP - MINTEMP) + MINTEMP);
+				motaTraza.getMotaMeasure().getMeasures().getHumidity().setValue(random.nextFloat() * (MAXHUM - MINHUM) + MINHUM);
+				motaTraza.getMotaMeasure().getMeasures().getLuminosity().setValue(random.nextFloat() * (MAXLUM - MINLUM) + MINLUM);
+					
+				jsonString = OBJECTMAPPER.writeValueAsString(motaTraza);
+				client.insert(ONTOLOGY_NAME, jsonString);
+	
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}	
+		}
 	}	
 	
 	/**
@@ -89,9 +100,14 @@ public class Sofia2Producer {
 	 */
 	public static void main(final String ... $args) throws JsonProcessingException, ParseException
 	{
-		RestClient client = new RestClient(URL, 
-				TimeOutConfig.builder().connectTimeout(5).readTimeouts(5).writeTimeout(5).timeunit(TimeUnit.SECONDS).build());
-		String sessionKey = client.connect(TOKEN, DEVICE, "device-test", true);
-		generateMotaMeasures(client);
+		try {
+			BasicConfigurator.configure();
+			RestClient client = new RestClient(URL, 
+					TimeOutConfig.builder().connectTimeout(5).readTimeouts(5).writeTimeout(5).timeunit(TimeUnit.SECONDS).build());
+			client.connect(TOKEN, DEVICE, "device-test", true);
+			generateMotaMeasures(client);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

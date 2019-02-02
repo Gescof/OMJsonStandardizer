@@ -22,6 +22,11 @@
   		<url>http://sofia2.org/nexus/content/repositories/releases/</url>
   	</repository>
   	
+  	<repository>
+  		<id>slf4j</id>
+  		<url>http://maven.averbis.com/m2/</url>
+  	</repository>
+  	
   </repositories>
 
   <build>
@@ -47,6 +52,7 @@
       <scope>test</scope>
     </dependency>
     
+    <!--JSON dependecies-->
     <dependency>
   	  <groupId>com.fasterxml.jackson.core</groupId>
   	  <artifactId>jackson-core</artifactId>
@@ -71,6 +77,7 @@
 	  <version>20180813</version>
 	</dependency>
 	
+	<!--MongoDB dependecies-->
 	<dependency>
 	  <groupId>org.mongodb</groupId>
 	  <artifactId>mongo-java-driver</artifactId>
@@ -89,6 +96,24 @@
       <artifactId>onesaitplatform-java-client</artifactId>
       <version>1.1.0-rc25</version>
 	</dependency>
-		
+	
+	<dependency>
+      <groupId>com.minsait.onesait.platform</groupId>
+      <artifactId>onesaitplatform-comms-protocol</artifactId>
+      <version>1.1.0-rc25</version>
+	</dependency>
+	
+	<dependency>
+      <groupId>org.slf4j.impl</groupId>
+      <artifactId>log4j12</artifactId>
+      <version>1.7.2</version>
+	</dependency>
+	
+	<dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>3.12.1</version>
+	</dependency>	
+
   </dependencies>
 </project>

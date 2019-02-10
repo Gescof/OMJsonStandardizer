@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.sofia2.omJson;
+package es.upm.syst.IoT.sofia2.omJson.main;
 
 import java.text.ParseException;
 import java.time.Instant;
@@ -20,7 +20,7 @@ import com.minsait.onesait.platform.client.RestClient;
 import com.minsait.onesait.platform.client.TimeOutConfig;
 import com.minsait.onesait.platform.comms.protocol.enums.SSAPQueryType;
 
-import es.upm.syst.IoT.jsonJava.MotaMeasureTraza;
+import es.upm.syst.IoT.entities.mota.MotaMeasureTraza;
 
 /**
  * @author Guillermo, Yan Liu

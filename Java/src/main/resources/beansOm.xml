@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="omCollectionTraza" class="es.upm.syst.IoT.entites.omJson.ObservationCollectionTraza" scope="prototype">
+		<property name="omCollection" ref="omCollection"></property>
+	</bean>
+	
+	<bean id="omCollection" class="es.upm.syst.IoT.entites.omJson.ObservationCollection" scope="prototype">
+		<property name="members">
+			<bean class="java.util.ArrayList">
+				<constructor-arg>
+					<list>
+						<ref bean="memberGeometry"/>
+						<ref bean="memberTemperature"/>
+						<ref bean="memberHumidity"/>
+						<ref bean="memberLuminosity"/>
+					</list>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- OmMembers -->
+	<bean id="memberGeometry" class="es.upm.syst.IoT.entites.omJson.OmMember" scope="prototype">
+		<property name="type" value="Geometry-Observation"></property>
+		<property name="resultType" ref="geometry"></property>
+	</bean>
+	<bean id="geometry" class="es.upm.syst.IoT.entites.omJson.Geometry">
+		<property name="type" value="Point"></property>
+	</bean>
+	
+	<bean id="memberTemperature" class="es.upm.syst.IoT.entites.omJson.OmMember" scope="prototype">
+		<property name="type" value="Category-Observation"></property>
+		<property name="resultType" ref="temperature"></property>
+	</bean>
+	<bean id="temperature" class="es.upm.syst.IoT.entites.omJson.Member">
+		<property name="uom" value="https://en.wikipedia.org/wiki/Celsius"></property>
+	</bean>
+	
+	<bean id="memberHumidity" class="es.upm.syst.IoT.entites.omJson.OmMember" scope="prototype">
+		<property name="type" value="Category-Observation"></property>
+		<property name="resultType" ref="humidity"></property>
+	</bean>
+	<bean id="humidity" class="es.upm.syst.IoT.entites.omJson.Member">
+		<property name="uom" value="https://en.wikipedia.org/wiki/Relative_humidity"></property>
+	</bean>
+	
+	<bean id="memberLuminosity" class="es.upm.syst.IoT.entites.omJson.OmMember" scope="prototype">
+		<property name="type" value="Category-Observation"></property>
+		<property name="resultType" ref="luminosity"></property>
+	</bean>
+	<bean id="luminosity" class="es.upm.syst.IoT.entites.omJson.Member">
+		<property name="uom" value="https://en.wikipedia.org/wiki/Lux"></property>
+	</bean>
+	
+	<!-- OmList -->
+	<bean id="omCollectionList" class="java.util.ArrayList"></bean>
+
+	<!-- DAO -->
+	<bean id="daoOmCollections" class="es.upm.syst.IoT.persistence.DAOObservationCollections"></bean>
+	
+	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"></bean>
+	
+	<!-- Service -->
+	<bean id="gestorOmCollections" class="es.upm.syst.IoT.services.GestorOmCollections">
+		<property name="daoOmCollections" ref="daoMotas"></property>
+	</bean>
+	
+	<bean id="scanner" class="java.util.Scanner">
+		<constructor-arg>
+			<ref bean="inputFile"/>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="inputFile" class="java.io.File">
+		<constructor-arg>
+			<value>motaMeasures.json</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="jsonList" class="java.util.ArrayList"></bean>
+
+</beans>

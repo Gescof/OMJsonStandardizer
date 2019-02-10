@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.sofia2.omJson;
+package es.upm.syst.IoT.sofia2.omJson.main;
 
 import org.fusesource.mqtt.client.QoS;
 

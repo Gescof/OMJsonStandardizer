@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.mota;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
@@ -17,6 +17,11 @@ public class MotaMeasureTraza {
 	public MotaMeasureTraza()
 	{
 		this.motaMeasure = new MotaMeasure();
+	}
+
+	public MotaMeasureTraza(MotaMeasure motaMeasure, String id) {
+		this.motaMeasure = motaMeasure;
+		this.id = id;
 	}
 
 	/**
@@ -55,6 +60,14 @@ public class MotaMeasureTraza {
 	@JsonSetter("_id")	
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "{" + motaMeasure + "}";
 	}
 	
 }

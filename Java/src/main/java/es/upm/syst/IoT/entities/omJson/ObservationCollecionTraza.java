@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.omJson;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
@@ -53,6 +53,14 @@ public class ObservationCollecionTraza {
 	@JsonSetter("_id")
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón OM-JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "{" + omCollection + "}";
 	}
 	
 }

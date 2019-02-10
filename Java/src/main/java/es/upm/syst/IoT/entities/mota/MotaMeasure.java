@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.mota;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
@@ -21,11 +21,19 @@ public class MotaMeasure {
 		this.measures = new Measures();
 	}
 	
+	public MotaMeasure(Timestamp timestamp, String motaId, Geometry geometry, Measures measures) {
+		this.timestamp = timestamp;
+		this.motaId = motaId;
+		this.geometry = geometry;
+		this.measures = measures;
+	}
+
 	/**
 	 * Devuelve la fecha como objeto de tipo Timestamp.
 	 * @return Timestamp
 	 * @see Timestamp
 	 */
+	@JsonGetter("timestamp")
 	public Timestamp getTimestamp() {
 		return timestamp;
 	}
@@ -35,6 +43,7 @@ public class MotaMeasure {
 	 * @param timestamp
 	 * @see Timestamp
 	 */
+	@JsonSetter("timestamp")
 	public void setTimestamp(Timestamp timestamp) {
 		this.timestamp = timestamp;
 	}
@@ -62,6 +71,7 @@ public class MotaMeasure {
 	 * @return Geometry
 	 * @see Geometry
 	 */
+	@JsonSetter("geometry")
 	public Geometry getGeometry() {
 		return geometry;
 	}
@@ -71,6 +81,7 @@ public class MotaMeasure {
 	 * @param geometry
 	 * @see Geometry
 	 */
+	@JsonSetter("geometry")
 	public void setGeometry(Geometry geometry) {
 		this.geometry = geometry;
 	}
@@ -80,6 +91,7 @@ public class MotaMeasure {
 	 * @return Measures
 	 * @see Measures
 	 */
+	@JsonGetter("measures")
 	public Measures getMeasures() {
 		return measures;
 	}
@@ -89,8 +101,18 @@ public class MotaMeasure {
 	 * @param measures
 	 * @see Measures
 	 */
+	@JsonSetter("measures")
 	public void setMeasures(Measures measures) {
 		this.measures = measures;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "\"MotaMeasure\": {\"timestamp\": " + timestamp + ", \"geometry\": {" + geometry + "}, \"measures\": " + measures +
+				", \"motaId\": \"" + motaId + "\"}";
 	}
 	
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="motaTraza" class="es.upm.syst.IoT.entites.mota.MotaMeasureTraza" scope="prototype"></bean>
+	
+	<!-- MotaList -->
+	<bean id="motaTrazaList" class="java.util.ArrayList"></bean>
+
+	<!-- DAO -->
+	<bean id="daoMotas" class="es.upm.syst.IoT.persistence.DAOMotaMeasuresAzureTemplate"></bean>
+	
+	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"></bean>
+	
+	<!-- Service -->
+	<bean id="gestorMotas" class="es.upm.syst.IoT.services.GestorMotaMeasures">
+		<property name="daoMotaMeasures" ref="daoMotas"></property>
+	</bean>
+	
+	<bean id="random" class="java.util.Random"></bean>
+	
+	<bean id="printWriter" class="java.io.PrintWriter">
+		<constructor-arg>
+			<value>motaMeasures.json</value>
+		</constructor-arg>
+	</bean>
+
+</beans>

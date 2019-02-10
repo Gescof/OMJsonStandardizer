@@ -1,4 +1,7 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.mota;
+
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 /**
  * Representa las medidas que contiene una traza.
@@ -27,11 +30,18 @@ public class Measures {
 		luminosity.setUnit("lx");
 	}
 	
+	public Measures(Member temperature, Member humidity, Member luminosity) {
+		this.temperature = temperature;
+		this.humidity = humidity;
+		this.luminosity = luminosity;
+	}
+
 	/**
 	 * Devuelve la temperatura como objeto de tipo Member.
 	 * @return Member temperature
 	 * @see Member
 	 */
+	@JsonGetter("temperature")
 	public Member getTemperature() {
 		return temperature;
 	}
@@ -41,6 +51,7 @@ public class Measures {
 	 * @param temperature
 	 * @see Member
 	 */
+	@JsonSetter("temperature")
 	public void setTemperature(Member temperature) {
 		this.temperature = temperature;
 	}
@@ -50,6 +61,7 @@ public class Measures {
 	 * @return Member humidity
 	 * @see Member
 	 */
+	@JsonGetter("humidity")
 	public Member getHumidity() {
 		return humidity;
 	}
@@ -59,6 +71,7 @@ public class Measures {
 	 * @param humidity
 	 * @see Member
 	 */
+	@JsonSetter("humidity")
 	public void setHumidity(Member humidity) {
 		this.humidity = humidity;
 	}
@@ -68,6 +81,7 @@ public class Measures {
 	 * @return Member luminosity
 	 * @see Member
 	 */
+	@JsonGetter("luminosity")
 	public Member getLuminosity() {
 		return luminosity;
 	}
@@ -77,8 +91,17 @@ public class Measures {
 	 * @param luminosity
 	 * @see Member
 	 */
+	@JsonSetter("luminosity")
 	public void setLuminosity(Member luminosity) {
 		this.luminosity = luminosity;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "{\"temperature\": " + temperature + ", \"humidity\": " + humidity + ", \"luminosity\": " + luminosity + "}";
 	}
 	
 }

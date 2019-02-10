@@ -1,4 +1,4 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.omJson;
 
 import java.util.Date;
 
@@ -22,22 +22,34 @@ public class Timestamp {
 		this.date = new Date();
 	}
 	
+	public Timestamp(Date date) {
+		this.date = date;
+	}
+
 	/**
-	 * Devuelve la fecha.
+	 * Devuelve la fecha como instante.
 	 * @return Date date
 	 */
-	@JsonGetter("$date")
+	@JsonGetter("instant")
 	public Date getDate() {
 		return date;
 	}
 	
 	/**
-	 * Establece la fecha.
+	 * Establece la fecha como instante.
 	 * @param date
 	 */
-	@JsonSetter("$date")
+	@JsonSetter("instant")
 	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón OM-JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "\"instant\": \"" + date + "\"";
 	}
 	
 }

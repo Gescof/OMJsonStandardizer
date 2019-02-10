@@ -1,17 +1,20 @@
-package es.upm.syst.IoT.jsonJava;
+package es.upm.syst.IoT.entities.omJson;
+
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 /**
  * Representa un miembro de una OMCollection.
  * @author Guillermo, Yan Liu
  *
  */
-public class OMMember {	
+public class OmMember {	
 	private String id;
 	private String type;
 	private Timestamp resultTime;
-	private ResulType result;
+	private ResulType resultType;
 	
-	public OMMember()
+	public OmMember()
 	{
 		this.resultTime = new Timestamp();
 	}
@@ -21,22 +24,23 @@ public class OMMember {
 	 * @param String id
 	 * @param String type
 	 * @param Timestamp resultTime
-	 * @param ResulType result
+	 * @param ResulType resultType
 	 * @see Timestamp
 	 * @see ResulType
 	 */
-	public OMMember(String id, String type, Timestamp resultTime, ResulType result)
+	public OmMember(String id, String type, Timestamp resultTime, ResulType resultType)
 	{
 		this.id = id;
 		this.type = type;
 		this.resultTime = resultTime;
-		this.result = result;
+		this.resultType = resultType;
 	}
 	
 	/**
 	 * Devuelve el identificador como cadena.
 	 * @return String id
 	 */
+	@JsonGetter("id")
 	public String getId() {
 		return id;
 	}
@@ -45,6 +49,7 @@ public class OMMember {
 	 * Establece el identificador como cadena.
 	 * @param id
 	 */
+	@JsonSetter("id")
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -53,6 +58,7 @@ public class OMMember {
 	 * Devuelve el tipo de OMMember como cadena.
 	 * @return String type
 	 */
+	@JsonGetter("type")
 	public String getType() {
 		return type;
 	}
@@ -61,6 +67,7 @@ public class OMMember {
 	 * Establece el tipo de OMMember como cadena.
 	 * @param type
 	 */
+	@JsonSetter("type")
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -70,6 +77,7 @@ public class OMMember {
 	 * @return Timestamp resultTime
 	 * @see Timestamp
 	 */
+	@JsonGetter("resultTime")
 	public Timestamp getResultTime() {
 		return resultTime;
 	}
@@ -79,6 +87,7 @@ public class OMMember {
 	 * @param resultTime
 	 * @see Timestamp
 	 */
+	@JsonSetter("resultTime")
 	public void setResultTime(Timestamp resultTime) {
 		this.resultTime = resultTime;
 	}
@@ -88,8 +97,9 @@ public class OMMember {
 	 * @return ResulType result
 	 * @see ResulType
 	 */
+	@JsonGetter("result")
 	public ResulType getResult() {
-		return result;
+		return resultType;
 	}
 	
 	/**
@@ -97,8 +107,18 @@ public class OMMember {
 	 * @param result
 	 * @see ResulType
 	 */
+	@JsonSetter("result")
 	public void setResult(ResulType result) {
-		this.result = result;
+		this.resultType = result;
+	}
+
+	/* Devuelve en formato de cadena este objeto siguiendo el patrón OM-JSON.
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "{\"id\": \"" + id + "\", \"type\": " + type + ", \"resultTime\": " + resultTime 
+				+ ", \"result\": {" + resultType + "}";
 	}
 	
 }
